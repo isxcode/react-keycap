@@ -1,11 +1,15 @@
 import React from "react";
 
-export default class Avatar extends React.Component {
+export interface AvatarClass {
 
-    render() {
-
-        return "";
-    }
-
+    path: string;
+    alt?: string;
 
 }
+
+export default class Avatar extends React.Component<AvatarClass> {
+
+    render() {
+        return (<img alt={this.props.alt} src={this.props.path}/>);
+    }
+};
