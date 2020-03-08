@@ -4,8 +4,13 @@ import avatarFile from "../../public/static/avatar.png";
 
 export default class main extends React.Component {
 
+
     render() {
-        return (<Avatar path={avatarFile}/>);
+        return (
+            <div className={"avatar"}>
+                <Avatar path={avatarFile} width={"100px"} height={"100px"}/>
+            </div>
+        );
     }
 }
 

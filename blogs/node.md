@@ -24,3 +24,6 @@ npm install --save-dev webpack@4.41.5
 ```shell script
 npm uninstall webpack
 ```
+
+### 创建账号实现上传npm组件库
+

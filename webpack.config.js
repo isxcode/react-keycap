@@ -4,8 +4,8 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
 
 module.exports = {
-  mode: 'production',
-  // devtool: "source-map", // Enable sourcemaps for debugging webpack's output.
+  mode: 'development',
+  devtool: "source-map", // Enable sourcemaps for debugging webpack's output.
   entry: './src/index.tsx',
   output: {
     filename: 'index_bundle.js', // 指定生成js文件的名称
@@ -48,10 +48,19 @@ module.exports = {
         }
       },
       {
-        test: /\.css$/i,
-        use: ['style-loader', 'css-loader'],
+        exclude: /node_modules/,
+        test: /\.s[ac]ss$/i,
+        use: [
+          // Creates `style` nodes from JS strings
+          'style-loader',
+          // Translates CSS into CommonJS
+          'css-loader',
+          // Compiles Sass to CSS
+          'sass-loader',
+        ],
       },
       {
+        exclude: /node_modules/,
         test: /\.(png|jpe?g|gif|svg})$/i, // 设置解析文件后缀
         use: [
           {
