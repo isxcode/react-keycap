@@ -9,3 +9,8 @@ declare module "*.sass" {
     const content: string;
     export = content
 }
+
+declare module "*.md" {
+    const content: string;
+    export = content
+}

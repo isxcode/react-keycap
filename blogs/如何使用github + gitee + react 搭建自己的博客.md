@@ -39,12 +39,14 @@ npm install --save-dev html-webpack-plugin # 自动生成html
 npm install --save-dev clean-webpack-plugin # 自动删除build文件夹
 npm install copy-webpack-plugin --save-dev # 配置静态资源
 npm install -D babel-loader @babel/core @babel/preset-env @babel/preset-react # 解析es语法
-npm install sass-loader node-sass css-loader style-loader --save-dev # 解析sass语法
+npm install sass-loader node-sass style-loader --save-dev # 解析sass语法
 npm install file-loader --save-dev # 解析文件
 npm install --save-dev webpack-dev-server # 安装启动器
 npm install gh-pages --save-dev # 安装git多分支提交工具
 npm install --save-dev typescript ts-loader # 安装ts语法
 npm install --save lodash # 压缩
+npm install --save react-markdown # markdown 插件
+npm install --save-dev raw-loader react-markdown # react markdown解析
 ```
 
 - 创建webpack配置文件 webpack.config.js
