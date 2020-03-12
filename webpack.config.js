@@ -8,7 +8,7 @@ module.exports = {
   devtool: "source-map", // Enable sourcemaps for debugging webpack's output.
   entry: './src/index.tsx',
   output: {
-    filename: 'index_bundle.js', // 指定生成js文件的名称
+    filename: 'index.js', // 指定生成js文件的名称
     path: path.resolve(__dirname, './build'), // 指定打包目录
   },
   resolve: {
