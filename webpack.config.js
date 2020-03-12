@@ -27,6 +27,7 @@ module.exports = {
       filename: "index.html" // 指定生成文件名
     })],
   devServer: {
+    historyApiFallback: true,
     contentBase: './build', // 设置本地运行文件
     port: 9999 // 设置本地启动端口号
   },
@@ -70,7 +71,7 @@ module.exports = {
       },
       {
         exclude: /node_modules/,
-        test: /\.md$/,
+        test: /\.(md)$/,
         use: [
           {
             loader: 'raw-loader',  // 解析成text文件

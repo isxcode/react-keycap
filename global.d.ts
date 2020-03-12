@@ -15,5 +15,10 @@ declare module "*.md" {
     export = content
 }
 
+declare module "*.json" {
+    const content: string;
+    export = content
+}
 
 declare module "markdown-to-jsx"
+declare module "react-router-dom"

@@ -5,7 +5,7 @@
     "sourceMap": true,
     "outDir": "./build/",
     "noImplicitAny": true,
-    "module": "es6",
+    "module": "esnext", // 开启动态导入
     "target": "es5",
     "jsx": "react",
     "allowJs": true

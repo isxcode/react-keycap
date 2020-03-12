@@ -26,4 +26,11 @@ npm uninstall webpack
 ```
 
 ### 创建账号实现上传npm组件库
+登录账号
+
+// 切换源
+npm config set registry=http://registry.npmjs.org
+
+npm login
+ispong
 

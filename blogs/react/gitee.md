@@ -48,6 +48,7 @@ npm install --save lodash # 压缩
 npm install --save react-markdown # markdown 插件
 npm install --save-dev raw-loader # webpack解析文件为String
 npm i markdown-to-jsx # react markdown解析
+npm install --save react-router-dom # react router
 ```
 
 - 创建webpack配置文件 webpack.config.js

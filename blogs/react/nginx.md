@@ -43,4 +43,4 @@ nginx -s reload -p D:\developer\nginx-1.16.1
 ```
 
 测试图片
-![img](./pictures/avatar.png)
+![img](../pictures/avatar.png)
