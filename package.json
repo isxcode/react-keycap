@@ -30,7 +30,7 @@
   "scripts": {
     "start": "webpack-dev-server --open",
     "build": "webpack",
-    "deploy": "webpack && gh-pages -o gitee -b master -d ./build",
+    "deploy": "gh-pages -o gitee -b master -d ./build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

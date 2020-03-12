@@ -17,7 +17,8 @@ module.exports = {
   plugins: [
     new CopyPlugin([
       {from: './blogs', to: 'blogs'},
-      {from: './public/static', to: 'static'}
+      {from: './public/static', to: 'static'},
+      {from: '.spa', to: '.'}
     ]),
     new CleanWebpackPlugin({
       cleanAfterEveryBuildPatterns: ['./build'] // 指定删除目录
@@ -27,7 +28,7 @@ module.exports = {
       filename: "index.html" // 指定生成文件名
     })],
   devServer: {
-    historyApiFallback: true,
+    historyApiFallback: true, // browserRouter 无法识别路径问题
     contentBase: './build', // 设置本地运行文件
     port: 9999 // 设置本地启动端口号
   },
