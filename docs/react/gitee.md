@@ -69,7 +69,7 @@ module.exports = {
   },
   plugins: [
     new CopyPlugin([
-      {from: './blogs', to: 'blogs'},
+      {from: './docs', to: 'docs'},
     ]),
     new CleanWebpackPlugin({
       cleanAfterEveryBuildPatterns: ['./build'] // 指定删除目录

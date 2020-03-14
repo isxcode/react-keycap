@@ -16,7 +16,7 @@ module.exports = {
   },
   plugins: [
     new CopyPlugin([
-      {from: './blogs', to: 'blogs'},
+      {from: './docs', to: 'docs'},
       {from: './public/static', to: 'static'},
       {from: '.spa', to: '.'}
     ]),
