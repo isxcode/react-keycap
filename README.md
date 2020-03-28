@@ -10,29 +10,23 @@ npm install react-keycap
 
 ## Documentation
 
-You can find the react-keycap documentation [on the website](https://ispong.gitee.io/react-keycap).  
+You can find the react-keycap documentation [on the website](https://ispong.gitee.io/react-keycap).
 
 ## Examples
 
 ```typescript jsx
 import React from "react";
-import Avatar from 'react-keycap';
+import Avatar from "react-keycap";
 
 export default class main extends React.Component {
-    
-    render() {
-        return (
-            <Avatar path={"$path"} width={"100px"} height={"100px"}/>
-        );
-    }    
-};
+	render() {
+		return <Avatar path={"$path"} width={"100px"} height={"100px"} />;
+	}
+}
 ```
 
-***
+---
 
 #### Thanks for free JetBrains Open Source license
 
 <a href="https://www.jetbrains.com/?from=react-keycap" target="_blank"><img src="https://github.com/ispong/react-keycap/blob/master/docs/jetbrains/jetbrains.png?raw=true" height="150" alt="jetbrains"/></a>
-
-
-
