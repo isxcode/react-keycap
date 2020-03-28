@@ -17,8 +17,7 @@ module.exports = {
   plugins: [
     new CopyPlugin([
       {from: './docs', to: 'docs'},
-      {from: './public/static', to: 'static'},
-      {from: '.spa', to: '.'}
+      {from: './public/static', to: 'static'}
     ]),
     new CleanWebpackPlugin({
       cleanAfterEveryBuildPatterns: ['./build'] // 指定删除目录

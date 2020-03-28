@@ -1,0 +1,20 @@
+root = true
+
+[*]
+charset = utf-8
+end_of_line = crlf
+indent_size = 2
+indent_style = space
+insert_final_newline = true
+max_line_length = 120
+tab_width = 2
+
+[*.sass]
+tab_width = 4
+
+[{*.ats,*.ts}]
+indent_size = 4
+tab_width = 4
+
+[{.babelrc,.prettierrc,.stylelintrc,.eslintrc,jest.config,bowerrc,*.json,*.jsb3,*.jsb2}]
+tab_width = 4

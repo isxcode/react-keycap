@@ -30,9 +30,9 @@ export default class main extends React.Component {
 
 ***
 
-### Thanks for free JetBrains Open Source license
+#### Thanks for free JetBrains Open Source license
 
-<a href="https://www.jetbrains.com/?from=react-keycap" target="_blank"><img src="https://github.com/ispong/react-keycap/blob/master/WebStorm-logo.png?raw=true" height="100" alt="webStorm"/></a>
+<a href="https://www.jetbrains.com/?from=react-keycap" target="_blank"><img src="https://github.com/ispong/react-keycap/blob/master/doc/jetbrains.png?raw=true" height="150" alt="jetbrains"/></a>
 
 
 

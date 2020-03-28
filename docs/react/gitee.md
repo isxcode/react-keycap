@@ -42,12 +42,12 @@ npm install -D babel-loader @babel/core @babel/preset-env @babel/preset-react # 
 npm install sass-loader node-sass style-loader --save-dev # 解析sass语法
 npm install file-loader --save-dev # 解析文件
 npm install --save-dev webpack-dev-server # 安装启动器
-npm install gh-pages --save-dev # 安装git多分支提交工具
+# npm install gh-pages --save-dev # 安装git多分支提交工具
 npm install --save-dev typescript ts-loader # 安装ts语法
-npm install --save lodash # 压缩
-npm install --save react-markdown # markdown 插件
-npm install --save-dev raw-loader # webpack解析文件为String
-npm i markdown-to-jsx # react markdown解析
+# npm install --save lodash # 压缩
+# npm install --save react-markdown # markdown 插件
+# npm install --save-dev raw-loader # webpack解析文件为String
+# npm i markdown-to-jsx # react markdown解析
 npm install --save react-router-dom # react router
 ```
 
