@@ -20,3 +20,16 @@ package-lock.json 依赖包锁文件
 README.md 项目介绍
 tsconfig.json ts 配置文件
 webpack.config.js webpack 配置文件
+
+
+# 前端的历史
+
+Html 和 web浏览器  实现页面静态数据显示 css画页面
+html 布局  css 画局
+
+
+底层基石-浏览器 chrome
+
+静态 如何去
+静态 -> 动态 原因需求无法满足，要动态
+如何做动态 
