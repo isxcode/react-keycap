@@ -1,24 +1,25 @@
 import React from 'react';
 import './Index.sass';
-import {Layout, Header, Footer, Content, Sider} from '../../components/layout/layout';
-
+import {
+	Layout,
+	Header,
+	Footer,
+	Content,
+	Sider,
+} from '../../components/layout/layout';
 
 export default class Index extends React.Component {
 	render() {
 		return (
-			<Layout>
-				<Header className={'cus-header'}>
+			<Layout layout={'100'}>
+				<Header className={'cus-header'} layout={'10'} mark={true}>
 					header
 				</Header>
-				<Content>
-					<Sider>
-						sider
-					</Sider>
+				<Content layout={'40'}>
+					<Sider layout={'40'}>sider</Sider>
 					content
 				</Content>
-				<Footer>
-					footer
-				</Footer>
+				<Footer layout={'40'}>footer</Footer>
 			</Layout>
 
 			// <Layout>

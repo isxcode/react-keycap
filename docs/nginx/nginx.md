@@ -1,7 +1,6 @@
-# nginx 配置
+# nginx
 
 1- 安装
-
 [nginx 下载地址](http://nginx.org/en/download.html)
 
 1- 部署 react 到 nginx 上
@@ -43,6 +42,3 @@ nginx -s stop -p D:\developer\nginx-1.16.1
 ```shell script
 nginx -s reload -p D:\developer\nginx-1.16.1
 ```
-
-测试图片
-![img](../../public/avatar.png)
