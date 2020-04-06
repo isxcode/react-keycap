@@ -1,6 +1,7 @@
 import React from 'react';
 import './Index.sass';
-import {Layout, Header, Footer, Content, Sider} from "../../components/layout/layout";
+import {Layout, Header, Footer, Content, Sider} from '../../components/layout/layout';
+
 
 export default class Index extends React.Component {
 	render() {

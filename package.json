@@ -1,15 +1,31 @@
 {
 	"name": "react-keycap",
-	"version": "0.1.0",
+	"version": "0.0.1",
+	"keywords": [
+		"react",
+		"keycap"
+	],
+	"description": "React rapid development component library",
+	"homepage": "http://ispong.gitee.io/react-keycap",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/ispong/react-keycap"
+	},
+	"author": {
+		"name": "ispong",
+		"email": "ispong@outlook.com",
+		"url": "http://ispong.gitee.io"
+	},
+	"readme": "https://github.com/ispong/react-keycap/blob/master/README.md",
+	"license": "MIT",
 	"private": true,
 	"dependencies": {
 		"@testing-library/jest-dom": "^4.2.4",
 		"@testing-library/react": "^9.5.0",
 		"@testing-library/user-event": "^7.2.1",
-		"antd": "^4.0.3",
+		"@types/react-router-dom": "^5.1.3",
 		"react": "^16.13.0",
 		"react-dom": "^16.13.0",
-		"react-router-dom": "^5.1.2",
 		"react-scripts": "3.4.0"
 	},
 	"scripts": {

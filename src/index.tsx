@@ -12,8 +12,8 @@ ReactDOM.render(
 		<BrowserRouter>
 			<Redirect to={'/spring-oxygen'} />
 			{/*<Route path='/' component={home} />*/}
-			<Route path='/spring-oxygen' component={spring_oxygen_index} />
-			<Route path='/react-keycap' component={react_keycap_index} />
+			<Route path="/spring-oxygen" component={spring_oxygen_index} />
+			<Route path="/react-keycap" component={react_keycap_index} />
 		</BrowserRouter>
 	</div>,
 	document.getElementById('root'),

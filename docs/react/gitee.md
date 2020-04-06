@@ -56,6 +56,7 @@ npm install --save-dev typescript ts-loader # 安装ts语法
 # npm install --save-dev raw-loader # webpack解析文件为String
 # npm i markdown-to-jsx # react markdown解析
 npm install --save react-router-dom # react router
+npm install --save @types/react-router-dom
 ```
 
 - 创建 webpack 配置文件 webpack.config.js
