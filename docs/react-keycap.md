@@ -22,19 +22,19 @@
 | .editorconfig | .editorconfig | 编辑格式规定 | 启用|
 | .eslintignore  | .eslintignore| eslint检查忽略配置 | 启用|
 | .eslintrc.js  |.eslintrc.js | eslint检查配置 | 启用|
-| .gitattributes  | .gitattributes | git字符检查 | 启用|
-| .gitignore  |.gitignore | git忽略配置 | 启用|
-| .mailmap  | .mailmap | 开发者联系方式 | 暂时不用|
+| .gitattributes  | .gitattributes | git | 启用|
+| .gitignore  |.gitignore | git | 启用|
+| .mailmap  | .mailmap | git | 暂时不用|
 | .nvmrc  | .nvmrc | nvm-ci | 暂时不用| 
 | .prettierignore | .prettierignore | prettier忽略配置| 启用 |
 | .prettierrc.js | .prettierrc.js | prettier配置 | 启用 |
 | AUTHORS | AUTHORS |  作者列表| 暂时不用|
 | CHANGELOG.md | CHANGELOG.md| 更新日志| 启用 |
-| CODE_OF_CONDUCT.md | CODE_OF_CONDUCT.md | 行为守则 | 暂时不用 |
-| CONTRIBUTING.md |CONTRIBUTING.md | 开发说明文档 | 启用 |
-| LICENSE |LICENSE | MIT许可证| 启用 | 
-| README.md| README.md| 项目介绍|  启用 |
-| SECURITY.md |SECURITY.md | 安全说明| 暂时不用|
+| CODE_OF_CONDUCT.md | CODE_OF_CONDUCT.md | github | 暂时不用 |
+| CONTRIBUTING.md |CONTRIBUTING.md | github | 启用 |
+| LICENSE |LICENSE | github | 启用 | 
+| README.md| README.md| github|  启用 |
+| SECURITY.md |SECURITY.md | github| 暂时不用|
 | appveyor.yml| appveyor.yml | ci| 暂时不用 |
 | babel.config.js| babel.config.js | babel配置文件| 启用 |
 | dangerfile.js | dangerfile.js| ci|  暂时不用|
@@ -82,3 +82,4 @@ npm install gh-pages --save-dev # 安装git多分支提交工具
 ```shell script
 git remote add gitee https://gitee.com/ispong/ispong.git
 ```
+
