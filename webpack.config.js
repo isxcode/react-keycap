@@ -59,7 +59,7 @@ module.exports = {
 					'css-loader',
 					// Compiles Sass to CSS
 					'sass-loader',
-				],
+				]
 			},
 			{
 				exclude: /node_modules/,

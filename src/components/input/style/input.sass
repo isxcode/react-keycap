@@ -1,11 +1,24 @@
 @import '../../theme/theme.sass'
 
-.keycap-input::placeholder
-	color: darkgray
+// 全局input默认属性
+input
+	width: 200px
+	height: 20px
 
-.keycap-input::-ms-input-placeholder
-	text-align: center
+// 带边框样式
+.keycap-input-border
+	&:hover
+		border: green solid 1px
+	border: $theme-color solid 1px
 
-.keycap-input::-webkit-input-placeholder
-	text-align: center
+// 带底框样式
+.keycap-input-line
+	&::-webkit-input-placeholder
+		text-indent: 10px
+	&:hover
+		border-bottom: green solid 1px
+	border: none
+	border-bottom: $theme-color solid 1px
+	outline: none
+
 
