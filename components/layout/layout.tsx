@@ -59,7 +59,7 @@
 // }
 //
 // // 头部组件
-// export class Header extends React.Component<BasicProps> {
+// export class header extends React.Component<BasicProps> {
 // 	render() {
 // 		const divClassName = initDivClassName('header');
 //

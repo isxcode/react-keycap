@@ -9,3 +9,12 @@
 - 使用 mode:development
 
 #### 如何使用 sass 语法
+
+### 安装redux
+```shell script
+npm install react-redux
+```
+安装axios
+```shell script
+npm install axios
+```

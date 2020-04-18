@@ -1,0 +1,61 @@
+$theme-color: #6db33f
+
+// 设置nav标签,上下撑开
+.nav
+	//background: #9c64a7
+	position: relative // 相对父元素定位
+	//padding-bottom: 8px // 向下撑开
+	//padding-top: 8px // 向上撑开
+	margin: auto // 水平居中
+	//width: 70% // 百分比实现宽度
+	height: 73px // 写死nav高度
+	line-height: 73px
+
+// logo标题靠左,大小写死
+.logo-a
+	//background: #0066cc
+	margin-left: 173px
+	width: 250px
+	height: 73px
+	//line-height: 40px // 行间距,控制元素上下垂直居中 要与height大小保持一致
+	//float: left // 流式布局靠左 会导致父级元素无法撑开
+	display: inline-block // 使div中的div处于一行
+
+.logo-a img
+	vertical-align: middle  // 垂直对齐方式
+	display: inline-block
+	height: 65px
+
+.logo-a strong
+	vertical-align: middle
+	display: inline-block
+	font-size: 25px
+	color: $theme-color
+
+// item按钮靠右
+.items-nav
+	line-height: 73px
+	//background: #0066cc
+	//float: right
+	height: 73px
+	margin-left: 540px
+	display: inline-block
+
+.items-nav ul
+	list-style-type: none
+	padding: 0 // 去除ul默认样式
+	margin: 0 // 去除ul默认样式
+
+.items-nav li
+	display: inline-block
+	margin-right: 60px
+	font-size: 16px
+	font-weight: 600
+
+.items-nav ul a
+	&:hover
+		color: $theme-color
+	text-decoration: none // 取消超链接下划线
+	color: black
+
+
