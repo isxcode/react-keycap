@@ -1,5 +1,6 @@
 import React from 'react';
 import './Footer.sass';
+import {Link} from "react-router-dom";
 
 function Links() {
 	return (
@@ -7,20 +8,20 @@ function Links() {
 			<div className={'links-one-div'}>
 				<strong>Docs</strong>
 				<ul>
-					<li><a href={'./'}>Get Started</a></li>
-					<li><a href={'./'}>Learn Spring</a></li>
+					<li><Link to={'/spring-oxygen/document'}><a href={'#'}>Get Started</a></Link></li>
+					<li><a href={'https://spring.io/'} target={'_blank'}>Learn Spring</a></li>
 				</ul>
 			</div>
 			<div className={'links-one-div'}>
 				<strong>Community</strong>
 				<ul>
-					<li><a href={'./'}>GitHub</a></li>
+					<li><a href={'https://github.com/ispong/spring-oxygen'} target={'_blank'}>GitHub</a></li>
 				</ul>
 			</div>
 			<div className={'links-one-div'}>
 				<strong>Social</strong>
 				<ul>
-					<li><a href={'./'}>GitHub</a></li>
+					<li><a href={'https://github.com/ispong/spring-oxygen'} target={'_blank'}>GitHub</a></li>
 				</ul>
 			</div>
 		</div>

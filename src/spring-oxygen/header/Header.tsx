@@ -1,13 +1,16 @@
 import React from 'react';
 import './Header.sass';
 import springPng from '../../../public/static/img/spring.png';
+import { Link } from 'react-router-dom';
 
 function Logo() {
 	return (
-		<a className={'logo-a'}>
-			<img src={springPng} alt={'spring'} />
-			<strong>spring-oxygen</strong>
-		</a>
+		<Link to={'/spring-oxygen'}>
+			<a className={'logo-a'}>
+				<img src={springPng} alt={'spring'} />
+				<strong>spring-oxygen</strong>
+			</a>
+		</Link>
 	);
 }
 
@@ -16,13 +19,22 @@ function Items() {
 		<div className={'items-nav'}>
 			<ul>
 				<li>
-					<a href={'./'}>Docs</a>
+					<Link to={'/spring-oxygen/document'}>
+						<a href={'/spring-oxygen/document'}>Docs</a>
+					</Link>
 				</li>
 				<li>
-					<a href={'./'}>Help</a>
+					<a
+						href={'https://github.com/ispong/spring-oxygen/issues'}
+						target={'_blank'}
+					>
+						Help
+					</a>
 				</li>
 				<li>
-					<a href={'./'}>Github</a>
+					<a href={'https://github.com/ispong/spring-oxygen'} target={'_blank'}>
+						Github
+					</a>
 				</li>
 			</ul>
 		</div>
@@ -32,8 +44,8 @@ function Items() {
 export function Header() {
 	return (
 		<nav className={'nav'}>
-			<Logo/>
-			<Items/>
+			<Logo />
+			<Items />
 		</nav>
 	);
 }

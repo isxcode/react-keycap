@@ -2,7 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 // import { Home } from './home/Home';
-import {Index as Oxygen} from './spring-oxygen/Index';
+import { Index as Oxygen } from './spring-oxygen/Index';
+import { SignIn } from './views/signIn/signin';
 // import {Oxygen as Keycap } from './react-keycap/Keycap';
 
 // 写这份代码的目的就是为了将前端工程化,便于维护开发
@@ -16,10 +17,9 @@ function InitRouter() {
 	return (
 		<BrowserRouter>
 			<Switch>
-				{/*<Route path="/" component={Home} exact/>*/}
 				<Route path="/" component={Oxygen} exact/>
-				<Route path={'/spring-oxygen'} component={Oxygen}/>
-				{/*<Route path={'/react-keycap'} component={Keycap}/>*/}
+				<Route path="/spring-oxygen" component={Oxygen}/>
+				<Route path={'/sign'} component={SignIn}/>
 			</Switch>
 		</BrowserRouter>
 	);

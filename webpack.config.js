@@ -8,6 +8,7 @@ module.exports = {
 	devtool: 'source-map', // Enable sourcemaps for debugging webpack's output.
 	entry: './src/index.tsx',
 	output: {
+		publicPath: '/', // react路由二级目录404
 		filename: 'index.js', // 指定生成js文件的名称
 		path: path.resolve(__dirname, './build'), // 指定打包目录
 	},
@@ -16,7 +17,7 @@ module.exports = {
 	},
 	plugins: [
 		new CopyPlugin([
-			{ from: './docs', to: 'docs' },
+			{ from: './document', to: 'docs' },
 			{ from: './public/static', to: 'static' },
 		]),
 		new CleanWebpackPlugin({
@@ -59,7 +60,7 @@ module.exports = {
 					'css-loader',
 					// Compiles Sass to CSS
 					'sass-loader',
-				]
+				],
 			},
 			{
 				exclude: /node_modules/,
