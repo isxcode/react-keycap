@@ -21,6 +21,9 @@ function Home() {
 					<Route path={'/spring-oxygen'} exact>
 						<Main />
 					</Route>
+					<Route path={'/'} exact>
+						<Main />
+					</Route>
 				</Switch>
 			</main>
 
