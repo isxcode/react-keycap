@@ -5,11 +5,9 @@ import { Link } from 'react-router-dom';
 
 function Logo() {
 	return (
-		<Link to={'/spring-oxygen'}>
-			<a className={'logo-a'}>
+		<Link className={'logo-a'} to={'/spring-oxygen'}>
 				<img src={springPng} alt={'spring'} />
 				<strong>spring-oxygen</strong>
-			</a>
 		</Link>
 	);
 }
@@ -20,7 +18,7 @@ function Items() {
 			<ul>
 				<li>
 					<Link to={'/spring-oxygen/document'}>
-						<a href={'/spring-oxygen/document'}>Docs</a>
+						Docs
 					</Link>
 				</li>
 				<li>

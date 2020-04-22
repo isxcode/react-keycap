@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
-import Markdown from 'markdown-to-jsx';
-import Axios from 'axios';
+import React, {useState} from 'react';
 import './Document.sass';
+import Axios from 'axios';
+import CapMarkdown from "../../../components/markdown/CapMarkdown";
 
 export function Document() {
 	const [markdown, setMarkdown] = useState(
@@ -9,8 +9,10 @@ export function Document() {
 	);
 
 	async function getMarkdown(url: string) {
-		const result = await Axios.get(url);
+		const result = await Axios.get('http://k8s.definesys.com:30600/pluto/hello/cors?url='.concat(url));
 		setMarkdown(result.data);
+		console.log(result.data);
+		// window.postMessage("hello", url);
 	}
 
 	function Directory() {
@@ -22,7 +24,7 @@ export function Document() {
 							<a
 								href={'#'}
 								onClick={() => {
-									getMarkdown('/api/ispong/spring-oxygen/raw/master/README.md');
+									getMarkdown('https://gitee.com/ispong/spring-oxygen/raw/master/README.md');
 								}}
 							>
 								Quick Start
@@ -33,7 +35,7 @@ export function Document() {
 								href={'#'}
 								onClick={() => {
 									getMarkdown(
-										'/api/ispong/spring-oxygen/raw/master/README.md',
+										'https://gitee.com/ispong/spring-oxygen/raw/master/README.md',
 									);
 								}}
 							>
@@ -45,7 +47,7 @@ export function Document() {
 								href={'#'}
 								onClick={() => {
 									getMarkdown(
-										'/api/ispong/spring-oxygen/raw/master/spring-oxygen-wechatgo/src/main/java/com/ispong/oxygen/wechatgo/README.md',
+										'https://gitee.com/ispong/spring-oxygen/raw/master/spring-oxygen-wechatgo/src/main/java/com/ispong/oxygen/wechatgo/README.md',
 									);
 								}}
 							>
@@ -57,7 +59,7 @@ export function Document() {
 								href={'#'}
 								onClick={() => {
 									getMarkdown(
-										'/api/ispong/spring-oxygen/raw/master/README.md',
+										'https://gitee.com/ispong/spring-oxygen/raw/master/README.md',
 									);
 								}}
 							>
@@ -74,7 +76,7 @@ export function Document() {
 		return (
 			<div className={'doc-div'}>
 				<div className={'doc-content-div'}>
-					<Markdown>{markdown}</Markdown>
+					<CapMarkdown>{markdown}</CapMarkdown>
 				</div>
 			</div>
 		);

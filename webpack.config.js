@@ -56,7 +56,7 @@ module.exports = {
 				use: [
 					// Creates `style` nodes from JS strings
 					'style-loader',
-					// Translates CSS into CommonJS
+					// Translates CSS into CommonJS 一定要加css-loader
 					'css-loader',
 					// Compiles Sass to CSS
 					'sass-loader',

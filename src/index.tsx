@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
-// import { Home } from './home/Home';
+// import { Home } from './ispong/Home';
 import { Index as Oxygen } from './spring-oxygen/Index';
-import { SignIn } from './views/signIn/signin';
+import { SignIn } from '../components/views/signIn/signin';
 // import {Oxygen as Keycap } from './react-keycap/Keycap';
 
 // 写这份代码的目的就是为了将前端工程化,便于维护开发

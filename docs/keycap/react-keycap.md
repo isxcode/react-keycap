@@ -82,4 +82,3 @@ npm install gh-pages --save-dev # 安装git多分支提交工具
 ```shell script
 git remote add gitee https://gitee.com/ispong/ispong.git
 ```
-
