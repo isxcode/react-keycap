@@ -1,18 +1,19 @@
 import React, {useState} from 'react';
 import './Document.sass';
-import Axios from 'axios';
-import CapMarkdown from "../../../components/markdown/CapMarkdown";
+import Markdown from 'markdown-to-jsx';
+import 'highlight.js/styles/github.css';
+import {KAxios} from "../../../scripts/http/KAxios";
+import {KUrl} from "../../../scripts/http/KUrl";
+import {KApi} from "../../../scripts/http/KApi";
+import KMarkdown from "../../../components/markdown/KMarkdown";
 
 export function Document() {
-	const [markdown, setMarkdown] = useState(
-		"<div style='width: 400px;height: 500px ;line-height: 500px;margin: auto'><strong style='margin: auto;font-size: 25px'> Welcome to use Spring-oxygen </strong></div>",
-	);
+
+	const [markdown, setMarkdown] = useState("");
 
 	async function getMarkdown(url: string) {
-		const result = await Axios.get('http://k8s.definesys.com:30600/pluto/hello/cors?url='.concat(url));
-		setMarkdown(result.data);
-		console.log(result.data);
-		// window.postMessage("hello", url);
+		let res = await KAxios.doStringGet(KUrl.define, KApi.cors, {url: url});
+		setMarkdown(res);
 	}
 
 	function Directory() {
@@ -23,9 +24,7 @@ export function Document() {
 						<li>
 							<a
 								href={'#'}
-								onClick={() => {
-									getMarkdown('https://gitee.com/ispong/spring-oxygen/raw/master/README.md');
-								}}
+								onClick={() => {getMarkdown('https://gitee.com/ispong/spring-oxygen/raw/master/README.md');}}
 							>
 								Quick Start
 							</a>
@@ -76,7 +75,7 @@ export function Document() {
 		return (
 			<div className={'doc-div'}>
 				<div className={'doc-content-div'}>
-					<CapMarkdown>{markdown}</CapMarkdown>
+					<KMarkdown>{markdown}</KMarkdown>
 				</div>
 			</div>
 		);

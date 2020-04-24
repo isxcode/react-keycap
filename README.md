@@ -4,7 +4,7 @@ React rapid development component library
 
 ## Installation
 
-```shell script
+```shell
 npm install react-keycap
 ```
 
@@ -14,7 +14,7 @@ You can find the react-keycap documentation [on the website](https://ispong.gite
 
 ## Examples
 
-```typescript jsx
+```javascript
 import React from "react";
 import Avatar from "react-keycap";
 
@@ -24,7 +24,6 @@ export default class main extends React.Component {
 	}
 }
 ```
-
 ---
 
 #### Thanks for free JetBrains Open Source license

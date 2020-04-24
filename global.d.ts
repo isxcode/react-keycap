@@ -10,6 +10,11 @@ declare module '*.sass' {
 	export = content;
 }
 
+declare module '*.css' {
+	const content: string;
+	export = content;
+}
+
 declare module '*.md' {
 	const content: string;
 	export = content;

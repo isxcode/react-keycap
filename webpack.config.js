@@ -51,8 +51,8 @@ module.exports = {
 				},
 			},
 			{
-				exclude: /node_modules/,
-				test: /\.s[ac]ss$/i,
+				// exclude: /node_modules/,  无法解析highlight.js的样式
+				test: /\.(s[ac]ss|css)$/i,
 				use: [
 					// Creates `style` nodes from JS strings
 					'style-loader',

@@ -22,6 +22,8 @@ module.exports = {
 		semi: ['error', 'always'], // 分号
 		indent: ['error', 'tab'], // 缩进
 		'comma-dangle': 'off',
-		"space-before-function-paren": "off"
+		'space-before-function-paren': 'off',
+		'no-unused-vars': 'off',
+		'eol-last': 'off',
 	},
 };

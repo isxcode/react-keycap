@@ -82,3 +82,7 @@ npm install gh-pages --save-dev # 安装git多分支提交工具
 ```shell script
 git remote add gitee https://gitee.com/ispong/ispong.git
 ```
+
+
+### 开发目的 
+感觉用别人的组件不灵活 不能自定义去修改 别人的组件有时候使用起来也比较费劲
