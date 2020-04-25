@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import './Document.sass';
+import './Show.sass';
 import Markdown from 'markdown-to-jsx';
 import 'highlight.js/styles/github.css';
 import {KAxios} from "../../../scripts/http/KAxios";
@@ -7,7 +7,7 @@ import {KUrl} from "../../../scripts/http/KUrl";
 import {KApi} from "../../../scripts/http/KApi";
 import KMarkdown from "../../../components/markdown/KMarkdown";
 
-export function Document() {
+export function Show() {
 
 	const [markdown, setMarkdown] = useState("");
 
@@ -82,7 +82,7 @@ export function Document() {
 	}
 
 	return (
-		<div className={'document-div'}>
+		<div className={'show-div'}>
 			<Directory />
 			<Doc />
 		</div>

@@ -17,7 +17,7 @@ function Items() {
 		<div className={'items-nav'}>
 			<ul>
 				<li>
-					<Link to={'/spring-oxygen/document'}>
+					<Link to={'/spring-oxygen/show'}>
 						Docs
 					</Link>
 				</li>

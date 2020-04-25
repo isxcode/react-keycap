@@ -1,5 +1,6 @@
 import React from 'react';
 import './Main.sass';
+import {Link} from "react-router-dom";
 
 // 展示栏目-show
 function Show() {
@@ -9,9 +10,9 @@ function Show() {
 				<strong className={'show-content-strong'}>
 					Spring rapid development integration framework
 				</strong>
-				<a href={'./'} className={'show-start-a'}>
+				<Link to={'/spring-oxygen/show'} className={'show-start-a'}>
 					QUICKSTART
-				</a>
+				</Link>
 			</div>
 		</div>
 	);

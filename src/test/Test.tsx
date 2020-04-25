@@ -2,9 +2,7 @@ import React, {useEffect, useRef, useState} from 'react';
 import {KAxios} from '../../scripts/http/KAxios';
 import {KUrl} from '../../scripts/http/KUrl';
 import {KApi} from '../../scripts/http/KApi';
-import Markdown from "markdown-to-jsx";
-import 'highlight.js/styles/github.css';
-import hljs from "highlight.js";
+import KMarkdown from "../../components/markdown/KMarkdown";
 
 export function Test() {
 	const [content, hhh] = useState('我是我');
@@ -17,15 +15,9 @@ export function Test() {
 		hhh(res);
 	}
 
-	useEffect(() => {
-		document.querySelectorAll('pre code').forEach((block) => {
-			hljs.highlightBlock(block);
-		});
-	});
-
 	return (
 		<div>
-			<Markdown>{content}</Markdown>
+			<KMarkdown>{content}</KMarkdown>
 			<br/>
 			<button
 				onClick={() => {

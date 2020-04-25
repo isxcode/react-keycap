@@ -4,7 +4,7 @@ import { Header } from './header/Header';
 import { Main } from './main/Main';
 import { Footer } from './footer/Footer';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
-import { Document } from './document/Document';
+import { Show } from './show/Show';
 
 function Home() {
 	return (
@@ -15,8 +15,8 @@ function Home() {
 
 			<main className={'main-div'}>
 				<Switch>
-					<Route path={'/spring-oxygen/document'} exact>
-						<Document />
+					<Route path={'/spring-oxygen/show'} exact>
+						<Show />
 					</Route>
 					<Route path={'/spring-oxygen'} exact>
 						<Main />

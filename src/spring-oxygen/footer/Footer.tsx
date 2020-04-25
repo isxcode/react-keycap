@@ -8,7 +8,7 @@ function Links() {
 			<div className={'links-one-div'}>
 				<strong>Docs</strong>
 				<ul>
-					<li><Link to={'/spring-oxygen/document'}>Get Started</Link></li>
+					<li><Link to={'/spring-oxygen/show'}>Get Started</Link></li>
 					<li><a href={'https://spring.io/'} target={'_blank'}>Learn Spring</a></li>
 				</ul>
 			</div>

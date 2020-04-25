@@ -17,7 +17,7 @@ module.exports = {
 	},
 	plugins: [
 		new CopyPlugin([
-			{ from: './document', to: 'docs' },
+			{ from: './show', to: 'docs' },
 			{ from: './public/static', to: 'static' },
 		]),
 		new CleanWebpackPlugin({
