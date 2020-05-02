@@ -1,15 +1,15 @@
-### 关于如何使用 webStorm 开发 react
+### 使用 webStorm 快速开发 react
 
-#### 建议使用 IdeaVim 插件去开发(为了解决不使用上下左右键的问题)
+#### 使用 ideaVim 开发 react
 
-- 开启快捷键 ctrl+alt+v
-  esc/ctrl+c - 进入选择模式
+- esc 退出
+- v 进入编辑模式
 - 插入模式
   a - 字符右侧插入
   i - 字符左侧插入
   o - 换行插入
   s - 删除当前字符插入
-- 选择模式 v
+- 选择模式  
   w- 单词跳转-next
   b- 单词跳转-prev
 - 编辑模式
@@ -27,18 +27,35 @@
   alt+h / alt+l 去做切换
 
 - run
-  alt+shift+f10 || alt+r 运行
-  alt+shift+f9 || alt+d debug
-  alt+f11 npm
+  alt+r run
 
 - git
   alt+` 打开操作栏
   ctrl+t update project
   ctrl+k commit file
+  alt+9 git console
 
-#### tool 工具栏
+- mark
+  alt+m
+  shift+alt+m
 
-git alt+v
-ctrl+x 删除所有 tab
-ctrl+e 打开其他项目
-ctrl+n 创建新的文件
+- 构建工具(build)
+  alt+b
+
+- format 代码
+  alt+f
+
+- alt+数字快捷键
+  alt+1 - 文件控制台
+  alt+2 - 标记控制台
+  alt+4 - run 控制台
+  alt+5 - debug 控制台
+  alt+6 - todo 控制台
+  alt+7 - 文件结构控制台
+  alt+8 - service 控制台
+  alt+9 - git 控制台
+
+- 编辑控制台处理
+  alt+x 清屏
+  alt+[ 分屏
+  alt+] 合屏
