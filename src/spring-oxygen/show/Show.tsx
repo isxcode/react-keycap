@@ -1,18 +1,23 @@
 import React, {useState} from 'react';
 import './Show.sass';
-import Markdown from 'markdown-to-jsx';
 import 'highlight.js/styles/github.css';
-import {KAxios} from "../../../scripts/http/KAxios";
-import {KUrl} from "../../../scripts/http/KUrl";
-import {KApi} from "../../../scripts/http/KApi";
-import KMarkdown from "../../../components/markdown/KMarkdown";
+import {KAxios} from '../../../scripts/http/KAxios';
+import {KUrl} from '../../../scripts/http/KUrl';
+import {KApi} from '../../../scripts/http/KApi';
+import KMarkdown from '../../../components/markdown/KMarkdown';
 
 export function Show() {
 
-	const [markdown, setMarkdown] = useState("");
+	const [markdown, setMarkdown] = useState('');
 
 	async function getMarkdown(url: string) {
-		let res = await KAxios.doStringGet(KUrl.define, KApi.cors, {url: url});
+		// 封装请求对象
+		let param = {
+			url: url,
+		};
+		// 返回请求值
+		let res = await KAxios.doStringGet(KUrl.define, KApi.cors, param);
+
 		setMarkdown(res);
 	}
 
@@ -24,7 +29,11 @@ export function Show() {
 						<li>
 							<a
 								href={'#'}
-								onClick={() => {getMarkdown('https://gitee.com/ispong/spring-oxygen/raw/master/README.md');}}
+								onClick={() => {
+									getMarkdown(
+										'https://gitee.com/ispong/spring-oxygen/raw/master/README.md',
+									);
+								}}
 							>
 								Quick Start
 							</a>

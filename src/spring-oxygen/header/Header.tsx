@@ -6,8 +6,8 @@ import { Link } from 'react-router-dom';
 function Logo() {
 	return (
 		<Link className={'logo-a'} to={'/spring-oxygen'}>
-				<img src={springPng} alt={'spring'} />
-				<strong>spring-oxygen</strong>
+			<img src={springPng} alt={'spring'} />
+			<strong>spring-oxygen</strong>
 		</Link>
 	);
 }
@@ -17,9 +17,7 @@ function Items() {
 		<div className={'items-nav'}>
 			<ul>
 				<li>
-					<Link to={'/spring-oxygen/show'}>
-						Docs
-					</Link>
+					<Link to={'/spring-oxygen/show'}>Docs</Link>
 				</li>
 				<li>
 					<a

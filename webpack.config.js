@@ -6,7 +6,8 @@ const CopyPlugin = require('copy-webpack-plugin');
 module.exports = {
 	mode: 'development',
 	devtool: 'source-map', // Enable sourcemaps for debugging webpack's output.
-	entry: './src/index.tsx',
+	// entry: './src/index.tsx', // 声明函数入口
+	entry: './src/index.js',
 	output: {
 		publicPath: '/', // react路由二级目录404
 		filename: 'index.js', // 指定生成js文件的名称
@@ -17,7 +18,7 @@ module.exports = {
 	},
 	plugins: [
 		new CopyPlugin([
-			{ from: './show', to: 'docs' },
+			// { from: './show', to: 'docs' },
 			{ from: './public/static', to: 'static' },
 		]),
 		new CleanWebpackPlugin({

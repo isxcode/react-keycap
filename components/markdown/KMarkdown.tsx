@@ -8,27 +8,7 @@ interface KMarkdownProps {
 	children: React.ReactNode;
 }
 
-const H1Component = ({ children, ...props }: KMarkdownProps) => (
-	<div {...props}>{children}</div>
-);
-
-const H2Component = ({ children, ...props }: KMarkdownProps) => (
-	<div {...props}>{children}</div>
-);
-
-const H3Component = ({ children, ...props }: KMarkdownProps) => (
-	<div {...props}>{children}</div>
-);
-
-const H4Component = ({ children, ...props }: KMarkdownProps) => (
-	<div {...props}>{children}</div>
-);
-
-const H5Component = ({ children, ...props }: KMarkdownProps) => (
-	<div {...props}>{children}</div>
-);
-
-const H6Component = ({ children, ...props }: KMarkdownProps) => (
+const HComponent = ({children, ...props}: KMarkdownProps) => (
 	<div {...props}>{children}</div>
 );
 
@@ -52,37 +32,37 @@ export default function KMarkdown(props: { children: React.ReactNode }) {
 			options={{
 				overrides: {
 					h1: {
-						component: H1Component,
+						component: HComponent,
 						props: {
 							className: 'markdown-h1',
 						},
 					},
 					h2: {
-						component: H2Component,
+						component: HComponent,
 						props: {
 							className: 'markdown-h2',
 						},
 					},
 					h3: {
-						component: H3Component,
+						component: HComponent,
 						props: {
 							className: 'markdown-h3',
 						},
 					},
 					h4: {
-						component: H4Component,
+						component: HComponent,
 						props: {
 							className: 'markdown-h4',
 						},
 					},
 					h5: {
-						component: H5Component,
+						component: HComponent,
 						props: {
 							className: 'markdown-h5',
 						},
 					},
 					h6: {
-						component: H6Component,
+						component: HComponent,
 						props: {
 							className: 'markdown-h6',
 						},

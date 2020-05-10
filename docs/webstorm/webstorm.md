@@ -22,12 +22,12 @@
 
 #### webStorm 快捷键使用
 
+- config
+  alt+ctrl+s
+
 - 快速搜索自己想编辑的文件
   shift-shift 搜索所有文件
   alt+h / alt+l 去做切换
-
-- run
-  alt+r run
 
 - git
   alt+` 打开操作栏
@@ -35,9 +35,9 @@
   ctrl+k commit file
   alt+9 git console
 
-- mark
-  alt+m
-  shift+alt+m
+- mark 
+  alt+i
+  ctrl+alt+i
 
 - 构建工具(build)
   alt+b
@@ -59,3 +59,18 @@
   alt+x 清屏
   alt+[ 分屏
   alt+] 合屏
+
+- 工具栏
+  alt+n 创建新文件
+  alt+t 终端
+  alt+d 数据库
+
+- 运行
+  alt+r run
+
+- 项目
+  alt+e 项目管理
+  alt+s 状态栏 （status）
+  alt+u 菜单栏 (main menu)
+  alt+q 退出项目
+  alt+w 退出所有工具栏 hide

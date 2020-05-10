@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './style/signIn.sass';
 import Button, { ButtonType } from '../../../components/button/button';
-import Input, { InputType } from '../../../components/input/input';
+import KInput, { InputType } from '../../input/KInput';
 import Axios from 'axios';
 
 export function SignIn() {
@@ -34,7 +34,7 @@ export function SignIn() {
 	return (
 		<div className={'div-signIn'}>
 			<ShowLoginStatus/>
-			<Input
+			<KInput
 				which={InputType.LINE}
 				className={'username'}
 				placeholder={'username'}
@@ -42,7 +42,7 @@ export function SignIn() {
 				// 	setUsername(e.target.value);
 				// }}
 			/>
-			<Input
+			<KInput
 				which={InputType.LINE}
 				className={'password'}
 				placeholder={'password'}

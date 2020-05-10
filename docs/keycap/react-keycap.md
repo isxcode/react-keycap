@@ -48,7 +48,7 @@
 
 #### 项目初始化
 ```shell script
-npx create-react-app react-keycap
+npx create-react-app $project_name
 cd react-keycap
 npm start
 ```
@@ -86,3 +86,23 @@ git remote add gitee https://gitee.com/ispong/ispong.git
 
 ### 开发目的 
 感觉用别人的组件不灵活 不能自定义去修改 别人的组件有时候使用起来也比较费劲
+
+git clone https://github.com/puncsky/web-onefx-boilerplate.git my-awesome-project
+
+nvm use 10.15.0
+npm install
+
+cp ./.env.tmpl ./.env
+
+npm run build-production
+NODE_ENV=production npm run start
+
+
+npm run test: test the whole project and generate a test coverage
+npm run ava ./path/to/test-file.js: run a specific test file
+npm run build: build source code from src to dist
+npm run lint: run the linter
+npm run flow: run the flow type check
+npm run kill: kill the node server occupying the port 4100.
+
+

@@ -1,5 +1,5 @@
 import React, { InputHTMLAttributes } from 'react';
-import './style/input.sass';
+import './style/KInput.sass';
 
 interface InputProps extends InputHTMLAttributes<any> {
 	which?: InputType | undefined;
@@ -20,7 +20,7 @@ function genInputName(props: any) {
 	return props.className;
 }
 
-export default class Input extends React.Component<InputProps, any> {
+export default class KInput extends React.Component<InputProps, any> {
 	render(): React.ReactNode {
 		return (
 			<input {...this.props} className={genInputName(this.props)}>
