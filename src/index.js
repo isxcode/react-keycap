@@ -1,12 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import {BrowserRouter, HashRouter, Route, Switch} from 'react-router-dom';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import * as serviceWorker from './serviceWorker';
-import {Ispong} from './ispong/Ispong';
-import {Keycap} from './react-keycap/Keycap';
-import {Oxygen} from './spring-oxygen/Oxygen';
-import {Test} from './test/Test';
+import { Ispong } from './ispong/Ispong';
+import { Keycap } from './react-keycap/Keycap';
+import { Oxygen } from './spring-oxygen/Oxygen';
 
 // 通过js去渲染root这个dom
 ReactDOM.render(
@@ -18,7 +17,6 @@ ReactDOM.render(
 				<Route path={['/ispong', '/']} component={Ispong} exact />
 				<Route path="/react-keycap" component={Keycap} exact />
 				<Route path="/spring-oxygen" component={Oxygen} exact />
-				<Route path={'/test'} component={Test} exact />
 			</Switch>
 		</BrowserRouter>
 	</React.StrictMode>,

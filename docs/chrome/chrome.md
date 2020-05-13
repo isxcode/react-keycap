@@ -12,7 +12,7 @@
 | ctrl+w | 关闭当前页面 |
 | ctrl+shift+w | 关闭当前窗口 |
 | alt+f | 打开浏览器菜单 |
-    | ctrl+shift+b | 书签栏切换 |
+| ctrl+shift+b | 书签栏切换 |
 | ctrl+h | 查看浏览历史 |
 | ctrl+j | 查看下载历史 |
 | shift+esc | 打开浏览器任务管理器 |
