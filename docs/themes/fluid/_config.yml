@@ -43,14 +43,14 @@ fun_features: # 一些好玩的功能
 
 color:  # 主题颜色配置，不一定能每一处都生效，可能会被局部样式覆盖，这种情况建议用自定义 css 解决。配色可以在这获得启发： https://www.webdesignrankings.com/resources/lolcolors/
   body_bg_color: "#eee"             # body 背景色
-  navbar_bg_color: "#2f4154"        # 顶部菜单背景色
+  navbar_bg_color: "#20232a"        # 顶部菜单背景色
   navbar_text_color: "white"        # 顶部菜单字体色
   text_color: "#3c4858"             # 全局字体色
   sec_text_color: "#718096"         # 全局次级字体色（摘要、简介等位置）
   post_text_color: "#2c3e50"        # 文章正文字体色
   post_heading_color: "#1a202c"     # 文章标题标签字体色（h1 h2 h3...）
   link_color: "#3c4858"             # 超链接字体色
-  link_hover_color: "#1abc9c"       # 超链接悬浮时字体色
+  link_hover_color: "#61dafb"       # 超链接悬浮时字体色
   link_hover_bg_color: "#ebedef"    # 超链接悬浮背景色
   board_color: "#fff"               # 主面板背景色
 
@@ -93,14 +93,14 @@ aplayer:  # 音乐播放器，注意不能与 hexo-tag-aplayer 插件共用
     - { name: 'name', artist: 'artist', url: 'https://...url.mp3', cover: 'https://...cover.jpg' }
 
 version:  # 版本相关
-  check: true  # 每次生成检测是否为最新版本
+  check: false  # 每次生成检测是否为最新版本
 
 #---------------------------
 # 页头
 # Header
 #---------------------------
 navbar:
-  blog_title: Fluid # 导航栏左侧的标题，为空则按 hexo config.title 显示
+  blog_title: ispong-react # 导航栏左侧的标题，为空则按 hexo config.title 显示
   menu:  # 可自行增减，key 用来关联 languages/*.yml，如不存在关联则显示 key 本身的值；icon 是 css class，可以省略；增加 name 可以强制显示指定名称
     - { key: 'home', link: '/', icon: 'iconfont icon-home-fill' }
     - { key: 'archive', link: '/archives/', icon: 'iconfont icon-archive-fill' }
@@ -117,7 +117,7 @@ search: # 搜索栏
   content: true
 
 scroll_down_arrow:  # 向下滚动的箭头
-  enable: true
+  enable: false
   banner_height_limit: 90  # 头图高度不小于指定比例，才显示箭头
   scroll_after_turning_page: true  # 翻页后自动滚动
 
@@ -142,20 +142,20 @@ footer:
     police_icon: /img/police_beian.png # 公安备案的图片. 为空时不显示备案图片
 
 scroll_top_arrow:  # 向顶部滚动的箭头
-  enable: true
+  enable: false
 
 #---------------------------
 # 首页
 # Index Page
 #---------------------------
 index:
-  banner_img: /img/default.png  # 首页 Banner 头图，以下相同
+  banner_img: /img/background.png  # 首页 Banner 头图，以下相同
   banner_img_height: 100  # 头图高度，屏幕百分比，available: 0 - 100
   banner_mask_alpha: 0.3  # 头图黑色蒙版的透明度，available: 0 - 1.0， 0 是完全透明（无蒙版），1 是完全不透明
   post_default_img: '' # 默认的文章封面图，当没有指定 index_img 时会使用该图片，若都为空则不显示任何图片
   slogan:  # 首页副标题的独立设置
     enable: true  # 为 false 则不显示任何内容
-    text: 'An elegant Material-Design theme for Hexo'  # 为空则按 hexo config.subtitle 显示
+    text: 'Valar Morghulis'  # 为空则按 hexo config.subtitle 显示
   auto_excerpt:
     enable: true
   post_url_target: _self  # available: _blank | _self
@@ -167,7 +167,7 @@ index:
 # 通过 hexo new page 命令创建的页面
 # Custom Page
 page:
-  banner_img: /img/default.png
+  banner_img: /img/background.png
   banner_img_height: 60  # available: 0 - 100
   banner_mask_alpha: 0.3  # available: 0 - 1.0
 
@@ -176,7 +176,7 @@ page:
 # Post Page
 #---------------------------
 post:  # 部分配置同时控制自定义页面，注意备注
-  banner_img: /img/default.png
+  banner_img: /img/background.png
   banner_img_height: 70  # available: 0 - 100
   banner_mask_alpha: 0.3  # available: 0 - 1.0
   meta:  # 文章标题下方的信息
@@ -184,10 +184,10 @@ post:  # 部分配置同时控制自定义页面，注意备注
       enable: true
       format: "LL a"  # 格式参照 ISO-8601 日期格式化，可参照 http://momentjs.cn/docs/#/parsing/string-format/
     wordcount:  # 字数统计
-      enable: true
+      enable: false
       format: "{} 字"  # 显示的文本，{}是数字的占位符（必须包含)，下同
     min2read:  # 阅读时间
-      enable: true
+      enable: false
       format: "{} 分钟"
       words: 100  # 每分钟阅读多少字，如果是技术文章，建议降低
     views:  # 阅读次数，统计基于不蒜子  *不蒜子近期连接不稳定，谨慎开启
@@ -198,11 +198,11 @@ post:  # 部分配置同时控制自定义页面，注意备注
     content: 本文最后更新于：  # 描述文字
     relative: false  # 是否使用相对时间表示，比如："3 天前"
   toc:  # 文章右侧目录
-    enable: true
+    enable: false
     headingSelector: h1,h2,h3,h4,h5,h6
     collapseDepth: 0  # 层级的折叠深度，0 是全部折叠，6 是全部不折叠
   copyright:  # 版权声明
-    enable: true
+    enable: false
     content: '本博客所有文章除特别声明外，均采用 <a href="https://zh.wikipedia.org/wiki/Wikipedia:CC_BY-SA_3.0%E5%8D%8F%E8%AE%AE%E6%96%87%E6%9C%AC" rel="nofollow noopener">CC BY-SA 3.0协议</a> 。转载请注明出处！'
   prev_next:  # 文章底部上一篇下一篇功能
     enable: true
@@ -295,7 +295,7 @@ livere:
 # Archive Page
 #---------------------------
 archive:
-  banner_img: /img/default.png
+  banner_img: /img/background.png
   banner_img_height: 60  # available: 0 - 100
   banner_mask_alpha: 0.3  # available: 0 - 1.0
   subtitle:  # 打字机内容
@@ -305,7 +305,7 @@ archive:
 # Categories Page
 #---------------------------
 category:
-  banner_img: /img/default.png
+  banner_img: /img/background.png
   banner_img_height: 60  # available: 0 - 100
   banner_mask_alpha: 0.3  # available: 0 - 1.0
   subtitle:  # 打字机内容
@@ -315,7 +315,7 @@ category:
 # Tags Page
 #---------------------------
 tag:
-  banner_img: /img/default.png
+  banner_img: /img/background.png
   banner_img_height: 80  # available: 0 - 100
   banner_mask_alpha: 0.3  # available: 0 - 1.0
   subtitle:  # 打字机内容
@@ -332,7 +332,7 @@ tag:
 # About Page
 #---------------------------
 about:  # 关于页需要手动创建，具体请见：https://hexo.fluid-dev.com/docs/guide/#%E5%85%B3%E4%BA%8E%E9%A1%B5
-  banner_img: /img/default.png
+  banner_img: /img/background.png
   banner_img_height: 60  # available: 0 - 100
   banner_mask_alpha: 0.3  # available: 0 - 1.0
   subtitle:  # 打字机内容
@@ -350,7 +350,7 @@ about:  # 关于页需要手动创建，具体请见：https://hexo.fluid-dev.co
 # 404 Page
 #---------------------------
 page404:
-  banner_img: /img/default.png
+  banner_img: /img/background.png
   banner_img_height: 85  # available: 0 - 100
   banner_mask_alpha: 0.3  # available: 0 - 1.0
   subtitle: 'Page not found'  # 打字机内容
@@ -361,7 +361,7 @@ page404:
 # Links Page
 #---------------------------
 links:
-  banner_img: /img/default.png
+  banner_img: /img/background.png
   banner_img_height: 60  # available: 0 - 100
   banner_mask_alpha: 0.3  # available: 0 - 1.0
   subtitle:  # 打字机内容

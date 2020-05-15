@@ -14,7 +14,7 @@ $ hexo generate
 
 $ hexo publish [layout] <filename>
 
-$ 
+$ hexo new page about
 
 $ hexo deploy
 
