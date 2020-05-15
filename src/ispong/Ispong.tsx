@@ -1,11 +1,11 @@
 // 个人主页 负责部分功能的展示
 import React from 'react';
-import { HashRouter as Router, Route, Switch } from 'react-router-dom';
-import { Todo } from './todo/Todo';
-import { WebSockets } from './websockets/WebSockets';
-import KLink, { KLinkMode, KLinkType } from '../../components/link/KLink';
-import KLayout, { kLayoutType } from '../../components/layout/KLayout';
-import KSider, { KSiderType } from '../../components/layout/KSider';
+import {HashRouter as Router, Route, Switch} from 'react-router-dom';
+import {Todo} from './todo/Todo';
+import {WebSockets} from './websockets/WebSockets';
+import KLink, {KLinkMode, KLinkType} from '../../components/link/KLink';
+import KLayout, {kLayoutType} from '../../components/layout/KLayout';
+import KSider, {KSiderType} from '../../components/layout/KSider';
 import KContent from '../../components/layout/KContent';
 import KMenu from '../../components/menu/KMenu';
 
@@ -33,14 +33,9 @@ export function Ispong() {
 			<KLayout mode={kLayoutType.ROW}>
 				<KSider width={'15%'} type={KSiderType.LEFT_LINE} mark={false}>
 					<KMenu>
-						<KSubMenu>
-
-						</KSubMenu>
-						<KItem>
-
-						</KItem>
 						{labelList.map((label, index) => (
 							<KLink
+								mode={KLinkMode.ROW}
 								key={index}
 								type={KLinkType.SQUARE}
 								link={label.link}

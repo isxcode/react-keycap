@@ -39,7 +39,8 @@
 		"build": "webpack",
 		"deploy": "gh-pages -o gitee -b master -d ./build",
 		"test": "react-scripts test",
-		"eject": "react-scripts eject"
+		"eject": "react-scripts eject",
+		"hexo": "cd docs && hexo server"
 	},
 	"eslintConfig": {
 		"extends": "react-app"

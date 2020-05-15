@@ -31,10 +31,7 @@ export default class KMenu extends React.Component<KMenuProps, any> {
 				// className={kMenu.concat('-').concat(this.props.mode)}
 				style={style(this.props)}
 			>
-				<li>
-					<div></div>
-					<>
-				</li>
+				{this.props.children}
 			</ul>
 		);
 	}

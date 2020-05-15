@@ -53,7 +53,7 @@ export default class KLink extends React.Component<KLinkProps, any> {
 					.concat(kLink.concat('-').concat(this.props.mode))}
 				style={liStyle(this.props)}
 			>
-				<Link className={} style={style(this.props)} to={this.props.link}>
+				<Link style={style(this.props)} to={this.props.link}>
 					{this.props.title}
 				</Link>
 			</li>
