@@ -7,9 +7,12 @@ branches:
   only:
     - master # build master branch only
 before_install:
+  - cd ./docs
   - npm install -g hexo-cli
+install:
+  - npm install
 script:
-  - cd docs
+  - hexo clean
   - hexo generate # generate static files
 deploy:
   provider: pages
@@ -18,4 +21,4 @@ deploy:
   keep-history: true
   on:
     branch: master
-  local-dir: /docs/public
+  local-dir: ./docs/public
