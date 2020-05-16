@@ -1,3 +1,14 @@
+---
+title: prettier 安装说明
+subtitle: prettier 安装说明
+date: 2020-05-16 10:22:52
+tags: [prettier]
+categories: prettier
+banner_img: https://gitee.com/ispong/my-images/raw/master/blog-react/page.png
+index_img: https://gitee.com/ispong/my-images/raw/master/blog-react/nginx/nginx.png
+excerpt: prettier 安装说明巴拉巴拉
+---
+
 ## prettier
 
 > prettier安装

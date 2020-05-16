@@ -1,3 +1,14 @@
+---
+title: nginx 安装说明
+subtitle: nginx 安装说明
+date: 2020-05-16 10:22:52
+tags: [nginx]
+categories: nginx
+banner_img: https://gitee.com/ispong/my-images/raw/master/blog-react/page.png
+index_img: https://gitee.com/ispong/my-images/raw/master/blog-react/nginx/nginx.png
+excerpt: nginx 本地服务器搭建,配置,运行
+---
+
 # nginx
 
 linux 安装

@@ -1,3 +1,14 @@
+---
+title: chrome 快捷键使用
+subtitle: chrome 快捷键使用 
+date: 2020-05-16 10:22:52
+tags: [chrome]
+categories: chrome
+banner_img: https://gitee.com/ispong/my-images/raw/master/blog-react/page.png
+index_img: https://gitee.com/ispong/my-images/raw/master/blog-react/chrome/chrome.jpg
+excerpt: chrome 浏览器快速使用
+---
+
 ## how to use chrome
 
 #### 常用快捷键的使用

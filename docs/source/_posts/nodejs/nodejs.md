@@ -1,3 +1,14 @@
+---
+title: nodejs 安装说明
+subtitle: nodejs 安装说明
+date: 2020-05-16 10:22:52
+tags: [node]
+categories: node
+banner_img: https://gitee.com/ispong/my-images/raw/master/blog-react/page.png
+index_img: https://gitee.com/ispong/my-images/raw/master/blog-react/nginx/nginx.png
+excerpt: nodejs 安装配置巴拉巴拉
+---
+
 ### nodejs
 
 > 全局环境变量配置

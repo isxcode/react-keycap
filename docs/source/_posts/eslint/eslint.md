@@ -1,3 +1,14 @@
+---
+title: eslint 使用
+subtitle: eslint 使用
+date: 2020-05-16 10:22:52
+tags: [eslint]
+categories: eslint
+banner_img: https://gitee.com/ispong/my-images/raw/master/blog-react/page.png
+index_img: https://gitee.com/ispong/my-images/raw/master/blog-react/eslint/eslint.png
+excerpt: eslint规范react开发利器
+---
+
 ### eslint 
 
 > 安装eslint

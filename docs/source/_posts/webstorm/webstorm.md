@@ -1,3 +1,14 @@
+---
+title: webStorm 安装说明
+subtitle: webStorm 安装说明
+date: 2020-05-16 10:22:52
+tags: [webStorm]
+categories: webStorm
+banner_img: https://gitee.com/ispong/my-images/raw/master/blog-react/page.png
+index_img: https://gitee.com/ispong/my-images/raw/master/blog-react/nginx/nginx.png
+excerpt: webStorm 安装说明巴拉巴拉
+---
+
 ### 使用 webStorm 快速开发 react
 
 #### 使用 ideaVim 开发 react
