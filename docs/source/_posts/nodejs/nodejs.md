@@ -1,12 +1,12 @@
 ---
-title: nodejs 安装说明
-subtitle: nodejs 安装说明
-date: 2020-05-16 10:22:52
+title: Node 安装说明
+subtitle: Node 安装说明
+date: 2020-05-14 02:12:42
 tags: [node]
-categories: node
+categories: Node
 banner_img: https://gitee.com/ispong/my-images/raw/master/blog-react/page.png
-index_img: https://gitee.com/ispong/my-images/raw/master/blog-react/nginx/nginx.png
-excerpt: nodejs 安装配置巴拉巴拉
+index_img: https://gitee.com/ispong/my-images/raw/master/blog-react/node/node.png
+excerpt: Node?Deno?Ryan Dahl 这个屌人,不想说他.就一个字,渣!还不如罗志祥!!!
 ---
 
 ### nodejs

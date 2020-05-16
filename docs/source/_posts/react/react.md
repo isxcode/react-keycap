@@ -1,12 +1,12 @@
 ---
-title: react 安装说明
-subtitle: react 安装说明
-date: 2020-05-16 10:22:52
+title: React 安装说明
+subtitle: React 安装说明
+date: 2020-05-12 08:34:43
 tags: [react]
-categories: react
+categories: React
 banner_img: https://gitee.com/ispong/my-images/raw/master/blog-react/page.png
-index_img: https://gitee.com/ispong/my-images/raw/master/blog-react/nginx/nginx.png
-excerpt: react 安装说明巴拉巴拉
+index_img: https://gitee.com/ispong/my-images/raw/master/blog-react/react/react.png
+excerpt: React 天下第一,函数式编程 天下第一,Hook 天下第一
 ---
 
 ### react question

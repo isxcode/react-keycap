@@ -1,12 +1,12 @@
 ---
-title: prettier 安装说明
-subtitle: prettier 安装说明
-date: 2020-05-16 10:22:52
-tags: [prettier]
-categories: prettier
+title: Prettier 配置文件说明
+subtitle: Prettier 配置文件说明
+date: 2020-05-16 09:12:10
+tags: [prettier,react]
+categories: Prettier
 banner_img: https://gitee.com/ispong/my-images/raw/master/blog-react/page.png
-index_img: https://gitee.com/ispong/my-images/raw/master/blog-react/nginx/nginx.png
-excerpt: prettier 安装说明巴拉巴拉
+index_img: https://gitee.com/ispong/my-images/raw/master/blog-react/prettier/prettier.png
+excerpt: 项目上还不用Prettier?只用eslint?拜托都什么年代了,挑?不!我全都要!我全都要!我全都要!
 ---
 
 ## prettier

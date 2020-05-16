@@ -1,13 +1,15 @@
 ---
-title: hexo 安装说明
-subtitle: hexo 安装说明
-date: 2020-05-16 10:22:52
+title: Hexo+Fluid theme+Gitee搭建免费博客
+subtitle: Hexo+Fluid theme+Gitee搭建免费博客
+date: 2020-05-16 18:59:12
 tags: [hexo]
-categories: hexo
+categories: Hexo
 banner_img: https://gitee.com/ispong/my-images/raw/master/blog-react/page.png
 index_img: https://gitee.com/ispong/my-images/raw/master/blog-react/hexo/hexo.png
-excerpt: 个人博客搭建说明文档
+excerpt: 白嫖是任何人都不会拒绝的,更何况是这么好看的博客呢?免费搭建属于自己的博客网站,是时候白嫖一波马云爸爸了.
 ---
+
+- 没时间过两天再写补上
 
 解决问题:项目的docs文件文档能够更好的展示
 

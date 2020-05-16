@@ -1,12 +1,12 @@
 ---
-title: eslint 使用
-subtitle: eslint 使用
-date: 2020-05-16 10:22:52
-tags: [eslint]
-categories: eslint
+title: ESLint 安装使用说明
+subtitle: ESLint 安装使用说明
+date: 2020-05-15 19:08:13
+tags: [eslint,react,node]
+categories: ESLint
 banner_img: https://gitee.com/ispong/my-images/raw/master/blog-react/page.png
 index_img: https://gitee.com/ispong/my-images/raw/master/blog-react/eslint/eslint.png
-excerpt: eslint规范react开发利器
+excerpt: 知道什么叫又爱又恨嘛?用了ESLint你就会感慨,没错,这就是爱情!
 ---
 
 ### eslint 

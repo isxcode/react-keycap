@@ -1,12 +1,12 @@
 ---
-title: nginx 安装说明
-subtitle: nginx 安装说明
+title: Nginx 本地服务器搭建
+subtitle: Nginx 本地服务器搭建
 date: 2020-05-16 10:22:52
 tags: [nginx]
-categories: nginx
+categories: Nginx
 banner_img: https://gitee.com/ispong/my-images/raw/master/blog-react/page.png
 index_img: https://gitee.com/ispong/my-images/raw/master/blog-react/nginx/nginx.png
-excerpt: nginx 本地服务器搭建,配置,运行
+excerpt: Nginx本地安装,实现让分离式前端的文件包能在本地运行起来,并且可以通过配置文件模拟远程服务器的配置.
 ---
 
 # nginx

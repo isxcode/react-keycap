@@ -1,12 +1,12 @@
 ---
-title: react-keycap
-subtitle: react-keycap
+title: React-Keycap
+subtitle: React-Keycap
 date: 2020-05-16 10:22:52
-tags: [keycap]
-categories: keycap
+tags: [keycap,react]
+categories: Keycap
 banner_img: https://gitee.com/ispong/my-images/raw/master/blog-react/page.png
 index_img: https://gitee.com/ispong/my-images/raw/master/blog-react/page-index.png
-excerpt: 个人组件库说明文档
+excerpt: 基于React开源项目进行的二次封装,为了更快的实现前端页面搭建,且让前端的项目更加具有工程性.
 ---
 
 ### [react-keycap](https://github.com/ispong/react-keycap.git)

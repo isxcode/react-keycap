@@ -1,12 +1,12 @@
 ---
-title: webStorm 安装说明
-subtitle: webStorm 安装说明
+title: WebStorm 日常使用日记
+subtitle: WebStorm 日常使用日记
 date: 2020-05-16 10:22:52
 tags: [webStorm]
-categories: webStorm
+categories: WebStorm
 banner_img: https://gitee.com/ispong/my-images/raw/master/blog-react/page.png
-index_img: https://gitee.com/ispong/my-images/raw/master/blog-react/nginx/nginx.png
-excerpt: webStorm 安装说明巴拉巴拉
+index_img: https://gitee.com/ispong/my-images/raw/master/blog-react/webStorm/webstorm.png
+excerpt: 别问我到底是选WebStorm还是Vscode?问就是WebStorm!!(表示有JetBrains爸爸做最坚强的后盾,哎呀!真香)
 ---
 
 ### 使用 webStorm 快速开发 react
