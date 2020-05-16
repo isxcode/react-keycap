@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  
+  
+  
+  <entry>
+    <title>Hexo+Fluid theme+Gitee搭建免费博客</title>
+    <link href="/blog-react/2020/05/16/hexo/hexo/"/>
+    <url>/blog-react/2020/05/16/hexo/hexo/</url>
+    
+    <content type="html"><![CDATA[<ul><li>没时间过两天再写补上</li></ul><p>解决问题:项目的docs文件文档能够更好的展示</p><p>1- 安裝node  参考<br>2- 安裝git   参考<br>3- 官网hexo  一步一步走<br>4- 官网fiuld 一步一步走</p><p>创建自己的文件<br>hexo new chrome chrome</p><p>5- 创建gitee账号 创建gitee仓库<br>6- 安装部署插件 配置文件 上传文件<br>7- 启动gitee page功能<br>8- 访问地址<br>9- 特别配置 fiuld自定义</p><p>.<br>├── _config.yml<br>├── package.json<br>├── scaffolds<br>├── source<br>|   ├── _drafts<br>|   └── _posts<br>└── themes</p><p>$ hexo new [layout] <title></p><p>$ hexo generate</p><p>$ hexo publish [layout] <filename></p><p>$ hexo new page about</p><p>$ hexo deploy</p><p>1- npm install -g hexo-cli<br>2- hexo init docs<br>3- cd docs<br>4- npm install<br>5- update .ignore<br>6- update github ci<br>6- hexo server</p><p>sudo: false<br>language: node_js<br>node_js:</p><ul><li>10 # use nodejs v10 LTS<br>cache: npm<br>branches:<br>only:<ul><li>master # build master branch only<br>before_install:</li></ul></li><li>cd ./docs</li><li>npm install -g hexo-cli<br>install:</li><li>npm install<br>script:</li><li>hexo clean</li><li>hexo generate # generate static files<br>deploy:<br>provider: pages<br>skip-cleanup: true<br>github-token: $GH_TOKEN<br>keep-history: true<br>on:<br>branch: master<br>local-dir: ./docs/public</li></ul><h1 id="部署命令"><a href="#部署命令" class="headerlink" title="部署命令"></a>部署命令</h1><p>hexo clean &amp;&amp; hexo deploy</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>Hexo</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>hexo</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Chrome 浏览器快捷键使用说明</title>
+    <link href="/blog-react/2020/05/16/chrome/chrome/"/>
+    <url>/blog-react/2020/05/16/chrome/chrome/</url>
+    
+    <content type="html"><![CDATA[<h2 id="how-to-use-chrome"><a href="#how-to-use-chrome" class="headerlink" title="how to use chrome"></a>how to use chrome</h2><h4 id="常用快捷键的使用"><a href="#常用快捷键的使用" class="headerlink" title="常用快捷键的使用"></a>常用快捷键的使用</h4><table><thead><tr><th>快捷键</th><th>说明</th></tr></thead><tbody><tr><td>ctrl+n</td><td>打开新窗口</td></tr><tr><td>ctrl+shift+n</td><td>打开新无痕窗口</td></tr><tr><td>ctrl+t</td><td>打开新的页面</td></tr><tr><td>ctrl+tab</td><td>切换下一个页面</td></tr><tr><td>ctrl+shift+tab</td><td>切换上一个页面</td></tr><tr><td>ctrl+w</td><td>关闭当前页面</td></tr><tr><td>ctrl+shift+w</td><td>关闭当前窗口</td></tr><tr><td>alt+f</td><td>打开浏览器菜单</td></tr><tr><td>ctrl+shift+b</td><td>书签栏切换</td></tr><tr><td>ctrl+h</td><td>查看浏览历史</td></tr><tr><td>ctrl+j</td><td>查看下载历史</td></tr><tr><td>shift+esc</td><td>打开浏览器任务管理器</td></tr><tr><td>ctrl+f</td><td>搜索浏览器  enter 下一个/ shift+enter 上一个</td></tr><tr><td>ctrl+shift+delete</td><td>删除浏览器缓存</td></tr><tr><td>ctrl+shift+j</td><td>打开控制台</td></tr><tr><td>ctrl+shift+i</td><td>打开浏览器检查器</td></tr><tr><td>ctrl+shift+c</td><td>选择网页元素</td></tr></tbody></table>]]></content>
+    
+    
+    <categories>
+      
+      <category>Chrome</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>chrome</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Nginx 本地服务器搭建</title>
+    <link href="/blog-react/2020/05/16/nginx/nginx/"/>
+    <url>/blog-react/2020/05/16/nginx/nginx/</url>
+    
+    <content type="html"><![CDATA[<h1 id="nginx"><a href="#nginx" class="headerlink" title="nginx"></a>nginx</h1><p>linux 安装<br>install from repo</p><pre><code class="hljs shell">sudo vi /etc/yum.repos.d/nginx.repo</code></pre><pre><code class="hljs text">[ispong nginx]name&#x3D;nginx repobaseurl&#x3D;http:&#x2F;&#x2F;nginx.org&#x2F;packages&#x2F;centos&#x2F;7&#x2F;$basearch&#x2F;gpgcheck&#x3D;0enabled&#x3D;1</code></pre><pre><code class="hljs shell">sudo yum stall nginx</code></pre><p>nginx 权限配置</p><pre><code class="hljs shell">cat /etc/groupsudo gpasswd -a ispong nginxnewgrp - nginx</code></pre><p>1- 安装<br><a href="http://nginx.org/en/download.html" target="_blank" rel="noopener">nginx 下载地址</a></p><p>1- 部署 react 到 nginx 上</p><p>将 nginx 的访问路径映射到 build 文件中,修改 root 路径</p><pre><code class="hljs plain">    #允许跨域    add_header Access-Control-Allow-Origin *;    add_header Access-Control-Allow-Headers X-Requested-With;    add_header Access-Control-Allow-Methods GET,POST,OPTIONS;    #允许跨域server &#123;        listen       80;        server_name  localhost;        location &#x2F; &#123;            root   D:&#x2F;&#x2F;isxcode&#x2F;&#x2F;react-keycap&#x2F;&#x2F;build;            index  index.html index.htm;        &#125;        error_page   500 502 503 504  &#x2F;50x.html;        location &#x3D; &#x2F;50x.html &#123;            root   html;        &#125;    &#125;</code></pre><h3 id="nginx-命令"><a href="#nginx-命令" class="headerlink" title="nginx 命令"></a>nginx 命令</h3><p>启动 nginx</p><pre><code class="hljs shell">nginx start <span class="hljs-meta">#</span><span class="bash">or</span>nginx -c conf D:\developer\nginx-1.16.1\nginx.conf<span class="hljs-meta">#</span><span class="bash">or</span>start nginx -p D:\developer\nginx-1.16.1</code></pre><p>关闭 nginx</p><pre><code class="hljs shell">nginx -s stop<span class="hljs-meta">#</span><span class="bash">or</span>nginx -s stop -p D:\developer\nginx-1.16.1</code></pre><p>重新加载配置</p><pre><code class="hljs shell">nginx -s reload<span class="hljs-meta">#</span><span class="bash">or</span>nginx -s reload -p D:\developer\nginx-1.16.1</code></pre><p>查看nginx的配置</p><pre><code class="hljs shell">nginx -t</code></pre>]]></content>
+    
+    
+    <categories>
+      
+      <category>Nginx</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>nginx</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>React-Keycap</title>
+    <link href="/blog-react/2020/05/16/keycap/react-keycap/"/>
+    <url>/blog-react/2020/05/16/keycap/react-keycap/</url>
+    
+    <content type="html"><![CDATA[<h3 id="react-keycap"><a href="#react-keycap" class="headerlink" title="react-keycap"></a><a href="https://github.com/ispong/react-keycap.git" target="_blank" rel="noopener">react-keycap</a></h3><h4 id="开发目的"><a href="#开发目的" class="headerlink" title="开发目的"></a>开发目的</h4><ul><li>让新手也能开发框架</li><li>让程序员专注于算法 </li></ul><h4 id="文件结构说明"><a href="#文件结构说明" class="headerlink" title="文件结构说明"></a>文件结构说明</h4><blockquote><p>追随react开发</p></blockquote><table><thead><tr><th>文件夹</th><th>文件</th><th>文件说明</th><th>状态</th></tr></thead><tbody><tr><td>.circleci</td><td>config.yml</td><td>circle-ci</td><td>暂时不用</td></tr><tr><td>.codesandbox</td><td>ci.json</td><td>codesandbox-ci</td><td>暂时不用</td></tr><tr><td>.github</td><td>bug_report.md</td><td>issue模板</td><td>只接受issue</td></tr><tr><td>fixtures</td><td>-</td><td>项目集成测试</td><td>暂时不用</td></tr><tr><td>packages</td><td>-</td><td>react核心代码</td><td>暂时不用</td></tr><tr><td>components</td><td>-</td><td>组件库</td><td>启用</td></tr><tr><td>docs</td><td>-</td><td>前端技术文档</td><td>启用</td></tr><tr><td>public</td><td>-</td><td>静态文件</td><td>启用</td></tr><tr><td>src</td><td>-</td><td>使用案例</td><td>启用</td></tr><tr><td>scripts</td><td>-</td><td>javaScript脚本</td><td>启用</td></tr><tr><td>.editorconfig</td><td>.editorconfig</td><td>编辑格式规定</td><td>启用</td></tr><tr><td>.eslintignore</td><td>.eslintignore</td><td>eslint检查忽略配置</td><td>启用</td></tr><tr><td>.eslintrc.js</td><td>.eslintrc.js</td><td>eslint检查配置</td><td>启用</td></tr><tr><td>.gitattributes</td><td>.gitattributes</td><td>git</td><td>启用</td></tr><tr><td>.gitignore</td><td>.gitignore</td><td>git</td><td>启用</td></tr><tr><td>.mailmap</td><td>.mailmap</td><td>git</td><td>暂时不用</td></tr><tr><td>.nvmrc</td><td>.nvmrc</td><td>nvm-ci</td><td>暂时不用</td></tr><tr><td>.prettierignore</td><td>.prettierignore</td><td>prettier忽略配置</td><td>启用</td></tr><tr><td>.prettierrc.js</td><td>.prettierrc.js</td><td>prettier配置</td><td>启用</td></tr><tr><td>AUTHORS</td><td>AUTHORS</td><td>作者列表</td><td>暂时不用</td></tr><tr><td>CHANGELOG.md</td><td>CHANGELOG.md</td><td>更新日志</td><td>启用</td></tr><tr><td>CODE_OF_CONDUCT.md</td><td>CODE_OF_CONDUCT.md</td><td>github</td><td>暂时不用</td></tr><tr><td>CONTRIBUTING.md</td><td>CONTRIBUTING.md</td><td>github</td><td>启用</td></tr><tr><td>LICENSE</td><td>LICENSE</td><td>github</td><td>启用</td></tr><tr><td>README.md</td><td>README.md</td><td>github</td><td>启用</td></tr><tr><td>SECURITY.md</td><td>SECURITY.md</td><td>github</td><td>暂时不用</td></tr><tr><td>appveyor.yml</td><td>appveyor.yml</td><td>ci</td><td>暂时不用</td></tr><tr><td>babel.config.js</td><td>babel.config.js</td><td>babel配置文件</td><td>启用</td></tr><tr><td>dangerfile.js</td><td>dangerfile.js</td><td>ci</td><td>暂时不用</td></tr><tr><td>netlify.toml</td><td>netlify.toml</td><td>netlify-ci配置</td><td>暂时不用</td></tr><tr><td>package.json</td><td>package.json</td><td>nodejs配置文件</td><td>启用</td></tr><tr><td>yarn.lock</td><td>yarn.lock</td><td>yarn配置文件</td><td>禁用</td></tr><tr><td>package-lock.json</td><td>package-lock.json</td><td>npm配置文件</td><td>启用</td></tr><tr><td>tsconfig.json</td><td>tsconfig.json</td><td>typeScript配置文件</td><td>启用</td></tr><tr><td>webpack.config.js</td><td>webpack.config.js</td><td>webpack配置文件</td><td>启用</td></tr></tbody></table><h4 id="项目初始化"><a href="#项目初始化" class="headerlink" title="项目初始化"></a>项目初始化</h4><pre><code class="hljs shell">npx create-react-app $project_namecd react-keycapnpm start</code></pre><ul><li><p>使用webpack</p><pre><code class="hljs shell">npm install webpack webpack-cli --save-devnpm install --save-dev html-webpack-plugin # 自动生成htmlnpm install --save-dev clean-webpack-plugin # 自动删除build文件夹npm install copy-webpack-plugin --save-dev # 配置静态资源npm install -D babel-loader @babel/core @babel/preset-env @babel/preset-react # 解析es语法npm install sass-loader node-sass style-loader --save-dev # 解析sass语法npm install file-loader --save-dev # 解析文件npm install --save-dev webpack-dev-server # 安装启动器</code></pre></li><li><p>使用 react-router</p><pre><code class="hljs shell">npm install --save react-router-dom # react routernpm install --save @types/react-router-dom</code></pre></li><li><p>使用 typeScript</p><pre><code class="hljs shell">npm install --save-dev typescript ts-loader # 安装ts语法</code></pre></li><li><p>使用 gh-pages</p><pre><code class="hljs shell">npm install gh-pages --save-dev # 安装git多分支提交工具</code></pre></li><li><p>创建双git源</p><pre><code class="hljs shell">git remote add gitee https://gitee.com/ispong/ispong.git</code></pre></li></ul><h3 id="开发目的-1"><a href="#开发目的-1" class="headerlink" title="开发目的"></a>开发目的</h3><p>感觉用别人的组件不灵活 不能自定义去修改 别人的组件有时候使用起来也比较费劲</p><p>git clone <a href="https://github.com/puncsky/web-onefx-boilerplate.git" target="_blank" rel="noopener">https://github.com/puncsky/web-onefx-boilerplate.git</a> my-awesome-project</p><p>nvm use 10.15.0<br>npm install</p><p>cp ./.env.tmpl ./.env</p><p>npm run build-production<br>NODE_ENV=production npm run start</p><p>npm run test: test the whole project and generate a test coverage<br>npm run ava ./path/to/test-file.js: run a specific test file<br>npm run build: build source code from src to dist<br>npm run lint: run the linter<br>npm run flow: run the flow type check<br>npm run kill: kill the node server occupying the port 4100.</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>Keycap</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>react</tag>
+      
+      <tag>keycap</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>WebStorm 日常使用日记</title>
+    <link href="/blog-react/2020/05/16/webstorm/webstorm/"/>
+    <url>/blog-react/2020/05/16/webstorm/webstorm/</url>
+    
+    <content type="html"><![CDATA[<h3 id="使用-webStorm-快速开发-react"><a href="#使用-webStorm-快速开发-react" class="headerlink" title="使用 webStorm 快速开发 react"></a>使用 webStorm 快速开发 react</h3><h4 id="使用-ideaVim-开发-react"><a href="#使用-ideaVim-开发-react" class="headerlink" title="使用 ideaVim 开发 react"></a>使用 ideaVim 开发 react</h4><ul><li>esc 退出</li><li>v 进入编辑模式</li><li>插入模式<br>a - 字符右侧插入<br>i - 字符左侧插入<br>o - 换行插入<br>s - 删除当前字符插入</li><li>选择模式<br>w- 单词跳转-next<br>b- 单词跳转-prev</li><li>编辑模式<br>y - 复制<br>p - 粘贴</li><li>删除模式<br>dd- 删除当前行<br>1,10d - 删除 1 到 10 行<br>c- 删除当前选择文字插入</li></ul><h4 id="webStorm-快捷键使用"><a href="#webStorm-快捷键使用" class="headerlink" title="webStorm 快捷键使用"></a>webStorm 快捷键使用</h4><ul><li><p>config<br>alt+ctrl+s</p></li><li><p>快速搜索自己想编辑的文件<br>shift-shift 搜索所有文件<br>alt+h / alt+l 去做切换</p></li><li><p>git<br>alt+` 打开操作栏<br>ctrl+t update project<br>ctrl+k commit file<br>alt+9 git console</p></li><li><p>mark<br>alt+i<br>ctrl+alt+i</p></li><li><p>构建工具(build)<br>alt+b</p></li><li><p>format 代码<br>alt+f</p></li><li><p>alt+数字快捷键<br>alt+1 - 文件控制台<br>alt+2 - 标记控制台<br>alt+4 - run 控制台<br>alt+5 - debug 控制台<br>alt+6 - todo 控制台<br>alt+7 - 文件结构控制台<br>alt+8 - service 控制台<br>alt+9 - git 控制台</p></li><li><p>编辑控制台处理<br>alt+x 清屏<br>alt+[ 分屏<br>alt+] 合屏</p></li><li><p>工具栏<br>alt+n 创建新文件<br>alt+t 终端<br>alt+d 数据库</p></li><li><p>运行<br>alt+r run</p></li><li><p>项目<br>alt+e 项目管理<br>alt+s 状态栏 （status）<br>alt+u 菜单栏 (main menu)<br>alt+q 退出项目<br>alt+w 退出所有工具栏 hide</p></li></ul>]]></content>
+    
+    
+    <categories>
+      
+      <category>WebStorm</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>webStorm</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Prettier 配置文件说明</title>
+    <link href="/blog-react/2020/05/16/prettier/prettier/"/>
+    <url>/blog-react/2020/05/16/prettier/prettier/</url>
+    
+    <content type="html"><![CDATA[<h2 id="prettier"><a href="#prettier" class="headerlink" title="prettier"></a>prettier</h2><blockquote><p>prettier安装</p></blockquote><pre><code class="hljs shell">npm install --save-dev --save-exact prettier<span class="hljs-meta">#</span><span class="bash"> or</span>npm install --global prettier</code></pre><blockquote><p>prettier使用</p></blockquote><pre><code class="hljs shell">prettier --write .</code></pre><blockquote><p>prettier配置</p></blockquote><pre><code class="hljs javascript"><span class="hljs-comment">// https://prettier.io  用于前端代码显示规范</span><span class="hljs-built_in">module</span>.exports = &#123;singleQuote: <span class="hljs-literal">true</span>, <span class="hljs-comment">// 使用单引号</span>trailingComma: <span class="hljs-string">'all'</span>, <span class="hljs-comment">// 有结尾符号</span>printWidth: <span class="hljs-number">80</span>, <span class="hljs-comment">// 最长长度</span>tabWidth: <span class="hljs-number">2</span>, <span class="hljs-comment">// tab长度</span>semi: <span class="hljs-literal">true</span>, <span class="hljs-comment">// 使用分号</span>&#125;;</code></pre>]]></content>
+    
+    
+    <categories>
+      
+      <category>Prettier</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>react</tag>
+      
+      <tag>prettier</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>ESLint 安装使用说明</title>
+    <link href="/blog-react/2020/05/15/eslint/eslint/"/>
+    <url>/blog-react/2020/05/15/eslint/eslint/</url>
+    
+    <content type="html"><![CDATA[<h3 id="eslint"><a href="#eslint" class="headerlink" title="eslint"></a>eslint</h3><blockquote><p>安装eslint</p></blockquote><pre><code class="hljs shell">npm install eslint --save-dev</code></pre><blockquote><p>初始化eslint</p></blockquote><pre><code class="hljs shell">npx eslint --init</code></pre><blockquote><p>react项目配置</p></blockquote><pre><code class="hljs shell">? How would you like to use ESLint? To check syntax, find problems, and enforce code style? What type of modules does your project use? JavaScript modules (import/export)? Which framework does your project use? React? Does your project use TypeScript? Yes? Where does your code run? Browser? How would you like to define a style for your project? Use a popular style guide? Which style guide do you want to follow? Standard: https://github.com/standard/standard? What format do you want your config file to be in? JavaScript</code></pre><blockquote><p>配置参数说明 .eslintrc.js</p></blockquote><pre><code class="hljs javascript"><span class="hljs-built_in">module</span>.exports = &#123;env: &#123;browser: <span class="hljs-literal">true</span>,es6: <span class="hljs-literal">true</span>,&#125;,extends: [<span class="hljs-string">'plugin:react/recommended'</span>, <span class="hljs-string">'standard'</span>],globals: &#123;Atomics: <span class="hljs-string">'readonly'</span>,SharedArrayBuffer: <span class="hljs-string">'readonly'</span>,&#125;,parser: <span class="hljs-string">'@typescript-eslint/parser'</span>,parserOptions: &#123;ecmaFeatures: &#123;jsx: <span class="hljs-literal">true</span>,&#125;,ecmaVersion: <span class="hljs-number">2018</span>,sourceType: <span class="hljs-string">'module'</span>,&#125;,plugins: [<span class="hljs-string">'react'</span>, <span class="hljs-string">'@typescript-eslint'</span>],rules: &#123;<span class="hljs-string">'no-tabs'</span>: <span class="hljs-string">'off'</span>, <span class="hljs-comment">// 启动tab键</span>semi: [<span class="hljs-string">'error'</span>, <span class="hljs-string">'always'</span>], <span class="hljs-comment">// 分号</span>indent: [<span class="hljs-string">'error'</span>, <span class="hljs-string">'tab'</span>], <span class="hljs-comment">// 缩进</span><span class="hljs-string">'comma-dangle'</span>: <span class="hljs-string">'off'</span>,<span class="hljs-string">"space-before-function-paren"</span>: <span class="hljs-string">"off"</span>&#125;,&#125;;</code></pre>]]></content>
+    
+    
+    <categories>
+      
+      <category>ESLint</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>eslint</tag>
+      
+      <tag>react</tag>
+      
+      <tag>node</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Node 安装说明</title>
+    <link href="/blog-react/2020/05/14/nodejs/nodejs/"/>
+    <url>/blog-react/2020/05/14/nodejs/nodejs/</url>
+    
+    <content type="html"><![CDATA[<h3 id="nodejs"><a href="#nodejs" class="headerlink" title="nodejs"></a>nodejs</h3><blockquote><p>全局环境变量配置</p></blockquote><pre><code class="hljs shell">window+R: sysdm.cpl</code></pre><blockquote><p>npm镜像仓库地址</p></blockquote><ul><li>淘宝 <a href="https://registry.npm.taobao.org/" target="_blank" rel="noopener">https://registry.npm.taobao.org/</a> </li><li>npm <a href="https://registry.npmjs.org" target="_blank" rel="noopener">https://registry.npmjs.org</a></li><li>github <a href="https://npm.pkg.github.com/" target="_blank" rel="noopener">https://npm.pkg.github.com/</a></li></ul><blockquote><p>查询所有npm配置</p></blockquote><pre><code class="hljs shell">npm config list --json</code></pre><blockquote><p>配置npm</p></blockquote><pre><code class="hljs shell">npm config set prefix "$NODE_HOME"npm config set cache "$NODE_HOME\npm-cache"npm config set registry https://registry.npm.taobao.org/</code></pre><blockquote><p>清理npm缓存命令</p></blockquote><pre><code class="hljs shell">npm cache clean --force</code></pre><blockquote><p>npm安装包命令</p></blockquote><pre><code class="hljs shell">npm install --save-dev $package@$version</code></pre><blockquote><p>发布版本</p></blockquote><pre><code class="hljs shell">npm config set registry https://registry.npmjs.orgnpm login<span class="hljs-meta">#</span><span class="bash"> username:ispong</span><span class="hljs-meta">#</span><span class="bash"> password:https://www.npmjs.com/forgot</span><span class="hljs-meta">#</span><span class="bash"> email:ispong@outlook.com</span>npm publishnpm config set registry https://registry.npm.taobao.org/</code></pre><blockquote><p>检查发布 <a href="https://www.npmjs.com/" target="_blank" rel="noopener">https://www.npmjs.com/</a></p></blockquote><blockquote><p>撤销发布版本(小心使用！！！)</p></blockquote><pre><code class="hljs shell">npm unpublish react-keycap@0.1.0 --force</code></pre>]]></content>
+    
+    
+    <categories>
+      
+      <category>Node</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>node</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>React 安装说明</title>
+    <link href="/blog-react/2020/05/12/react/react/"/>
+    <url>/blog-react/2020/05/12/react/react/</url>
+    
+    <content type="html"><![CDATA[<h3 id="react-question"><a href="#react-question" class="headerlink" title="react question"></a>react question</h3><h4 id="如何在-ts-文件中使用-import-直接导入静态文件资源"><a href="#如何在-ts-文件中使用-import-直接导入静态文件资源" class="headerlink" title="如何在 ts 文件中使用 import 直接导入静态文件资源"></a>如何在 ts 文件中使用 import 直接导入静态文件资源</h4><ul><li>创建 global.d.ts 声明模块</li></ul><h4 id="如何解决浏览器-DevTools-failed-to-parse-SourceMap-chrome-extension-hdokiejnpimakedhajhdlcegeplioahd-sourcemaps-onloadwff-js-map"><a href="#如何解决浏览器-DevTools-failed-to-parse-SourceMap-chrome-extension-hdokiejnpimakedhajhdlcegeplioahd-sourcemaps-onloadwff-js-map" class="headerlink" title="如何解决浏览器 DevTools failed to parse SourceMap: chrome-extension://hdokiejnpimakedhajhdlcegeplioahd/sourcemaps/onloadwff.js.map"></a>如何解决浏览器 DevTools failed to parse SourceMap: chrome-extension://hdokiejnpimakedhajhdlcegeplioahd/sourcemaps/onloadwff.js.map</h4><ul><li>使用 mode:development</li></ul><h4 id="如何使用-sass-语法"><a href="#如何使用-sass-语法" class="headerlink" title="如何使用 sass 语法"></a>如何使用 sass 语法</h4><h3 id="安装redux"><a href="#安装redux" class="headerlink" title="安装redux"></a>安装redux</h3><pre><code class="hljs shell">npm install react-redux</code></pre><p>安装axios</p><pre><code class="hljs shell">npm install axios</code></pre>]]></content>
+    
+    
+    <categories>
+      
+      <category>React</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>react</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  
+</search>

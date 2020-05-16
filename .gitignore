@@ -15,7 +15,7 @@ docs/*.log
 docs/node_modules/
 docs/public/
 docs/deploy*/
-docs/.deploy_git
+#docs/.deploy_git
 
 
 
