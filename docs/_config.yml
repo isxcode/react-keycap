@@ -97,6 +97,7 @@ theme: fluid
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
+# hexo clean && hexo deploy
 deploy:
   type: git
   repo: https://gitee.com/ispong/blog-react.git
