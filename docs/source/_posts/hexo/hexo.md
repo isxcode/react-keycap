@@ -82,3 +82,6 @@ deploy:
   on:
     branch: master
   local-dir: ./docs/public
+
+# 部署命令
+hexo clean && hexo deploy
