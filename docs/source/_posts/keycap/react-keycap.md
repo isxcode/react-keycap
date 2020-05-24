@@ -7,6 +7,7 @@ categories: Keycap
 banner_img: https://gitee.com/ispong/my-images/raw/master/blog-react/page.png
 index_img: https://gitee.com/ispong/my-images/raw/master/blog-react/page-index.png
 excerpt: 基于React开源项目进行的二次封装,为了更快的实现前端页面搭建,且让前端的项目更加具有工程性.
+hide: true
 ---
 
 ### [react-keycap](https://github.com/ispong/react-keycap.git)

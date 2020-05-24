@@ -11,9 +11,9 @@
 # 全局
 # Site
 #---------------------------
-favicon: https://gitee.com/ispong/my-images/raw/master/blog-react/favicon.png # 网站标签页的 icon
+favicon: https://gitee.com/ispong/my-images/raw/master/blog-react/blog/favicon.png # 网站标签页的 icon
 
-apple_touch_icon: https://gitee.com/ispong/my-images/raw/master/blog-react/favicon.png # 用于苹果设备的 icon
+apple_touch_icon: https://gitee.com/ispong/my-images/raw/master/blog-react/blog/favicon.png # 用于苹果设备的 icon
 
 title_join_string: ' - '  # 浏览器标签页中的标题分隔符，效果： 文章名 - 站点名
 
@@ -57,7 +57,7 @@ color:  # 主题颜色配置，不一定能每一处都生效，可能会被局�
 font:  # 主题字体配置
   font_size: 16px                   # 全局字号
   font_family:                      # 全局字体
-  code_font_size: 85%               # 代码的字号
+  code_font_size: 100%               # 代码的字号
 
 custom_js:   # 指定自定义 js 文件路径，路径是相对 source 目录，如 /js/custom.js 对应存放目录 source/js/custom.js，支持列表
 custom_css:   # 指定自定义 css 文件路径，路径是相对 source 目录，如 /css/custom.css 同上，支持列表
@@ -100,14 +100,14 @@ version:  # 版本相关
 # Header
 #---------------------------
 navbar:
-  blog_title: blog-react # 导航栏左侧的标题，为空则按 hexo config.title 显示
+  blog_title: Blog-React # 导航栏左侧的标题，为空则按 hexo config.title 显示
   menu:  # 可自行增减，key 用来关联 languages/*.yml，如不存在关联则显示 key 本身的值；icon 是 css class，可以省略；增加 name 可以强制显示指定名称
     - { key: 'home', link: '/', icon: 'iconfont icon-home-fill' }
     - { key: 'archive', link: '/archives/', icon: 'iconfont icon-archive-fill' }
     - { key: 'category', link: '/categories/', icon: 'iconfont icon-category-fill' }
     - { key: 'tag', link: '/tags/', icon: 'iconfont icon-tags-fill' }
     - { key: 'about', link: '/about/', icon: 'iconfont icon-user-fill' }
-    #- { key: 'links', link: '/links/', icon: 'iconfont icon-link-fill' }  # 友链页，把前面#去掉即可展示
+    - { key: 'links', link: '/links/', icon: 'iconfont icon-link-fill' }  # 友链页，把前面#去掉即可展示
 
 search: # 搜索栏
   enable: true
@@ -117,12 +117,11 @@ search: # 搜索栏
   content: true
 
 scroll_down_arrow:  # 向下滚动的箭头
-  enable: false
+  enable: true
   banner_height_limit: 90  # 头图高度不小于指定比例，才显示箭头
   scroll_after_turning_page: true  # 翻页后自动滚动
 
 banner_parallax: true  # 头图滚动视差
-
 
 #---------------------------
 # 页脚
@@ -149,7 +148,7 @@ scroll_top_arrow:  # 向顶部滚动的箭头
 # Index Page
 #---------------------------
 index:
-  banner_img: https://gitee.com/ispong/my-images/raw/master/blog-react/index.png  # 首页 Banner 头图，以下相同
+  banner_img: https://gitee.com/ispong/my-images/raw/master/blog-react/blog/index.png  # 首页 Banner 头图，以下相同
   banner_img_height: 100  # 头图高度，屏幕百分比，available: 0 - 100
   banner_mask_alpha: 0.3  # 头图黑色蒙版的透明度，available: 0 - 1.0， 0 是完全透明（无蒙版），1 是完全不透明
   post_default_img: '' # 默认的文章封面图，当没有指定 index_img 时会使用该图片，若都为空则不显示任何图片
@@ -167,7 +166,7 @@ index:
 # 通过 hexo new page 命令创建的页面
 # Custom Page
 page:
-  banner_img: https://gitee.com/ispong/my-images/raw/master/blog-react/page.png
+  banner_img: https://gitee.com/ispong/my-images/raw/master/blog-react/blog/page.png
   banner_img_height: 60  # available: 0 - 100
   banner_mask_alpha: 0.3  # available: 0 - 1.0
 
@@ -176,7 +175,7 @@ page:
 # Post Page
 #---------------------------
 post:  # 部分配置同时控制自定义页面，注意备注
-  banner_img: https://gitee.com/ispong/my-images/raw/master/blog-react/page.png
+  banner_img: https://gitee.com/ispong/my-images/raw/master/blog-react/blog/page.png
   banner_img_height: 70  # available: 0 - 100
   banner_mask_alpha: 0.3  # available: 0 - 1.0
   meta:  # 文章标题下方的信息
@@ -216,12 +215,12 @@ post:  # 部分配置同时控制自定义页面，注意备注
     specific: false  # 开启后，只有在文章 Front-matter 里指定 `math: true` 才会在文章页启动公式转换，以便在页面不包含公式时提高加载速度
     engine: mathjax  # 公式引擎  available: mathjax | katex
   mermaid:  # 流程图，基于 mermaid-js，文档：http://mermaid-js.github.io/mermaid/
-    enable: false  # 开启后文章默认可用，自定义页面如需使用，需在 Front-matter 中指定 `mermaid: true`
-    specific: false  # 开启后，只有在文章 Front-matter 里指定 `mermaid: true` 才会在文章页启动公式转换，以便在页面不包含公式时提高加载速度
+    enable: true  # 开启后文章默认可用，自定义页面如需使用，需在 Front-matter 中指定 `mermaid: true`
+    specific: true  # 开启后，只有在文章 Front-matter 里指定 `mermaid: true` 才会在文章页启动公式转换，以便在页面不包含公式时提高加载速度
     options: { theme: 'default' }  # 接口选项，具体可见：http://mermaid-js.github.io/mermaid/#/mermaidAPI
   comments:  # 评论
-    enable: false  # 开启评论
-    type: disqus  # 指定使用的评论模块  available: disqus | valine | gitalk | utterances | changyan | livere  推荐 utterances
+    enable: true  # 开启评论
+    type: utterances  # 指定使用的评论模块  available: disqus | valine | gitalk | utterances | changyan | livere  推荐 utterances
 
 
 #---------------------------
@@ -234,9 +233,9 @@ post:  # 部分配置同时控制自定义页面，注意备注
 # utterances
 # You can install utterances with https://utteranc.es/ and generate your configuration
 utterances:
-  repo:
-  issue_term:
-  label: utterances
+  repo: ispong/blog-utterances-comment
+  issue_term: pathname
+  label: Comment
   theme: github-light
   crossorigin: anonymous
 
@@ -295,7 +294,7 @@ livere:
 # Archive Page
 #---------------------------
 archive:
-  banner_img: https://gitee.com/ispong/my-images/raw/master/blog-react/archive.png
+  banner_img: https://gitee.com/ispong/my-images/raw/master/blog-react/blog/archive.png
   banner_img_height: 60  # available: 0 - 100
   banner_mask_alpha: 0.3  # available: 0 - 1.0
   subtitle:  # 打字机内容
@@ -305,7 +304,7 @@ archive:
 # Categories Page
 #---------------------------
 category:
-  banner_img: https://gitee.com/ispong/my-images/raw/master/blog-react/category.png
+  banner_img: https://gitee.com/ispong/my-images/raw/master/blog-react/blog/category.png
   banner_img_height: 60  # available: 0 - 100
   banner_mask_alpha: 0.3  # available: 0 - 1.0
   subtitle:  # 打字机内容
@@ -315,7 +314,7 @@ category:
 # Tags Page
 #---------------------------
 tag:
-  banner_img: https://gitee.com/ispong/my-images/raw/master/blog-react/tag.png
+  banner_img: https://gitee.com/ispong/my-images/raw/master/blog-react/blog/tag.png
   banner_img_height: 80  # available: 0 - 100
   banner_mask_alpha: 0.3  # available: 0 - 1.0
   subtitle:  # 打字机内容
@@ -331,16 +330,16 @@ tag:
 # About Page
 #---------------------------
 about:  # 关于页需要手动创建，具体请见：https://hexo.fluid-dev.com/docs/guide/#%E5%85%B3%E4%BA%8E%E9%A1%B5
-  banner_img: https://gitee.com/ispong/my-images/raw/master/blog-react/about.png
+  banner_img: https://gitee.com/ispong/my-images/raw/master/blog-react/blog/about.png
   banner_img_height: 60  # available: 0 - 100
   banner_mask_alpha: 0.3  # available: 0 - 1.0
   subtitle:  # 打字机内容
-  avatar: https://gitee.com/ispong/my-images/raw/master/blog-react/avatar.png # 头像
+  avatar: https://gitee.com/ispong/my-images/raw/master/blog-react/blog/avatar.png # 头像
   name: ispong
   introduce: ispong@outlook.com # 支持 HTML
   icons: # 更多图标可从 https://github.com/fluid-dev/static/blob/master/hexo-theme-fluid/iconfont.png 查找，class 代表图标的 css class
     - { class: 'iconfont icon-github-fill', link: 'https://github.com/ispong' }
-    - { class: 'iconfont icon-wechat-fill', qrcode: 'https://gitee.com/ispong/my-images/raw/master/blog-react/wechat.jpg' }  # 添加 qrcode 后，点击不再跳转，而是悬浮二维码，需要指定 image
+    - { class: 'iconfont icon-wechat-fill', qrcode: 'https://gitee.com/ispong/my-images/raw/master/blog-react/blog/wechat.jpg' }  # 添加 qrcode 后，点击不再跳转，而是悬浮二维码，需要指定 image
 #    - { class: 'iconfont icon-mail', text: 'https://douban.com' }
 
 
@@ -349,7 +348,7 @@ about:  # 关于页需要手动创建，具体请见：https://hexo.fluid-dev.co
 # 404 Page
 #---------------------------
 page404:
-  banner_img: https://gitee.com/ispong/my-images/raw/master/blog-react/about.png
+  banner_img: https://gitee.com/ispong/my-images/raw/master/blog-react/blog/about.png
   banner_img_height: 85  # available: 0 - 100
   banner_mask_alpha: 0.3  # available: 0 - 1.0
   subtitle: 'Page not found'  # 打字机内容
@@ -359,26 +358,38 @@ page404:
 # Links Page
 #---------------------------
 links:
-  banner_img: https://gitee.com/ispong/my_images/raw/master/ispong-react/background.png
+  banner_img: https://gitee.com/ispong/my-images/raw/master/blog-react/blog/link.png
   banner_img_height: 60  # available: 0 - 100
   banner_mask_alpha: 0.3  # available: 0 - 1.0
   subtitle:  # 打字机内容
   items:  # intro 与 image 可省略
     - {
-      title: 'Fluid Docs',
-      intro: '主题使用指南',
-      link: 'https://hexo.fluid-dev.com/docs/',
-      image: 'https://gitee.com/ispong/my_images/raw/master/ispong-react/favicon.png'
+      title: 'IntelliJ IDEA',
+      intro: 'The most intelligent JVM IDE',
+      link: 'https://www.jetbrains.com/?from=spring-oxygen',
+      image: 'https://gitee.com/ispong/my-images/raw/master/blog-spring/blog/link-idea.png'
     }
     - {
-      title: 'Fluid Repo',
-      intro: '主题 GitHub 仓库',
-      link: 'https://github.com/fluid-dev/hexo-theme-fluid',
-      image: 'https://gitee.com/ispong/my_images/raw/master/ispong-react/favicon.png'
+      title: 'Fluid',
+      intro: 'An elegant Material-Design theme for Hexo',
+      link: 'https://hexo.fluid-dev.com/docs/en/',
+      image: 'https://gitee.com/ispong/my-images/raw/master/blog-spring/blog/link-fluid.png'
     }
     - {
-      title: 'Fluid Example',
-      intro: '主题操作示例',
-      link: 'https://hexo.fluid-dev.com/docs/example/',
-      image: 'https://gitee.com/ispong/my_images/raw/master/ispong-react/favicon.png'
+      title: 'Spring',
+      intro: 'Spring makes Java simple.modern.productive.reactive.cloud-rea',
+      link: 'https://spring.io/',
+      image: 'https://gitee.com/ispong/my-images/raw/master/blog-spring/blog/link-spring.png'
+    }
+    - {
+      title: 'Spring-Oxygen',
+      intro: 'Spring rapid development integration framework',
+      link: 'https://github.com/ispong/spring-oxygen',
+      image: 'https://gitee.com/ispong/my-images/raw/master/blog-spring/blog/link-github.png'
+    }
+    - {
+      title: 'React-Keycap',
+      intro: 'React rapid development component library',
+      link: 'https://github.com/ispong/react-keycap',
+      image: 'https://gitee.com/ispong/my-images/raw/master//blog-spring/blog/link-github.png'
     }

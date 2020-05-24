@@ -1,17 +1,22 @@
 ---
-title: Chrome 浏览器快捷键使用说明
-subtitle: Chrome 浏览器快捷键使用说明
-date: 2020-05-16 18:27:52
-tags: [chrome]
+title: Chrome常用快捷键
+subtitle: Chrome常用快捷键
+tags:
+  - chrome
 categories: Chrome
-banner_img: https://gitee.com/ispong/my-images/raw/master/blog-react/page.png
-index_img: https://gitee.com/ispong/my-images/raw/master/blog-react/chrome/chrome.jpg
+banner_img: 'https://gitee.com/ispong/my-images/raw/master/blog-react/page.png'
+index_img: 'https://gitee.com/ispong/my-images/raw/master/blog-react/chrome/chrome.png'
 excerpt: Chrome浏览器被越来越多的人喜爱,骚操作快捷键一定不能错过!!!
+date: 2020-05-21 12:24:18
 ---
 
-## how to use chrome
+## 🙋 问题
 
-#### 常用快捷键的使用
+1. 鼠标点击图标实在是太烦
+
+## 💡 方法
+
+- 常用快捷键的使用
 
 | 快捷键 | 说明 |
 | --- | --- |
@@ -32,3 +37,11 @@ excerpt: Chrome浏览器被越来越多的人喜爱,骚操作快捷键一定不�
 | ctrl+shift+j | 打开控制台 |
 | ctrl+shift+i | 打开浏览器检查器 |
 | ctrl+shift+c | 选择网页元素 |
+
+## 📝 总结
+
+🎈🎈 爽  🎉🎉🎉
+
+## 🔍 参考
+
+- [chrome快捷键说明]()

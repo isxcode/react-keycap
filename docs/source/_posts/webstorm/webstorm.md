@@ -7,6 +7,7 @@ categories: WebStorm
 banner_img: https://gitee.com/ispong/my-images/raw/master/blog-react/page.png
 index_img: https://gitee.com/ispong/my-images/raw/master/blog-react/webStorm/webstorm.png
 excerpt: 别问我到底是选WebStorm还是Vscode?问就是WebStorm!!(表示有JetBrains爸爸做最坚强的后盾,哎呀!真香)
+hide: true
 ---
 
 ### 使用 webStorm 快速开发 react
