@@ -38,7 +38,7 @@
 		"start": "webpack-dev-server --open",
 		"build": "webpack",
 		"deploy": "gh-pages -o gitee -b master -d ./build",
-		"test": "react-scripts test",
+		"test": "jest",
 		"eject": "react-scripts eject",
 		"hexo": "cd docs && hexo server"
 	},

@@ -61,3 +61,8 @@ npm config set registry https://registry.npm.taobao.org/
 ```shell script 
 npm unpublish react-keycap@0.1.0 --force
 ```
+
+> npm 命令说明
+```shell script
+npm help npm
+```

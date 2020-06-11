@@ -118,3 +118,37 @@ npm run flow: run the flow type check
 npm run kill: kill the node server occupying the port 4100.
 
 
+
+## 我需要做成那种
+
+做一个模板替换工具  还可以方便维护我的代码
+
+
+
+template 
+
+git clone xxx template
+项目模板 可以自己去改动源码 就是一种规范
+
+
+项目组成 
+docs
+components
+scripts
+
+git clone xxx
+cd scripts
+keycap init -project='' -email='' -version='' 
+
+打包到本地进行调试
+
+
+开源配置都留着 写一个脚本生成开源配置文件
+
+我希望是这样的
+
+git clone -tempalte 项目铭恒 http://github.com/xx
+
+
+
+

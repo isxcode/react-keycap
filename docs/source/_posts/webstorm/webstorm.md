@@ -5,9 +5,8 @@ date: 2020-05-16 10:22:52
 tags: [webStorm]
 categories: WebStorm
 banner_img: https://gitee.com/ispong/my-images/raw/master/blog-react/page.png
-index_img: https://gitee.com/ispong/my-images/raw/master/blog-react/webStorm/webstorm.png
+index_img: https://gitee.com/ispong/my-images/raw/master/blog-react/webstorm/webstorm.png
 excerpt: 别问我到底是选WebStorm还是Vscode?问就是WebStorm!!(表示有JetBrains爸爸做最坚强的后盾,哎呀!真香)
-hide: true
 ---
 
 ### 使用 webStorm 快速开发 react
@@ -27,7 +26,7 @@ hide: true
 - 编辑模式
   y - 复制
   p - 粘贴
-- 删除模式
+- 删除模
   dd- 删除当前行
   1,10d - 删除 1 到 10 行
   c- 删除当前选择文字插入
@@ -86,3 +85,9 @@ hide: true
   alt+u 菜单栏 (main menu)
   alt+q 退出项目
   alt+w 退出所有工具栏 hide
+
+- info markdown
+
+- mark
+
+- 
