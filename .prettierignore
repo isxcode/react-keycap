@@ -1,8 +1,0 @@
-**/*.svg
-package.json
-dist/
-LICENSE
-.gitignore
-.prettierignore
-.editorconfig
-.eslintignore
