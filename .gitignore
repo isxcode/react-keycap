@@ -1,21 +1,11 @@
-# 忽略所有的打包文件
+.github
+
 build
 
-# 忽略所有的moudules
 node_modules
 
-# 忽略idea的配置文件
 .idea
 
-# hexo博客
-docs/.DS_Store
-docs/Thumbs.db
-docs/db.json
-docs/*.log
-docs/node_modules/
-docs/public/
-docs/deploy*/
-docs/.deploy_git
 
 
 

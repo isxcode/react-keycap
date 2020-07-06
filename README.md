@@ -10,7 +10,7 @@
 
 React rapid development component library.
 
-[![Status][Status-image]][Status-url] [![React][React-image]][React-url] [![Maven Central][Maven-image]][Maven-url] [![GitHub last commit][commit-image]][commit-url] [![GitHub][license-image]][license-url]
+[![Status][Status-image]][Status-url] [![React][React-image]][React-url] [![Maven Central][npm-image]][npm-url] [![GitHub last commit][commit-image]][commit-url] [![GitHub][license-image]][license-url]
 
 [Status-image]: https://img.shields.io/badge/status-developing-ff69b4?style=flat-square
 [Status-url]: https://github.com/ispong/react-keycap
@@ -36,7 +36,7 @@ yarn add react-keycap
 Npm
 
 ```shell script
-npm install save-dev react-keycap
+npm i react-keycap
 ```
 
 ## 🔨 Start Up
