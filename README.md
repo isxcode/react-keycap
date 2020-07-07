@@ -60,4 +60,4 @@ You can find the spring-oxygen documentation [on the website](https://ispong.git
 
 #### Thanks for free JetBrains Open Source license
 
-<a href="https://www.jetbrains.com/?from=react-keycap" target="_blank"><img src="https://gitee.com/ispong/blog-images/raw/master/idea/jetbrains-3.png" height="150" alt="jetbrains"/></a>
+<a href="https://www.jetbrains.com/?from=react-keycap" target="_blank"><img src="https://gitee.com/ispong/blog-images/raw/master/idea/jetbrains-3.png" height="100" alt="jetbrains"/></a>
