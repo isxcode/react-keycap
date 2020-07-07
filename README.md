@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://github.com/ispong/react-keycap">
-    <img alt="react-keycap" width="250" src="https://gitee.com/ispong/blog-images/raw/master/design/keycap.png">
+    <img alt="react-keycap" width="500" src="https://gitee.com/ispong/blog-images/raw/master/design/keycap.png">
   </a>
 </p>
 
@@ -10,7 +10,7 @@
 
 React rapid development component library.
 
-[![Status][Status-image]][Status-url] [![React][React-image]][React-url] [![Maven Central][npm-image]][npm-url] [![GitHub last commit][commit-image]][commit-url] [![GitHub][license-image]][license-url]
+[![Status][Status-image]][Status-url] [![React][React-image]][React-url] [![Npm Central][npm-image]][npm-url] [![GitHub last commit][commit-image]][commit-url] [![License][license-image]][license-url]
 
 [Status-image]: https://img.shields.io/badge/status-developing-ff69b4?style=flat-square
 [Status-url]: https://github.com/ispong/react-keycap
@@ -29,7 +29,7 @@ React rapid development component library.
 
 Yarn
 
-```shell
+```shell script
 yarn add react-keycap
 ```
 
