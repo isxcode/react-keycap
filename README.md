@@ -10,12 +10,12 @@
 
 React rapid development component library.
 
-[![Status][Status-image]][Status-url] [![React][React-image]][React-url] [![Npm Central][npm-image]][npm-url] [![GitHub last commit][commit-image]][commit-url] [![License][license-image]][license-url]
+[![status][status-image]][status-url] [![react][react-image]][react-url] [![npm][npm-image]][npm-url] [![commit][commit-image]][commit-url] [![license][license-image]][license-url]
 
-[Status-image]: https://img.shields.io/badge/status-developing-ff69b4?style=flat-square
-[Status-url]: https://github.com/ispong/react-keycap
-[React-image]: https://img.shields.io/badge/react-16.13.x-blue?style=flat-square
-[React-url]: https://reactjs.org/
+[status-image]: https://img.shields.io/badge/status-developing-ff69b4?style=flat-square
+[status-url]: https://github.com/ispong/react-keycap
+[react-image]: https://img.shields.io/badge/react-16.13.x-blue?style=flat-square
+[react-url]: https://reactjs.org/
 [npm-image]: https://img.shields.io/npm/v/react-keycap?style=flat-square
 [npm-url]: https://www.npmjs.com/package/react-keycap
 [commit-image]: https://img.shields.io/github/last-commit/ispong/react-keycap?style=flat-square
@@ -27,16 +27,16 @@ React rapid development component library.
 
 ## 📦 Installation
 
-Yarn
-
-```shell script
-yarn add react-keycap
-```
-
 Npm
 
 ```shell script
 npm i react-keycap
+```
+
+Yarn
+
+```shell script
+yarn add react-keycap
 ```
 
 ## 🔨 Start Up
