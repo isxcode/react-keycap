@@ -37,6 +37,7 @@
 	},
 	"scripts": {
 		"start": "webpack-dev-server --open",
+		"link": "npm link",
 		"build": "webpack",
 		"test": "jest",
 		"eject": "react-scripts eject"

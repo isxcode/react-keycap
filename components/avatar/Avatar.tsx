@@ -10,7 +10,6 @@ import React, {ReactPropTypes} from 'react';
 
 export function Avatar(props: any) {
 
-
 	return <div>
 		{this.props.}
 	</div>;
