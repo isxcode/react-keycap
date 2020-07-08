@@ -1,6 +1,7 @@
 <p align="center">
   <a href="https://github.com/ispong/react-keycap">
-    <img alt="react-keycap" width="500" src="https://gitee.com/ispong/blog-images/raw/master/design/keycap.png">
+    <i
+    mg alt="react-keycap" width="500" src="https://gitee.com/ispong/blog-images/raw/master/design/keycap.png">
   </a>
 </p>
 
