@@ -1,37 +1,14 @@
-# 配置代码编写格式 https://editorconfig.org/
+# https://editorconfig.org/
 root = true
 
-[*]  # 所有文件
-indent_style = tab # 缩进方式
-indent_size = 2 # 缩进大小
-end_of_line = lf # 换行符类型
-charset = utf-8 # 字符编码格式
-trim_trailing_whitespace = true # 删除行尾空格
-insert_final_newline = true # 让文件以空行结束
-max_line_length = off # 行最大长度
-
-[*.tsx] # tsx
-indent_size = 4
-tab_width = 4
-max_line_length = off # 行最大长度
-
-
-[*.sass] # sass文件
-tab_width = 2 # tab长度
-
-[*.md] # markdown文件
-trim_trailing_whitespace = false
-
-[*.js] # javaScript文件
-max_line_length = off
+[*]
+indent_style = space
+indent_size = 2
+end_of_line = lf
+charset = utf-8
 trim_trailing_whitespace = true
-
-[*.json] # markdown文件
-max_line_length = 0
 insert_final_newline = true
+max_line_length = 80
 
-[{.eslintrc,.babelrc,.prettierrc,.stylelintrc,jest.config,bowerrc}]
-tab_width = 8
-
-[COMMIT_EDITMSG]
-max_line_length = 0
+[*.md]
+trim_trailing_whitespace = false
