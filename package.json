@@ -6,19 +6,33 @@
 		"component",
 		"react-keycap"
 	],
-	"description": "React rapid development component library.",
-	"homepage": "http://ispong.gitee.io",
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/ispong/react-keycap"
-	},
-	"author": {
-		"name": "ispong",
-		"email": "ispong@outlook.com",
-		"url": "http://ispong.gitee.io"
-	},
-	"readme": "https://github.com/ispong/react-keycap/blob/master/README.md",
-	"license": "MIT",
+  "homepage": "http://ispong.gitee.io",
+  "bugs": {
+    "url": "https://github.com/ispong/react-keycap/issues",
+    "email": "ispong@lookout.com"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "ispong",
+    "email": "ispong@outlook.com",
+    "url": "http://ispong.gitee.io"
+  },
+  "files": [],
+  "main": "",
+  "bin": {},
+  "man": [],
+  "directories": {
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ispong/react-keycap"
+  },
+  "config": {
+
+  },
+  "description": "React rapid development component library.",
+  "readme": "https://github.com/ispong/react-keycap/blob/master/README.md",
 	"private": false,
 	"dependencies": {
 		"@testing-library/jest-dom": "^4.2.4",
@@ -44,18 +58,6 @@
 	},
 	"eslintConfig": {
 		"extends": "react-app"
-	},
-	"browserslist": {
-		"production": [
-			">0.2%",
-			"not dead",
-			"not op_mini all"
-		],
-		"development": [
-			"last 1 chrome version",
-			"last 1 firefox version",
-			"last 1 safari version"
-		]
 	},
 	"devDependencies": {
 		"@babel/core": "^7.8.7",

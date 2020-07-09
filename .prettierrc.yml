@@ -1,8 +1,20 @@
-printWidth: 80
-tabWidth: 2
-useTabs: true
-singleQuote: true
-trailingComma: all
-bracketSpacing: true
-jsxBracketSameLine: false
-semi: true
+# 说明文档 https://prettier.io/docs/en/options.html
+
+printWidth: 120 # 最大输入长度
+tabWidth: 2 # 缩进长度为2
+useTabs: false # 使用space缩进
+semi: false # 每行结尾不加分号
+singleQuote: true # 使用单引号
+quoteProps: as-needed # 对属性加引号
+jsxSingleQuote: true # 替换jsx的双引号
+trailingComma: es5 # 结尾逗号处理方式
+bracketSpacing: true # 花括号之间加空格
+jsxBracketSameLine: true # jsx风格的花括号
+arrowParens: always # 箭头函数加括号
+parser: typescript # 自动解析ts文件
+requirePragma: true # 需要注释
+insertPragma: true # 自动插入注释
+proseWrap: preserve #  注释样式
+htmlWhitespaceSensitivity: strict # 严格要求
+vueIndentScriptAndStyle: false # 支持vue脚本样式
+endOfLine: lf # 结尾使用/n结束
