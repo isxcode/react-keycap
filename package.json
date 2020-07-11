@@ -1,85 +1,53 @@
 {
-	"name": "react-keycap",
-	"version": "0.0.1",
-	"keywords": [
-		"react",
-		"component",
-		"react-keycap"
-	],
-  "homepage": "http://ispong.gitee.io",
-  "bugs": {
-    "url": "https://github.com/ispong/react-keycap/issues",
-    "email": "ispong@lookout.com"
-  },
-  "license": "MIT",
-  "author": {
-    "name": "ispong",
-    "email": "ispong@outlook.com",
-    "url": "http://ispong.gitee.io"
-  },
-  "files": [],
-  "main": "",
-  "bin": {},
-  "man": [],
-  "directories": {
-
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/ispong/react-keycap"
-  },
-  "config": {
-
-  },
-  "description": "React rapid development component library.",
-  "readme": "https://github.com/ispong/react-keycap/blob/master/README.md",
-	"private": false,
-	"dependencies": {
-		"@testing-library/jest-dom": "^4.2.4",
-		"@testing-library/react": "^9.5.0",
-		"@testing-library/user-event": "^7.2.1",
-		"@types/highlight.js": "^9.12.3",
-		"@types/markdown-to-jsx": "^6.11.0",
-		"@types/react-router-dom": "^5.1.3",
-		"axios": "^0.19.2",
-		"highlight.js": "^9.18.1",
-		"react": "^16.13.0",
-		"react-dom": "^16.13.0",
-		"react-redux": "^7.2.0",
-		"react-router-dom": "^5.1.2",
-		"react-scripts": "3.4.0"
-	},
-	"scripts": {
-		"start": "webpack-dev-server --open",
-		"link": "npm link",
-		"build": "webpack",
-		"test": "jest",
-		"eject": "react-scripts eject"
-	},
-	"eslintConfig": {
-		"extends": "react-app"
-	},
-	"devDependencies": {
-		"@babel/core": "^7.8.7",
-		"@babel/preset-env": "^7.8.7",
-		"@babel/preset-react": "^7.8.3",
-		"@typescript-eslint/eslint-plugin": "^3.6.0",
-		"@typescript-eslint/parser": "^3.6.0",
-		"babel-loader": "^8.0.6",
-		"clean-webpack-plugin": "^3.0.0",
-		"copy-webpack-plugin": "^5.1.1",
-		"css-loader": "^3.5.2",
-		"eslint": "^7.4.0",
-		"eslint-config-standard": "^14.1.1",
-		"eslint-plugin-import": "^2.22.0",
-		"eslint-plugin-node": "^11.1.0",
-		"eslint-plugin-promise": "^4.2.1",
-		"eslint-plugin-react": "^7.20.3",
-		"eslint-plugin-standard": "^4.0.1",
-		"markdown-to-jsx": "^6.11.0",
-		"node-sass": "^4.13.1",
-		"prettier": "2.0.2",
-		"sass": "^1.26.3",
-		"typescript": "^3.8.3"
-	}
+		"name": "react-keycap",
+		"version": "0.0.2",
+		"description": "React rapid development component library.",
+		"readme": "https://github.com/ispong/react-keycap/blob/master/README.md",
+		"private": false,
+		"keywords": [
+				"react",
+				"keycap"
+		],
+		"homepage": "http://ispong.gitee.io",
+		"bugs": {
+				"url": "https://github.com/ispong/react-keycap/issues",
+				"email": "ispong@lookout.com"
+		},
+		"license": "MIT",
+		"author": {
+				"name": "ispong",
+				"email": "ispong@outlook.com",
+				"url": "http://ispong.gitee.io"
+		},
+		"repository": {
+				"type": "git",
+				"url": "https://github.com/ispong/react-keycap"
+		},
+  "typings": "./typings/index.d.ts",
+  "main": "index.js",
+  "module": "react-keycap",
+  "scripts": {
+				"start": "webpack-dev-server --open",
+				"link": "npm link",
+				"build": "react-scripts build",
+				"test": "jest",
+				"eject": "react-scripts eject",
+				"prettier": "prettier -c --write '**/*'"
+		},
+		"dependencies": {
+        "@testing-library/jest-dom": "^4.2.4",
+        "@testing-library/react": "^9.5.0",
+        "@testing-library/user-event": "^7.2.1",
+        "react": "^16.13.0",
+        "react-dom": "^16.13.0",
+        "react-scripts": "3.4.0"
+		},
+		"devDependencies": {
+        "@babel/core": "^7.8.7",
+        "@babel/preset-env": "^7.8.7",
+        "@babel/preset-react": "^7.8.3",
+        "babel-loader": "^8.0.6",
+        "prettier": "2.0.2",
+        "typescript": "^3.8.3"
+		}
 }

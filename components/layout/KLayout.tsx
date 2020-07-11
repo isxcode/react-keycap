@@ -1,10 +1,5 @@
-import React from 'react'
+// import * as React from 'react';
 
-function KLayout ( ) {
+const KLayout = 'hhhh 成功了';
 
-  return (
-    <p>启动组件成功</p>
-  )
-}
-
-export default KLayout
+export default KLayout;
