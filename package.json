@@ -1,6 +1,6 @@
 {
 		"name": "react-keycap",
-		"version": "0.0.2",
+		"version": "0.0.3",
 		"description": "React rapid development component library.",
 		"readme": "https://github.com/ispong/react-keycap/blob/master/README.md",
 		"private": false,
@@ -23,10 +23,9 @@
 				"type": "git",
 				"url": "https://github.com/ispong/react-keycap"
 		},
-  "typings": "./typings/index.d.ts",
-  "main": "index.js",
-  "module": "react-keycap",
-  "scripts": {
+		"typings": "./typings/index.d.ts",
+		"main": "index.jsx",
+		"scripts": {
 				"start": "webpack-dev-server --open",
 				"link": "npm link",
 				"build": "react-scripts build",
@@ -35,19 +34,20 @@
 				"prettier": "prettier -c --write '**/*'"
 		},
 		"dependencies": {
-        "@testing-library/jest-dom": "^4.2.4",
-        "@testing-library/react": "^9.5.0",
-        "@testing-library/user-event": "^7.2.1",
-        "react": "^16.13.0",
-        "react-dom": "^16.13.0",
-        "react-scripts": "3.4.0"
+				"@babel/runtime": "^7.10.4",
+				"@testing-library/jest-dom": "^4.2.4",
+				"@testing-library/react": "^9.5.0",
+				"@testing-library/user-event": "^7.2.1",
+				"react": "^16.13.0",
+				"react-dom": "^16.13.0",
+				"react-scripts": "3.4.0"
 		},
 		"devDependencies": {
-        "@babel/core": "^7.8.7",
-        "@babel/preset-env": "^7.8.7",
-        "@babel/preset-react": "^7.8.3",
-        "babel-loader": "^8.0.6",
-        "prettier": "2.0.2",
-        "typescript": "^3.8.3"
+				"@babel/core": "^7.8.7",
+				"@babel/preset-env": "^7.8.7",
+				"@babel/preset-react": "^7.8.3",
+				"babel-loader": "^8.0.6",
+				"prettier": "2.0.2",
+				"typescript": "^3.9.6"
 		}
 }
