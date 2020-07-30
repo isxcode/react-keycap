@@ -1,10 +1,15 @@
-.github
-
+# idea
 .idea
 
-build
+# github
+.github
 
+# build
+lib
+
+# node
 node_modules
 
+# logs
 *.log
 
