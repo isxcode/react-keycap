@@ -3,6 +3,7 @@ root = true # 设置为主配置文件
 
 [*]
 indent_style = space # 使用空格缩进
+tab_width = 2 # tab长度
 indent_size = 2 # 缩进长度两个空格
 end_of_line = lf # 使用/n换行
 charset = utf-8 # 使用uft-8 字符集
@@ -10,3 +11,5 @@ trim_trailing_whitespace = true # 删除结尾无用的空格
 insert_final_newline = false # 结尾插入一行
 max_line_length = off # 最大行输入无限制
 
+[*.json]
+indent_size = 4

@@ -6,6 +6,7 @@
 
 # build
 lib
+es
 
 # node
 node_modules

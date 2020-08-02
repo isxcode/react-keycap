@@ -6,13 +6,16 @@ const CopyPlugin = require('copy-webpack-plugin');
 const config = {
   // 入口
   entry: {
-    button: './components/button/index.tsx',
+    button: './components/demo/index.tsx',
     input: './components/input/index.tsx',
   },
   // 出口
   output: {
     path: path.resolve(__dirname, 'lib'),
     filename: '[name]/[name].js',
+    library: 'react+-keycap',
+    libraryTarget: 'umd',
+    // libraryExport: '',
   },
   module: {
     // loader test指定解析那些类型的文件 use指定解析时候用哪个加载器 exclude指定不解析的文件
@@ -31,11 +34,11 @@ const config = {
   // 插件
   plugins: [
     new CleanWebpackPlugin(),
-    new CopyPlugin({
-      patterns: [
-        { from: 'typings', to: './' },
-      ],
-    }),
+    // new CopyPlugin({
+    //   patterns: [
+    //     { from: 'types', to: './' },
+    //   ],
+    // }),
   ],
 }
 
