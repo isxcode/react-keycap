@@ -26,18 +26,18 @@
 		},
 		"main": "lib/index.js",
 		"module": "es/index.js",
-		"typings": "es/index.d.ts",
+		"typings": "typings/index.d.ts",
 		"files": [
 				"es",
-				"lib"
+        "typings"
 		],
 		"scripts": {
 				"link": "npm link",
-				"build:commonjs": "cross-env BABEL_OUTPUT=commonjs babel ./components -d ./lib/ --plugins @babel/plugin-transform-modules-commonjs --extensions \".tsx\" ",
-				"build:es": "babel ./components -d ./es/ --extensions \".tsx\" ",
+        "build:es": "babel ./components -d ./es/ --extensions \".tsx\" ",
+        "cpx:es": "cpx \"./components/**/*.sass\" ./es",
+        "build:commonjs": "cross-env BABEL_OUTPUT=commonjs babel ./components -d ./lib/ --plugins @babel/plugin-transform-modules-commonjs --extensions \".tsx\" ",
         "build:dts-gen": "dts-gen -m react-keycap -f ./es/index.d.ts -o",
         "cpx:commonjs": "cpx \"./components/**/*.sass\" ./lib",
-        "cpx:es": "cpx \"./components/**/*.sass\" ./es",
         "prettier": "prettier -c --write '**/*'"
 		},
 		"dependencies": {
