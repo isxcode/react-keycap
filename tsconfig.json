@@ -1,21 +1,27 @@
 {
-  "compilerOptions": {
-    "jsx": "react",
-    "allowSyntheticDefaultImports": true,
-    "outDir": "./dist/",
-    "sourceMap": true,
-    "strict": true,
-    "noImplicitReturns": true,
-    "noImplicitAny": true,
-    "module": "es6",
-    "moduleResolution": "node",
-    "target": "es5",
-    "allowJs": true
-  },
-  "exclude": [
-    "node_modules"
-  ],
-  "include": [
-    "components"
-  ]
+      "compilerOptions": {
+          "allowUnreachableCode": true, // 执行不到的代码不报错
+          "allowUnusedLabels": true, // 不适用的标签不报错
+          "alwaysStrict": true, // 每一个源文件 加上"use strict"
+//          "baseUrl": ".", // 工作目录
+          "jsx": "react", // 支持jsx语法
+          "sourceMap": true, // 生成map文件
+          "module": "es6", // 生成模块系统代码
+          "noImplicitAny": false, // 不禁用any
+          "removeComments": true, // 移除注释
+          "target": "es5", // 目标版本
+          "outDir": "./dist/", // 输出目录
+          "declaration": true, // 自动生成声明类文件
+          "declarationDir": "./ts/lib", // 声明类文件输出
+          "allowJs": true, // 允许编辑js文件
+          "allowSyntheticDefaultImports": true,
+          "noImplicitReturns": true,
+          "moduleResolution": "node"
+      },
+      "exclude": [
+          "node_modules"
+      ],
+      "include": [
+          "components"
+      ]
 }

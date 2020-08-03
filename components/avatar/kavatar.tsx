@@ -1,5 +1,5 @@
 import React from 'react'
-import './style/kavatar.sass'
+// import './style/kavatar.sass'
 
 function KAvatar() {
 
@@ -9,4 +9,3 @@ function KAvatar() {
 }
 
 export default KAvatar
-
