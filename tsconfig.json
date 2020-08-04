@@ -1,27 +1,101 @@
 {
       "compilerOptions": {
-          "allowUnreachableCode": true, // 执行不到的代码不报错
-          "allowUnusedLabels": true, // 不适用的标签不报错
-          "alwaysStrict": true, // 每一个源文件 加上"use strict"
-//          "baseUrl": ".", // 工作目录
-          "jsx": "react", // 支持jsx语法
-          "sourceMap": true, // 生成map文件
-          "module": "es6", // 生成模块系统代码
-          "noImplicitAny": false, // 不禁用any
-          "removeComments": true, // 移除注释
-          "target": "es5", // 目标版本
-          "outDir": "./dist/", // 输出目录
-          "declaration": true, // 自动生成声明类文件
-          "declarationDir": "./ts/lib", // 声明类文件输出
-          "allowJs": true, // 允许编辑js文件
+          "allowJs": true,
           "allowSyntheticDefaultImports": true,
-          "noImplicitReturns": true,
-          "moduleResolution": "node"
+//          "allowUmdGlobalAccess": false,
+          "allowUnreachableCode": true,
+          "allowUnusedLabels": true,
+          "alwaysStrict": true,
+//          "assumeChangesOnlyAffectDirectDependencies": false,
+//          "baseUrl": "./",
+          "charset": "utf8",
+//          "checkJs": false,
+//          "composite": false,
+          "declaration": true,
+          "declarationDir": "./es",
+          "declarationMap": false,
+//          "diagnostics": false,
+//          "disableSizeLimit": false,
+//          "downlevelIteration": false,
+//          "emitDeclarationOnly": false,
+//          "emitDecoratorMetadata": false,
+//          "esModuleInterop": true,
+//          "experimentalDecorators": false,
+//          "forceConsistentCasingInFileNames": false,
+//          "importHelpers": false,
+//          "importsNotUsedAsValues": "remove",
+//          "incremental": false,
+//          "inlineSourceMap": false,
+//          "inlineSources": false,
+//          "isolatedModules": false,
+          "jsx": "react",
+//          "jsxFactory": "React.createElement",
+//          "keyofStringsOnly": false,
+//          "useDefineForClassFields": false,
+//          "lib": [
+//
+//          ],
+//          "listEmittedFiles": false,
+//          "listFiles": false,
+//          "mapRoot": "",
+//          "maxNodeModuleJsDepth": 0,
+          "module": "ES6",
+          "moduleResolution": "Classic",
+//          "newLine": "crlf",
+//          "noEmit": false,
+//          "noEmitHelpers": false,
+//          "noEmitOnError": false,
+//          "noErrorTruncation": false,
+//          "noFallthroughCasesInSwitch": false,
+          "noImplicitAny": false,
+//          "noImplicitReturns": true,
+//          "noImplicitThis": false,
+//          "noImplicitUseStrict": false,
+//          "noLib": false,
+//          "noResolve": false,
+          "noStrictGenericChecks": true,
+          "noUnusedLocals": false,
+          "noUnusedParameters": false,
+          "outDir": "./es",
+//          "outFile": "",
+//          "paths": {
+//
+//          },
+//          "preserveConstEnums": false,
+//          "preserveSymlinks": false,
+//          "preserveWatchOutput": false,
+          "pretty": false,
+          "reactNamespace": "React",
+          "removeComments": true,
+//          "resolveJsonModule": false,
+//          "rootDir": "",
+//          "rootDirs": [],
+          "skipDefaultLibCheck": true,
+          "skipLibCheck": true,
+          "sourceMap": false,
+//          "sourceRoot": "",
+//          "strict": false,
+//          "strictBindCallApply": false,
+//          "strictFunctionTypes": false,
+//          "strictPropertyInitialization": false,
+//          "strictNullChecks": false,
+//          "suppressExcessPropertyErrors": false,
+//          "suppressImplicitAnyIndexErrors": false,
+          "target": "ESNext"
+//          "traceResolution": false,
+//          "tsBuildInfoFile": "",
+//          "types": [],
+//          "typeRoots": [
+//              "node_modules/@types"
+//          ]
+//          "watch": false
       },
-      "exclude": [
-          "node_modules"
-      ],
-      "include": [
-          "components"
-      ]
+    "include": [
+        "./components/"
+    ],
+    "exclude": [
+        "node_modules",
+        "lib",
+        "es"
+    ]
 }

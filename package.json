@@ -26,20 +26,16 @@
 		},
 		"main": "lib/index.js",
 		"module": "es/index.js",
-		"typings": "lib/index.d.ts",
+		"typings": "es/index.d.ts",
 		"files": [
 				"es",
 				"lib"
 		],
 		"scripts": {
 				"link": "npm link",
-				"build:rollup": "rollup -c ./rollup.config.js",
-				"clean:es": "del /s/q es",
-				"build:es": "babel ./components -d ./es/ --extensions \".tsx\" ",
-				"cpx:es": "cpx \"./components/**/*.sass\" ./es",
-				"build:commonjs": "cross-env BABEL_OUTPUT=commonjs babel ./components -d ./lib/ --plugins @babel/plugin-transform-modules-commonjs --extensions \".tsx\" ",
-				"build:dts-gen": "dts-gen -m react-keycap -f ./es/index.d.ts -o",
-				"cpx:commonjs": "cpx \"./components/**/*.sass\" ./lib",
+				"build:es": "tsc",
+				"cpx:es": "cpx ./components/**/*.sass ./es",
+				"build:commonjs": "babel ./es -d ./lib ",
 				"prettier": "prettier -c --write '**/*'"
 		},
 		"dependencies": {
@@ -54,16 +50,8 @@
 		"devDependencies": {
 				"@babel/cli": "^7.2.3",
 				"@babel/core": "^7.11.0",
-				"@babel/plugin-transform-modules-commonjs": "^7.10.4",
 				"@babel/preset-env": "^7.10.4",
-				"@babel/preset-react": "^7.8.3",
-				"@babel/preset-typescript": "^7.10.4",
-				"@rollup/plugin-babel": "^5.1.0",
-				"@rollup/plugin-node-resolve": "^8.4.0",
-				"@rollup/plugin-sucrase": "^3.1.0",
-				"@rollup/plugin-typescript": "^5.0.2",
 				"cpx": "^1.5.0",
-				"cross-env": "^7.0.2",
 				"jest": "^26.1.0",
 				"node-sass": "^4.14.1",
 				"prettier": "^2.0.2",
