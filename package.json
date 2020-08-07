@@ -33,7 +33,7 @@
 		],
 		"scripts": {
 				"link": "npm link",
-				"build:es": "tsc",
+				"tsc:es": "tsc",
 				"cpx:es": "cpx ./components/**/*.sass ./es",
 				"build:commonjs": "babel ./es -d ./lib ",
 				"prettier": "prettier -c --write '**/*'"

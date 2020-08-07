@@ -2,14 +2,14 @@
       "compilerOptions": {
           "allowJs": true,
           "allowSyntheticDefaultImports": true,
-//          "allowUmdGlobalAccess": false,
+          "allowUmdGlobalAccess": false,
           "allowUnreachableCode": true,
           "allowUnusedLabels": true,
           "alwaysStrict": true,
 //          "assumeChangesOnlyAffectDirectDependencies": false,
-//          "baseUrl": "./",
+          "baseUrl": "./components",
           "charset": "utf8",
-//          "checkJs": false,
+          "checkJs": false,
 //          "composite": false,
           "declaration": true,
           "declarationDir": "./es",
@@ -91,7 +91,7 @@
 //          "watch": false
       },
     "include": [
-        "./components/"
+        "./components"
     ],
     "exclude": [
         "node_modules",
