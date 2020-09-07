@@ -11,3 +11,5 @@ node_modules
 # logs
 *.log
 
+# coveralls
+coverage

@@ -24,7 +24,7 @@
 [license-url]: https://github.com/ispong/react-keycap/blob/master/LICENSE
 [workflow-image]: https://img.shields.io/github/workflow/status/ispong/react-keycap/release%20ci?style=flat-square
 [workflow-url]: https://github.com/ispong/react-keycap/actions?query=workflow%3A%22release+ci%22
-[lgtm-image]: https://img.shields.io/lgtm/grade/java/github/ispong/react-keycap?style=flat-square
+[lgtm-image]: https://img.shields.io/lgtm/grade/javascript/github/ispong/react-keycap?style=flat-square
 [lgtm-url]: https://lgtm.com/projects/g/ispong/react-keycap/latest/files/?sort=name&dir=ASC&mode=heatmap
 [coveralls-image]: https://img.shields.io/coveralls/github/ispong/react-keycap?style=flat-square
 [coveralls-url]: https://coveralls.io/github/ispong/react-keycap?branch=latest

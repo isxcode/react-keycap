@@ -35,8 +35,9 @@
 				"cpx:es": "cpx \"./components/**/*.scss\" ./es",
 				"build:commonjs": "babel ./es -d ./lib ",
 				"cpx:commonjs": "cpx \"./components/**/*.scss\" ./lib",
-				"prettier": "prettier -c --write '**/*'"
-		},
+				"prettier": "prettier -c --write '**/*'",
+        "test": "jest --coverage"
+    },
 		"dependencies": {
 				"@babel/runtime": "^7.10.4",
 				"@testing-library/jest-dom": "^4.2.4",
