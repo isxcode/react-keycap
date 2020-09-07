@@ -85,7 +85,7 @@ const App = () => (
 
 ## 🌈 Features
 
-![img](https://gitee.com/ispong/blog-images/raw/master/design/keycap.png)
+![img](https://gitee.com/ispong/blog-images/raw/master/design/keycap-feature.png)
 
 ## 📄 Documentation
 
