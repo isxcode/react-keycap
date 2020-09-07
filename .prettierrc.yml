@@ -1,5 +1,3 @@
-# 说明文档 https://prettier.io/docs/en/options.html
-
 printWidth: 120 # 最大输入长度
 tabWidth: 2 # 缩进长度为2
 useTabs: false # 使用space缩进

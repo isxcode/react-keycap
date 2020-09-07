@@ -10,22 +10,7 @@ function getCustomColor(): string {
 /**
  * 获取应用对应的className
  */
-export function getClassName(componentType: string, whichList: string[], className: string): string {
+export function getPrefixCls(suffixCls?: string): string {
 
-  let nameSymbol = 'keycap-' + componentType
-  let classNameResult = nameSymbol
-
-  if (whichList != null) {
-    whichList.forEach((val, idx, array) => {
-      if (val != null) {
-        classNameResult = classNameResult + ' ' + nameSymbol + '-' + val
-      }
-    })
-  }
-
-  if (className != null) {
-    classNameResult = classNameResult + ' ' + className
-  }
-
-  return classNameResult
+  return suffixCls ? `keycap-${suffixCls}` : 'keycap'
 }

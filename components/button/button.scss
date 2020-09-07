@@ -1,0 +1,16 @@
+@import '../style/index.scss';
+
+.keycap-btn-default {
+  &:hover {
+    background: purple;
+  }
+  border: none;
+  outline: none;
+  text-align: center;
+  width: 130px;
+  height: 30px;
+  color: black;
+  font-size: 18px;
+  background: linear-gradient($theme-color, $theme-color);
+  border-radius: 4%;
+}
