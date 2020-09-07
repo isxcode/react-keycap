@@ -44,7 +44,7 @@
 
 ## 🚨 Note
 
-Since release `v0.1.0` , Package will not update in npm repository.We will only publish package in [github package repository](https://github.com/ispong/react-keycap/packages).
+Since release `v0.1.1` , Package will not update in npm repository.We will only publish package in [github package repository](https://github.com/ispong/react-keycap/packages).
 
 ## 📦 Installation
 

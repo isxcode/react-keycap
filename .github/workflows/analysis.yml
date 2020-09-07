@@ -1,4 +1,4 @@
-name: react-keycap analysis ci
+name: analysis ci
 
 on:
   push:

@@ -1,4 +1,4 @@
-name: react-keycap release ci
+name: release ci
 
 on:
   release:
