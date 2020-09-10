@@ -5,6 +5,7 @@
 lib
 es
 node_modules
+.npmrc
 
 ### Jest ###
 coverage

@@ -32,6 +32,7 @@
 		"scripts": {
         "build": "node ./scripts/build",
         "test": "jest --coverage",
+        "prettier": "prettier -c --write .",
         "tsc:es": "tsc",
         "cpx:es": "cpx \"./components/**/*.scss\" ./es",
         "babel:cjs": "babel ./es -d ./lib",

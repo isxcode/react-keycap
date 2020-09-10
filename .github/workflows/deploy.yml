@@ -5,12 +5,10 @@ on:
     types: [created]
 
 jobs:
-
   release:
     runs-on: ubuntu-latest
 
     steps:
-
       - name: checkout repository
         uses: actions/checkout@v2
 
@@ -28,8 +26,7 @@ jobs:
           node-version: 12
           registry-url: https://npm.pkg.github.com/
       - run: npm ci
-      - run: npm run tsc:es
-      - run: npm run cpx:es
+      - run: npm run build
       - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
