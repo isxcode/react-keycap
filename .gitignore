@@ -1,15 +1,10 @@
-# idea
+### IntelliJ IDEA ###
 .idea
 
-# build
+### Npm ###
 lib
 es
-
-# node
 node_modules
 
-# logs
-*.log
-
-# coveralls
+### Jest ###
 coverage

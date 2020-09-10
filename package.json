@@ -1,18 +1,18 @@
 {
 		"name": "@ispong/react-keycap",
-    "publishConfig": {
-        "registry": "https://npm.pkg.github.com"
+		"publishConfig": {
+				"registry": "https://npm.pkg.github.com"
 		},
 		"version": "0.1.1",
 		"description": "React rapid development component library.",
 		"readme": "https://github.com/ispong/react-keycap/blob/master/README.md",
 		"private": false,
-    "license": "MIT",
-    "keywords": [
-        "react",
-        "keycap",
-        "react-component"
-    ],
+		"license": "MIT",
+		"keywords": [
+				"react",
+				"keycap",
+				"react-component"
+		],
 		"author": {
 				"name": "ispong",
 				"email": "ispong@outlook.com",
@@ -30,14 +30,13 @@
 				"lib"
 		],
 		"scripts": {
-				"link": "npm link",
-				"tsc:es": "tsc",
-				"cpx:es": "cpx \"./components/**/*.scss\" ./es",
-				"build:commonjs": "babel ./es -d ./lib ",
-				"cpx:commonjs": "cpx \"./components/**/*.scss\" ./lib",
-				"prettier": "prettier -c --write '**/*'",
-        "test": "jest --coverage"
-    },
+        "build": "node ./scripts/build",
+        "test": "jest --coverage",
+        "tsc:es": "tsc",
+        "cpx:es": "cpx \"./components/**/*.scss\" ./es",
+        "babel:cjs": "babel ./es -d ./lib",
+        "cpx:cjs": "cpx \"./components/**/*.scss\" ./lib"
+		},
 		"dependencies": {
 				"@babel/runtime": "^7.10.4",
 				"@testing-library/jest-dom": "^4.2.4",
