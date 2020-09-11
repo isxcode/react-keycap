@@ -11,6 +11,10 @@ $btn-prefix-cls: '#{$keycap-prefix}-btn';
   border-radius: 3px;
   outline: none;
 
+  &-icon {
+    margin: 0 10px 0 0;
+  }
+
   &-default {
     &:hover {
       color: white;

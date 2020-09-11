@@ -37,7 +37,11 @@ const InternalButton: React.ForwardRefRenderFunction<unknown, ButtonProps> = (pr
   )
 
   const iconNode = (
-    icon ? (icon) : ('')
+    icon ? (
+      <span className={`${prefixCls}-icon`}>
+        {icon}
+      </span>
+    ) : ('')
   )
 
   const buttonNode = (
