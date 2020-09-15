@@ -1,34 +1,30 @@
 {
-      "compilerOptions": {
-          "allowJs": true,
-          "checkJs": false,
-          "allowSyntheticDefaultImports": true,
-          "alwaysStrict": true,
-          "baseUrl": "./components",
-          "declaration": true,
-          "declarationDir": "./es",
-          "jsx": "react",
-          "module": "ES6",
-          "target": "ESNext",
-          "reactNamespace": "React",
-          "moduleResolution": "Classic",
-          "noImplicitAny": false,
-          "noStrictGenericChecks": true,
-          "noUnusedLocals": false,
-          "noUnusedParameters": false,
-          "pretty": false,
-          "outDir": "./es",
-          "removeComments": true,
-          "skipDefaultLibCheck": true,
-          "skipLibCheck": true,
-          "sourceMap": false
-      },
-    "include": [
-        "./components"
-    ],
-    "exclude": [
-        "node_modules",
-        "lib",
-        "es"
-    ]
+    "compilerOptions": {
+
+        "allowSyntheticDefaultImports": true,
+        "baseUrl": "./components",
+        "sourceMap": false,
+        "allowJs": true,
+        "checkJs": false,
+        "strictNullChecks": true,
+        "alwaysStrict": true,
+
+        "declaration": true,
+        "declarationDir": "./es",
+
+        "module": "ES6",
+        "jsx": "react",
+        "target": "ESNext",
+        "outDir": "./es",
+
+        "noStrictGenericChecks": false,
+        "noImplicitAny": false,
+        "noUnusedLocals": false,
+        "noUnusedParameters": false,
+
+        "lib": ["dom","es6"],
+        "skipLibCheck": true
+    },
+    "include": ["./components"],
+    "exclude": ["node_modules", "lib", "es"]
 }
