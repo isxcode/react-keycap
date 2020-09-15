@@ -12,6 +12,7 @@ jobs:
       - name: checkout repository
         uses: actions/checkout@v2
         with:
+          repository: ${{ github.repository }}
           ref: 'main'
 
       - name: cache npm
