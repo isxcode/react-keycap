@@ -1,16 +1,53 @@
 @import '../style/index.scss';
 
-.keycap-btn-default {
-  &:hover {
-    background: purple;
-  }
-  border: none;
-  outline: none;
+$btn-prefix-cls: '#{$keycap-prefix}-btn';
+
+.#{$btn-prefix-cls} {
+
+  padding: 10px 20px;
+  height: 40px;
+  font-size: 15px;
   text-align: center;
-  width: 130px;
-  height: 30px;
-  color: black;
-  font-size: 18px;
-  background: linear-gradient($theme-color, $theme-color);
-  border-radius: 4%;
+  border-radius: 3px;
+  outline: none;
+
+  &-icon {
+    margin: 0 10px 0 0;
+  }
+
+  &-default {
+    &:hover {
+      color: white;
+      background: $theme-deep-color;
+    }
+    border: 1px solid black;
+    color: black;
+    background: white;
+  }
+
+  &-primary {
+    &:hover {
+      background: $theme-deep-color;
+    }
+    border: none;
+    color: white;
+    background: $theme-color;
+  }
+
+  &-danger {
+    &:hover {
+      background: white;
+    }
+    border: 1px solid red;
+    color: red;
+    background: white;
+  }
+
+  &-ghost {
+
+  }
+
+  &-dashed {
+
+  }
 }

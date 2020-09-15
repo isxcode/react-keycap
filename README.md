@@ -14,12 +14,12 @@
 
 <div align="center">
 
-[![github commit][commit-image]][commit-url] [![github release][release-image]][release-url] [![github license][license-image]][license-url] [![github workflow][workflow-image]][workflow-url] [![lgtm][lgtm-image]][lgtm-url] [![coveralls][coveralls-image]][coveralls-url]
+[![github commit][commit-image]][commit-url] [![npm release][npm-image]][npm-url] [![github license][license-image]][license-url] [![github workflow][workflow-image]][workflow-url] [![lgtm][lgtm-image]][lgtm-url] [![coveralls][coveralls-image]][coveralls-url]
 
 [commit-image]: https://img.shields.io/github/last-commit/ispong/react-keycap?style=flat-square
 [commit-url]: https://github.com/ispong/react-keycap/graphs/commit-activity
-[release-image]: https://img.shields.io/github/v/release/ispong/react-keycap?style=flat-square
-[release-url]: https://github.com/ispong/react-keycap/releases
+[npm-img]: https://img.shields.io/npm/v/react-keycap?style=flat-square
+[npm-url]: https://www.npmjs.com/package/react-keycap
 [license-image]: https://img.shields.io/github/license/ispong/react-keycap?style=flat-square
 [license-url]: https://github.com/ispong/react-keycap/blob/master/LICENSE
 [workflow-image]: https://img.shields.io/github/workflow/status/ispong/react-keycap/release%20ci?style=flat-square
@@ -42,39 +42,24 @@
 [fork-url]: https://github.com/ispong/react-keycap/network/members
 </div>
 
-## 🚨 Note
-
-Since release `v0.1.1` , Package will not update in npm repository.We will only publish package in [github package repository](https://github.com/ispong/react-keycap/packages).
-
 ## 📦 Installation
 
 #### For Npm
 
-- edit `.npmrc` file
-
-```text
-registry=https://registry.npmjs.org/
-
-@ispong:registry=https://npm.pkg.github.com
-//npm.pkg.github.com/:_authToken=135ea292b89b891ac9d155ad2e87f1abdf1db1fa
-```
-
-- run command
-
 ```shell script
-npm install @ispong/react-keycap --save
+npm install react-keycap --save
 ```
 
 #### For yarn
 
-```text
+```shell script
 yarn add react-keycap
 ```
 
 ## 🔨 Start Up
 
 ```javascript
-import { Button } from '@ispong/react-keycap'
+import { Button } from 'react-keycap'
 
 const App = () => (
   <>
