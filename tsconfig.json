@@ -1,8 +1,10 @@
 {
     "compilerOptions": {
-
         "allowSyntheticDefaultImports": true,
-        "baseUrl": "./components",
+        "baseUrl": "./",
+        "paths": {
+            "keycap": ["components/*"]
+        },
         "sourceMap": false,
         "allowJs": true,
         "checkJs": false,
@@ -12,17 +14,18 @@
         "declaration": true,
         "declarationDir": "./es",
 
-        "module": "ES6",
         "jsx": "react",
-        "target": "ESNext",
+        "target": "es6",
+        "lib": ["dom","es2017"],
         "outDir": "./es",
+        "moduleResolution": "node",
+        "esModuleInterop": true,
+        "experimentalDecorators": true,
 
         "noStrictGenericChecks": false,
         "noImplicitAny": false,
         "noUnusedLocals": false,
         "noUnusedParameters": false,
-
-        "lib": ["dom","es6"],
         "skipLibCheck": true
     },
     "include": ["./components"],
