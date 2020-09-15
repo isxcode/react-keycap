@@ -5,23 +5,12 @@
 		"readme": "https://github.com/ispong/react-keycap/blob/master/README.md",
 		"private": false,
 		"license": "MIT",
-		"bugs": {
-				"url": "https://github.com/ispong/react-keycap/issues"
-		},
 		"keywords": [
-				"react",
-				"react-keycap",
-				"keycap"
-		],
-		"contributors": [
-				"ispong"
-		],
-		"author": {
-				"name": "ispong",
-				"email": "ispong@outlook.com",
-				"url": "https://ispong.gitee.io"
-		},
-		"homepage": "github.com/ispong/react-keycap/wiki",
+        "react",
+        "react-keycap",
+        "keycap"
+    ],
+    "homepage": "github.com/ispong/react-keycap/wiki",
 		"repository": {
 				"type": "git",
 				"url": "https://github.com/ispong/react-keycap"
