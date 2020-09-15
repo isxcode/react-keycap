@@ -12,7 +12,7 @@ jobs:
       - name: checkout repository
         uses: actions/checkout@v2
         with:
-          repository: 'main'
+          ref: 'main'
 
       - name: cache npm
         uses: actions/cache@v2
