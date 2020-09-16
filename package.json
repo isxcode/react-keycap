@@ -1,5 +1,5 @@
 {
-		"name": "react-keycap",
+		"name": "@ispong/react-keycap",
 		"version": "0.1.2",
 		"description": "React rapid development component library.",
 		"readme": "https://github.com/ispong/react-keycap/blob/master/README.md",
