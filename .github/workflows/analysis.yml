@@ -33,7 +33,7 @@ jobs:
         config-file: ./.github/codeql/codeql-config.yml
 
     - name: npm build dist
-      uses: actions/setup-node@v1
+      uses: actions/setup-node@v2.1.1
       with:
         node-version: 12
     - run: npm ci
