@@ -1,7 +1,7 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import classNames from 'classnames'
-import './button.scss'
-import { getPrefixCls } from '../common/common'
+import { ConfigContext } from '../provider/context'
+import './style/button.scss'
 
 export type ButtonType = 'default' | 'primary' | 'ghost' | 'dashed' | 'danger'
 export type ButtonSize = 'large' | 'middle' | 'small'
@@ -25,6 +25,8 @@ const InternalButton: React.ForwardRefRenderFunction<unknown, ButtonProps> = (pr
   } = props
 
   const buttonRef = (ref as any) || React.createRef<HTMLElement>()
+
+  const { getPrefixCls } = useContext(ConfigContext)
 
   const prefixCls = getPrefixCls('btn')
 

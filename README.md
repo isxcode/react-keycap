@@ -18,7 +18,7 @@
 
 [commit-image]: https://img.shields.io/github/last-commit/ispong/react-keycap?style=flat-square
 [commit-url]: https://github.com/ispong/react-keycap/graphs/commit-activity
-[npm-img]: https://img.shields.io/npm/v/react-keycap?style=flat-square
+[npm-image]: https://img.shields.io/npm/v/react-keycap?style=flat-square
 [npm-url]: https://www.npmjs.com/package/react-keycap
 [license-image]: https://img.shields.io/github/license/ispong/react-keycap?style=flat-square
 [license-url]: https://github.com/ispong/react-keycap/blob/master/LICENSE
@@ -47,7 +47,7 @@
 #### For Npm
 
 ```shell script
-npm install react-keycap --save
+npm install react-keycap -save
 ```
 
 #### For yarn
@@ -75,7 +75,6 @@ const App = () => (
 ## 📄 Documentation
 
 You can find the spring-oxygen documentation [on the website](https://ispong.gitee.io/tags/react-keycap).
-
 ***
 
 #### Thanks for free JetBrains Open Source license

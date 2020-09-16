@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import './modal.scss'
+import './style/modal.scss'
 
 export interface BaseModalProps {
   isOpen?: boolean

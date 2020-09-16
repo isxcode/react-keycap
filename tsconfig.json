@@ -10,10 +10,8 @@
         "checkJs": false,
         "strictNullChecks": true,
         "alwaysStrict": true,
-
         "declaration": true,
         "declarationDir": "./es",
-
         "jsx": "react",
         "target": "es6",
         "lib": ["dom","es2017"],
@@ -21,7 +19,6 @@
         "moduleResolution": "node",
         "esModuleInterop": true,
         "experimentalDecorators": true,
-
         "noStrictGenericChecks": false,
         "noImplicitAny": false,
         "noUnusedLocals": false,
@@ -29,5 +26,5 @@
         "skipLibCheck": true
     },
     "include": ["./components"],
-    "exclude": ["node_modules", "lib", "es"]
+    "exclude": ["node_modules", "lib", "es", "**/_test_"]
 }
