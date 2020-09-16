@@ -39,9 +39,6 @@ jobs:
 
       - name: publish to github
         uses: actions/setup-node@v1
-        with:
-          registry-url: 'https://npm.pkg.github.com'
-          scope: '@ispong'
       - run: echo 'registry=https://npm.pkg.github.com' > ~/.npmrc
       - run: npm publish
         env:
