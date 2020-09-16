@@ -29,16 +29,18 @@ jobs:
       - run: npm ci
       - run: npm run build
 
-#      - name: publish to npm
-#        uses: actions/setup-node@v1
-#        with:
-#          registry-url: 'https://registry.npmjs.org'
-#      - run: npm publish
-#        env:
-#          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+      - name: publish to npm
+        uses: actions/setup-node@v1
+        with:
+          registry-url: 'https://registry.npmjs.org'
+      - run: npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       - name: publish to github
         uses: actions/setup-node@v1
-      - run: echo 'registry=https://npm.pkg.github.com/ispong' > ~/.npmrc
-      - run: echo '//npm.pkg.github.com/:_authToken=${{ secrets.GITHUB_TOKEN }}' >> ~/.npmrc
+      - run: |
+          echo 'registry=https://npm.pkg.github.com/ispong' > ~/.npmrc
+          echo '//npm.pkg.github.com/:_authToken=${{ secrets.GITHUB_TOKEN }}' >> ~/.npmrc
+          node ./.github/action/gpr.js
       - run: npm publish
