@@ -59,11 +59,11 @@ yarn add react-keycap
 ## 🔨 Start Up
 
 ```javascript
-import { Button } from 'react-keycap'
+import { Input } from 'react-keycap'
 
 const App = () => (
   <>
-    <Button type="primary">Hello React Keycap</Button>
+    <Input type="primary">Hello React Keycap</Input>
   </>
 );
 ```

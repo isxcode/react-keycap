@@ -1,11 +1,11 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import Button from '../button'
+import Input from '../input'
 
 test('test button component', () => {
 
   const component = renderer.create(
-    <Button>test</Button>,
+    <Input>test</Input>
   )
 
   let tree = component.toJSON()

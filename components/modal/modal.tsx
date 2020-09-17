@@ -1,40 +1,39 @@
-import React, { useEffect, useState } from 'react'
+import React, { useContext } from 'react'
 import './style/modal.scss'
+import { ConfigContext } from '../provider/context'
+import classNames from 'classnames'
 
 export interface BaseModalProps {
   isOpen?: boolean
-  onAfterOpen?: () => void
-  onRequestClose?: () => void
 }
 
-export type ModalProps = Partial<BaseModalProps & React.HTMLAttributes<HTMLDivElement>>
+export type ModalProps = BaseModalProps & React.ButtonHTMLAttributes<HTMLButtonElement>
 
 const InternalModal: React.ForwardRefRenderFunction<unknown, ModalProps> = (props, ref) => {
-
-  const [user, setUser] = useState(0)
 
   const {
     children,
     isOpen,
-    onRequestClose,
-    onAfterOpen
+    className
   } = props
 
-  const buttonRef = (ref as any) || React.createRef<HTMLElement>()
+  const modalRef = (ref as any) || React.createRef<HTMLElement>()
 
-  const modalNode = isOpen ? (
-    'ceshi'
-  ) : (
-    'xxx'
+  const { getPrefixCls } = useContext(ConfigContext)
+
+  const prefixCls = getPrefixCls('modal')
+
+  const modalCls = classNames(
+    prefixCls,
   )
 
-  function demo(){
-
-  }
-
-  // useEffect(() => {
-  //   demo()
-  // }, [buttonRef])
+  const modalNode = isOpen ? (
+    <div className={modalCls}>
+      <div className={'keycap-modal-portal'}>
+        {children}
+      </div>
+    </div>
+  ) : null
 
   return <>
     {modalNode}
@@ -42,5 +41,11 @@ const InternalModal: React.ForwardRefRenderFunction<unknown, ModalProps> = (prop
 }
 
 const Modal = React.forwardRef<unknown, ModalProps>(InternalModal)
+
+Modal.displayName = 'Modal'
+
+Modal.defaultProps = {
+  isOpen: false,
+}
 
 export default Modal
