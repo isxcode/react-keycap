@@ -26,7 +26,7 @@
 				"build": "node ./scripts/build",
 				"test": "jest",
 				"prettier": "prettier -c --write .",
-				"tsc:es": "tsc",
+				"tsc": "tsc",
 				"babel:cjs": "babel ./es -d ./lib",
 				"cpx": "cpx \"./components/**/*.scss\" ./es && cpx \"./components/**/*.scss\" ./lib",
 				"add-react": "npm link ../leo-day-react/node_modules/react"

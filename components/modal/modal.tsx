@@ -28,8 +28,8 @@ const InternalModal: React.ForwardRefRenderFunction<unknown, ModalProps> = (prop
   )
 
   const modalNode = isOpen ? (
-    <div className={modalCls}>
-      <div className={'keycap-modal-portal'}>
+    <div className={modalCls} ref={modalRef}>
+      <div className={className}>
         {children}
       </div>
     </div>
