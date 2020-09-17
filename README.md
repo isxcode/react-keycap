@@ -71,6 +71,7 @@ const App = () => (
 ## 🌈 Features
 
 ![img](https://gitee.com/ispong/blog-images/raw/master/design/keycap-feature.png)
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fispong%2Freact-keycap.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fispong%2Freact-keycap?ref=badge_shield)
 
 ## 📄 Documentation
 
@@ -80,3 +81,5 @@ You can find the spring-oxygen documentation [on the website](https://ispong.git
 #### Thanks for free JetBrains Open Source license
 
 <a href="https://www.jetbrains.com/?from=react-keycap" target="_blank"><img src="https://gitee.com/ispong/blog-images/raw/master/idea/jetbrains-3.png" height="100" alt="jetbrains"/></a>
+
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fispong%2Freact-keycap.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fispong%2Freact-keycap?ref=badge_large)
