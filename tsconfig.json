@@ -1,28 +1,38 @@
 {
     "compilerOptions": {
+
+        "baseUrl": "./",
+        "paths": {
+            "react-keycap": ["components/index.tsx"],
+            "react-keycap/es/*": ["components/*"]
+        },
+
         "allowSyntheticDefaultImports": true,
-        "sourceMap": false,
-        "allowJs": true,
-        "checkJs": false,
         "strictNullChecks": true,
         "alwaysStrict": true,
-        "declaration": true,
-        "declarationDir": "./es",
+        "allowJs": true,
+
+        "noUnusedParameters": true,
+        "noUnusedLocals": true,
+        "noImplicitAny": true,
+        "skipLibCheck": true,
+
         "jsx": "react",
-        "target": "es6",
-        "lib": ["dom","es2017"],
+        "target": "esnext",
         "outDir": "./es",
         "moduleResolution": "node",
-        "esModuleInterop": true,
         "experimentalDecorators": true,
-        "noStrictGenericChecks": false,
-        "noImplicitAny": false,
-        "noUnusedLocals": false,
-        "noUnusedParameters": false,
-        "skipLibCheck": true
+        "lib": [
+            "dom",
+            "esnext"
+        ],
+
+        "declaration": true,
+        "declarationDir": "./es"
     },
     "include": [
-        "./components"
+        "./components",
+        "./utils"
     ],
     "exclude": [
         "node_modules",
