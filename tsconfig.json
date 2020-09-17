@@ -31,8 +31,7 @@
         "declarationDir": "./es"
     },
     "include": [
-        "./components",
-        "./utils"
+        "./components"
     ],
     "exclude": [
         "node_modules",

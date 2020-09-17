@@ -47,7 +47,7 @@
 #### For Npm
 
 ```shell script
-npm install react-keycap -save
+npm install react-keycap
 ```
 
 #### For yarn
