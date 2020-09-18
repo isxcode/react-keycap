@@ -14,67 +14,61 @@
 
 <div align="center">
 
-[![github commit][commit-image]][commit-url] [![npm release][npm-image]][npm-url] [![github license][license-image]][license-url] [![github workflow][workflow-image]][workflow-url] [![lgtm][lgtm-image]][lgtm-url] [![coveralls][coveralls-image]][coveralls-url]
+[![Github Build](https://github.com/ispong/react-keycap/workflows/build/badge.svg?branch=main)](https://github.com/ispong/react-keycap/actions)
+[![Npm Version](https://img.shields.io/npm/v/@ispong/react-keycap)](https://www.npmjs.com/package/@ispong/react-keycap)
+[![Language grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/ispong/react-keycap.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/ispong/react-keycap/context:javascript)
+[![Coverage Status](https://coveralls.io/repos/github/ispong/react-keycap/badge.svg?branch=latest)](https://coveralls.io/github/ispong/react-keycap?branch=latest)
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fispong%2Freact-keycap.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fispong%2Freact-keycap?ref=badge_shield)
 
-[commit-image]: https://img.shields.io/github/last-commit/ispong/react-keycap?style=flat-square
-[commit-url]: https://github.com/ispong/react-keycap/graphs/commit-activity
-[npm-image]: https://img.shields.io/npm/v/react-keycap?style=flat-square
-[npm-url]: https://www.npmjs.com/package/react-keycap
-[license-image]: https://img.shields.io/github/license/ispong/react-keycap?style=flat-square
-[license-url]: https://github.com/ispong/react-keycap/blob/master/LICENSE
-[workflow-image]: https://img.shields.io/github/workflow/status/ispong/react-keycap/release%20ci?style=flat-square
-[workflow-url]: https://github.com/ispong/react-keycap/actions?query=workflow%3A%22release+ci%22
-[lgtm-image]: https://img.shields.io/lgtm/grade/javascript/github/ispong/react-keycap?style=flat-square
-[lgtm-url]: https://lgtm.com/projects/g/ispong/react-keycap/latest/files/?sort=name&dir=ASC&mode=heatmap
-[coveralls-image]: https://img.shields.io/coveralls/github/ispong/react-keycap?style=flat-square
-[coveralls-url]: https://coveralls.io/github/ispong/react-keycap?branch=latest
 </div>
 
-<div align="center">
+## 🐣 Introduce
 
-[![github watch][watch-image]][watch-url] [![github star][star-image]][star-url] [![github fork][fork-image]][fork-url]
-
-[watch-image]: https://img.shields.io/github/watchers/ispong/react-keycap?style=social
-[watch-url]: https://github.com/ispong/react-keycap/watchers
-[star-image]: https://img.shields.io/github/stars/ispong/react-keycap?style=social
-[star-url]: https://github.com/ispong/react-keycap/stargazers
-[fork-image]: https://img.shields.io/github/forks/ispong/react-keycap?style=social
-[fork-url]: https://github.com/ispong/react-keycap/network/members
-</div>
+to do white something 目前只用于个人项目,欢迎使用但不推荐,跟人更新可能不太及时
 
 ## 📦 Installation
 
-#### For Npm
+- Npm
 
 ```shell script
-npm install react-keycap
+npm install @ispong/react-keycap
 ```
 
-#### For yarn
+- Yarn
 
 ```shell script
-yarn add react-keycap
+yarn add @ispong/react-keycap
 ```
 
-## 🔨 Start Up
+## 🔨 Usage
 
 ```javascript
-import { Input } from 'react-keycap'
+import { Button } from '@ispong/react-keycap'
 
 const App = () => (
   <>
-    <Input type="primary">Hello React Keycap</Input>
+    <Button type={'primary'} label={'Hello'} />
   </>
-);
+)
+
+const mountNode = document.getElementById('root')
+ReactDOM.render(<App/>, mountNode)
 ```
+
+## 📄 Documentation
+
 
 ## 🌈 Features
 
 ![img](https://gitee.com/ispong/blog-images/raw/master/design/keycap-feature.png)
 
-## 📄 Documentation
+You can find the react-keycap documentation [on the website](https://github.com/ispong/react-keycap/wiki).
 
-You can find the spring-oxygen documentation [on the website](https://ispong.gitee.io/tags/react-keycap).
+
+## 🤝 Contributing
+
+## ❤️Sponsors and Backers
+
 ***
 
 #### Thanks for free JetBrains Open Source license

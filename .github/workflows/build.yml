@@ -1,11 +1,11 @@
-name: release ci
+name: build
 
 on:
   release:
     types: [created]
 
 jobs:
-  release:
+  build:
     runs-on: ubuntu-latest
 
     steps:
@@ -42,5 +42,4 @@ jobs:
       - run: |
           echo 'registry=https://npm.pkg.github.com/ispong' > ~/.npmrc
           echo '//npm.pkg.github.com/:_authToken=${{ secrets.GITHUB_TOKEN }}' >> ~/.npmrc
-          node ./.github/action/gpr.js
       - run: npm publish
