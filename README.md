@@ -14,6 +14,7 @@
 
 <div align="center">
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/68c2c5c17c8b485c979fa0e0a47d1bcd)](https://app.codacy.com/manual/ispong/react-keycap?utm_source=github.com&utm_medium=referral&utm_content=ispong/react-keycap&utm_campaign=Badge_Grade_Dashboard)
 [![Github Build](https://github.com/ispong/react-keycap/workflows/build/badge.svg)](https://github.com/ispong/react-keycap/actions?query=workflow%3A%22build%22)
 [![Npm Version](https://img.shields.io/npm/v/@ispong/react-keycap)](https://www.npmjs.com/package/@ispong/react-keycap)
 [![Language grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/ispong/react-keycap.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/ispong/react-keycap/context:javascript)
