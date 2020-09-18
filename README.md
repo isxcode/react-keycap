@@ -16,8 +16,8 @@
 
 [![Github Build](https://github.com/ispong/react-keycap/workflows/build/badge.svg)](https://github.com/ispong/react-keycap/actions?query=workflow%3A%22build%22)
 [![Npm Version](https://img.shields.io/npm/v/@ispong/react-keycap)](https://www.npmjs.com/package/@ispong/react-keycap)
-[![Language grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/ispong/react-keycap.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/ispong/react-keycap/context:javascript)
-[![Coverage Status](https://coveralls.io/repos/github/ispong/react-keycap/badge.svg?branch=latest)](https://coveralls.io/github/ispong/react-keycap?branch=latest)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/6fef88f911ab41f4af03d74ea6ea449a)](https://www.codacy.com/manual/ispong/react-keycap?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=ispong/react-keycap&amp;utm_campaign=Badge_Grade)
+[![Coverage Status](https://coveralls.io/repos/github/ispong/react-keycap/badge.svg?branch=main)](https://coveralls.io/github/ispong/react-keycap?branch=main)
 [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fispong%2Freact-keycap.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fispong%2Freact-keycap?ref=badge_shield)
 
 </div>

@@ -7,7 +7,6 @@ on:
 
 jobs:
   build:
-    name: build
     runs-on: ubuntu-latest
 
     strategy:
@@ -37,16 +36,23 @@ jobs:
         languages: ${{ matrix.language }}
         config-file: ./.github/codeql/codeql-config.yml
 
-    - name: npm build dist
+    - name: npm build
       uses: actions/setup-node@v2.1.1
       with:
         node-version: 12
-    - run: npm ci
-    - run: npm run build
-    - run: npm test
+    - run: |
+        npm ci
+        npm run build
+        npm test
 
-    - name: perform codeql analysis
+    - name: codeql analysis
       uses: github/codeql-action/analyze@v1
+
+    - name: codacy analysis
+      uses: codacy/codacy-analysis-cli-action@1.0.0
+      with:
+        directory: ./components
+        max-allowed-issues: 20
 
     - name: coveralls analysis
       uses: coverallsapp/github-action@v1.1.2
