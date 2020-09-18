@@ -5,12 +5,12 @@ updates:
     directory: '/'
     schedule:
       interval: 'daily'
-      time: '12:00'
-    open-pull-requests-limit: 10
+      timezone: "Asia/Shanghai"
+      time: '09:00'
 
   - package-ecosystem: 'npm'
     directory: '/'
     schedule:
       interval: 'daily'
-      time: '12:00'
-    open-pull-requests-limit: 10
+      timezone: "Asia/Shanghai"
+      time: '09:00'

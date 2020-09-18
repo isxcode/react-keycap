@@ -1,12 +1,12 @@
-name: analysis ci
+name: ✅ test
 
 on:
   push:
     branches:
-      - latest
+      - main
 
 jobs:
-  analysis:
+  test:
     runs-on: ubuntu-latest
 
     strategy:

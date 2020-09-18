@@ -1,4 +1,4 @@
-name: build
+name: 📦 build
 
 on:
   release:
@@ -23,7 +23,7 @@ jobs:
             ${{ runner.os }}-node-
 
       - name: npm build
-        uses: actions/setup-node@v2.1.1
+        uses: actions/setup-node@v1
         with:
           node-version: 12
       - run: npm ci
