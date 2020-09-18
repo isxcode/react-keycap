@@ -7,6 +7,7 @@ paths:
   - components
 
 paths-ignore:
+  - coverage
   - node_modules
   - ~/.npm
   - '**/*.test.js.snap'
