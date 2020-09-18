@@ -14,7 +14,7 @@
 
 <div align="center">
 
-[![Github Build](https://github.com/ispong/react-keycap/workflows/build/badge.svg?branch=main)](https://github.com/ispong/react-keycap/actions)
+[![Github Build](https://github.com/ispong/react-keycap/workflows/%F0%9F%93%A6%20build/badge.svg)](https://github.com/ispong/react-keycap/actions?query=workflow%3A%22%F0%9F%93%A6+build%22)
 [![Npm Version](https://img.shields.io/npm/v/@ispong/react-keycap)](https://www.npmjs.com/package/@ispong/react-keycap)
 [![Language grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/ispong/react-keycap.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/ispong/react-keycap/context:javascript)
 [![Coverage Status](https://coveralls.io/repos/github/ispong/react-keycap/badge.svg?branch=latest)](https://coveralls.io/github/ispong/react-keycap?branch=latest)
@@ -24,7 +24,6 @@
 
 ## 🐣 Introduce
 
-to do white something 目前只用于个人项目,欢迎使用但不推荐,跟人更新可能不太及时
 
 ## 📦 Installation
 
