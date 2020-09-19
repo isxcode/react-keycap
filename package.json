@@ -27,7 +27,6 @@
     "tsc": "tsc",
     "babel": "babel es -d lib",
     "cpx": "cpx \"./components/**/*.scss\" ./es && cpx \"./components/**/*.scss\" ./lib",
-    "add-react": "npm link ../leo-day-react/node_modules/react",
     "prettier": "prettier -c --write ."
   },
   "dependencies": {

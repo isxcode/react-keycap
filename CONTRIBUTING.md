@@ -1,4 +1,4 @@
-## Welcome to contribute react-keycap project
+## Welcome to contribute react-keycap
 
 Hello! Thank you for taking the time to contribute! If you want to join us, please send email to **ispong@outlook.com**.
 
@@ -6,7 +6,7 @@ Hello! Thank you for taking the time to contribute! If you want to join us, plea
 
 ### Start Project
 
-1. Make Workspace
+1. Make new workspace
 
 ```shell script
 mkdir keycap
@@ -29,7 +29,6 @@ cd keycap
 git clone -b latest https://github.com/ispong/react-keycap.git
 cd react-keycap
 npm install
-npm link ../leo-day-react/node_modules/react
 npm run build
 npm link
 ```

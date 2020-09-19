@@ -2,10 +2,11 @@
 .idea
 
 ### Npm ###
+node_modules
+
+### Package ###
 lib
 es
-node_modules
-.npmrc
 
 ### Jest ###
 coverage
