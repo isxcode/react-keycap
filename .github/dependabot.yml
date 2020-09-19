@@ -11,7 +11,7 @@ updates:
 
   - package-ecosystem: 'npm'
     directory: '/'
-    target-branch: 'main'
+    target-branch: 'latest'
     schedule:
       interval: 'daily'
       timezone: "Asia/Shanghai"
