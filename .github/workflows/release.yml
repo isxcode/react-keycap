@@ -26,20 +26,20 @@ jobs:
         uses: actions/setup-node@v2.1.1
         with:
           node-version: 12
-      - run: npm ci
-      - run: npm run build
+      - run: |
+          npm ci
+          npm run build
 
       - name: publish to npm
         uses: actions/setup-node@v2.1.1
-        with:
-          registry-url: 'https://registry.npmjs.org'
-      - run: npm publish --access publish
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+      - run: |
+          echo 'registry=https://registry.npmjs.org' > ~/.npmrc
+          echo '//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}' >> ~/.npmrc
+          npm publish --access publish
 
       - name: publish to github
         uses: actions/setup-node@v2.1.1
       - run: |
           echo 'registry=https://npm.pkg.github.com/ispong' > ~/.npmrc
           echo '//npm.pkg.github.com/:_authToken=${{ secrets.GITHUB_TOKEN }}' >> ~/.npmrc
-      - run: npm publish
+          npm publish
