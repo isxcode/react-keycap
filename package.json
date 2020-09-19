@@ -1,6 +1,6 @@
 {
   "name": "@ispong/react-keycap",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "React rapid development component library.",
   "homepage": "https://github.com/ispong/react-keycap/wiki",
   "private": false,
@@ -8,8 +8,7 @@
   "keywords": [
     "react",
     "component",
-    "typescripts",
-    "react-keycap"
+    "typescripts"
   ],
   "repository": {
     "type": "git",
@@ -32,6 +31,8 @@
     "prettier": "prettier -c --write ."
   },
   "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.9.0",
     "classnames": "^2.2.6",
     "@babel/runtime": "^7.11.2"
   },
@@ -51,16 +52,7 @@
     "identity-obj-proxy": "^3.0.0",
     "jest": "^26.1.0",
     "prettier": "^2.1.2",
-    "react": "^16.13.1",
-    "react-dom": "^16.9.0",
     "react-test-renderer": "^16.13.1",
     "typescript": "^4.0.2"
-  },
-  "bugs": {
-    "url": "https://github.com/ispong/react-keycap/issues"
-  },
-  "directories": {
-    "lib": "lib"
-  },
-  "author": "ispong"
+  }
 }

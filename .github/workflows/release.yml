@@ -33,7 +33,7 @@ jobs:
         uses: actions/setup-node@v2.1.1
         with:
           registry-url: 'https://registry.npmjs.org'
-      - run: npm publish
+      - run: npm publish --access publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
