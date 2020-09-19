@@ -43,7 +43,7 @@ jobs:
     - run: |
         npm ci
         npm run build
-        npm test
+    - run: npm test
 
     - name: codeql analysis
       uses: github/codeql-action/analyze@v1
