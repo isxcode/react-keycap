@@ -19,6 +19,7 @@
 [![Language grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/ispong/react-keycap.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/ispong/react-keycap/context:javascript)
 [![Coverage Status](https://coveralls.io/repos/github/ispong/react-keycap/badge.svg?branch=main)](https://coveralls.io/github/ispong/react-keycap?branch=main)
 [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fispong%2Freact-keycap.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fispong%2Freact-keycap?ref=badge_shield)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/ispong/react-keycap/blob/main/CONTRIBUTING.md)
 
 </div>
 
@@ -32,7 +33,7 @@
 
 ## 🐣 Introduce
 
-[`React Keycap`](https://github.com/ispong/react-keycap) is UI component library for [React](https://reactjs.org/).
+[React Keycap](https://github.com/ispong/react-keycap) is UI component library for [React](https://reactjs.org/).
 It is important to state that this project is personally developed and maintained, and enterprise projects are recommended to be used with caution.
 Welcome to develop together, hope to become an enterprise-level development UI library.
 
@@ -69,11 +70,7 @@ ReactDOM.render(<App/>, mountNode)
 
 ## 📄 Documentation
 
-You can find the [`React Keycap`](https://github.com/ispong/react-keycap) documentation [on the website](https://github.com/ispong/react-keycap/wiki).
-
-## 🤝 Contributions
-
-Please see the [contributing guidelines](https://github.com/ispong/react-keycap/blob/main/CONTRIBUTING.md) for details .
+You can find the React Keycap documentation [on the website](https://github.com/ispong/react-keycap/wiki).
 
 ## 🌈 Features
 
