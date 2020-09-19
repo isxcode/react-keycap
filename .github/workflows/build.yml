@@ -3,7 +3,7 @@ name: build
 on:
   push:
     branches:
-      - main
+      - latest
 
 jobs:
   build:
@@ -47,12 +47,6 @@ jobs:
 
     - name: codeql analysis
       uses: github/codeql-action/analyze@v1
-
-    - name: codacy analysis
-      uses: codacy/codacy-analysis-cli-action@1.0.0
-      with:
-        directory: /home/runner/work/react-keycap/react-keycap/components
-        max-allowed-issues: 20
 
     - name: coveralls analysis
       uses: coverallsapp/github-action@v1.1.2

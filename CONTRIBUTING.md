@@ -2,6 +2,8 @@
 
 Hello! Thank you for taking the time to contribute! If you want to join us, please send email to **ispong@outlook.com**.
 
+**Working on your first Pull Request?** You can learn how from this *free* series [How to Contribute to an Open Source Project on GitHub](https://egghead.io/series/how-to-contribute-to-an-open-source-project-on-github)
+
 ## Here has two project
 
 ### react-keycap
@@ -46,10 +48,9 @@ npm start
 
 pull your code to `latest` branch,we will ,don't pull to `main` branch
 
-**Working on your first Pull Request?** You can learn how from this *free* series [How to Contribute to an Open Source Project on GitHub](https://egghead.io/series/how-to-contribute-to-an-open-source-project-on-github)
 
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
 
 
-Contributions
-Yes please! See the contributing guidelines for details.
+
+Yes please!

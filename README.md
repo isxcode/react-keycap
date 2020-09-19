@@ -14,39 +14,52 @@
 
 <div align="center">
 
-[![Github Build](https://github.com/ispong/react-keycap/workflows/build/badge.svg)](https://github.com/ispong/react-keycap/actions?query=workflow%3A%22build%22)
-[![Npm Version](https://img.shields.io/npm/v/@ispong/react-keycap)](https://www.npmjs.com/package/@ispong/react-keycap)
-[![Codacy Badge](https://app.codacy.com/project/badge/Grade/6fef88f911ab41f4af03d74ea6ea449a)](https://www.codacy.com/manual/ispong/react-keycap?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=ispong/react-keycap&amp;utm_campaign=Badge_Grade)
+[![Github Build](https://github.com/ispong/react-keycap/workflows/build/badge.svg?branch=latest)](https://github.com/ispong/react-keycap/actions?query=workflow%3A%22build%22)
+[![Npm Version](https://badge.fury.io/js/%40ispong%2Freact-keycap.svg)](https://www.npmjs.com/package/@ispong/react-keycap)
+[![Language grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/ispong/react-keycap.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/ispong/react-keycap/context:javascript)
 [![Coverage Status](https://coveralls.io/repos/github/ispong/react-keycap/badge.svg?branch=main)](https://coveralls.io/github/ispong/react-keycap?branch=main)
 [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fispong%2Freact-keycap.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fispong%2Freact-keycap?ref=badge_shield)
 
 </div>
 
+<div align="center">
+
+[![Github Watch](https://img.shields.io/github/watchers/ispong/react-keycap?style=social)](https://github.com/ispong/react-keycap/watchers)
+[![Github Star](https://img.shields.io/github/stars/ispong/react-keycap?style=social)](https://github.com/ispong/react-keycap/stargazers)
+[![Github Fork](https://img.shields.io/github/forks/ispong/react-keycap?style=social)](https://github.com/ispong/react-keycap/network/members)
+
+</div>
+
 ## 🐣 Introduce
 
+[`React Keycap`](https://github.com/ispong/react-keycap) is UI component library for [React](https://reactjs.org/).
+It is important to state that this project is personally developed and maintained, and enterprise projects are recommended to be used with caution.
+Welcome to develop together, hope to become an enterprise-level development UI library.
 
 ## 📦 Installation
 
-- Npm
+- for Npm
 
 ```shell script
-npm install @ispong/react-keycap
+npm install @ispong/react-keycap --save-dev
 ```
 
-- Yarn
+- for Yarn
 
 ```shell script
-yarn add @ispong/react-keycap
+yarn add @ispong/react-keycap --dev
 ```
 
 ## 🔨 Usage
 
 ```javascript
+import React from 'react'
+import ReactDOM from 'react-dom'
 import { Button } from '@ispong/react-keycap'
 
 const App = () => (
   <>
-    <Button type={'primary'} label={'Hello'} />
+    <Button which={'primary'} label={'Hello'} />
   </>
 )
 
@@ -56,17 +69,15 @@ ReactDOM.render(<App/>, mountNode)
 
 ## 📄 Documentation
 
+You can find the [`React Keycap`](https://github.com/ispong/react-keycap) documentation [on the website](https://github.com/ispong/react-keycap/wiki).
+
+## 🤝 Contributions
+
+Please see the [contributing guidelines](https://github.com/ispong/react-keycap/blob/main/CONTRIBUTING.md) for details .
 
 ## 🌈 Features
 
 ![img](https://gitee.com/ispong/blog-images/raw/master/design/keycap-feature.png)
-
-You can find the react-keycap documentation [on the website](https://github.com/ispong/react-keycap/wiki).
-
-
-## 🤝 Contributing
-
-## ❤️Sponsors and Backers
 
 ***
 
