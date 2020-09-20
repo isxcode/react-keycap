@@ -3,6 +3,7 @@
 
 ### Npm ###
 node_modules
+.npmrc
 
 ### Package ###
 lib
