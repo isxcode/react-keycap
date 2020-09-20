@@ -3,6 +3,7 @@ updates:
 
   - package-ecosystem: 'github-actions'
     directory: '/'
+    target-branch: 'main'
     schedule:
       interval: 'daily'
       timezone: "Asia/Shanghai"
@@ -10,6 +11,7 @@ updates:
 
   - package-ecosystem: 'npm'
     directory: '/'
+    target-branch: 'latest'
     schedule:
       interval: 'daily'
       timezone: "Asia/Shanghai"
