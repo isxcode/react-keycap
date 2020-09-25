@@ -15,18 +15,17 @@
 <div align="center">
 
 [![Github Build](https://github.com/ispong/react-keycap/workflows/build/badge.svg?branch=latest)](https://github.com/ispong/react-keycap/actions?query=workflow%3A%22build%22)
-[![Npm Version](https://badge.fury.io/js/%40ispong%2Freact-keycap.svg)](https://www.npmjs.com/package/@ispong/react-keycap)
+[![Npm Version](https://img.shields.io/npm/v/@ispong/react-keycap)](https://www.npmjs.com/package/@ispong/react-keycap)
 [![Language grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/ispong/react-keycap.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/ispong/react-keycap/context:javascript)
-[![Coverage Status](https://coveralls.io/repos/github/ispong/react-keycap/badge.svg?branch=main)](https://coveralls.io/github/ispong/react-keycap?branch=main)
+[![Coverage Status](https://coveralls.io/repos/github/ispong/react-keycap/badge.svg?branch=latest)](https://coveralls.io/github/ispong/react-keycap?branch=latest)
 [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fispong%2Freact-keycap.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fispong%2Freact-keycap?ref=badge_shield)
 
 </div>
 
 <div align="center">
 
-[![Wiki](https://img.shields.io/badge/Wiki-docs-orange)](https://github.com/ispong/react-keycap/wiki)
+[![Wiki](https://img.shields.io/badge/Wiki-docs-important)](https://github.com/ispong/react-keycap/wiki)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/ispong/react-keycap/blob/main/CONTRIBUTING.md)
-[![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/ispong/react-keycap)
 
 </div>
 
@@ -40,9 +39,10 @@
 
 ## 🐣 Intro
 
-[React Keycap](https://github.com/ispong/react-keycap) is UI component library for [React](https://reactjs.org/).
-It is important to state that this project is personally developed and maintained, and enterprise projects are recommended to be used with caution.
-Welcome to develop together, hope to become an enterprise-level development UI library.
+[React Keycap](https://github.com/ispong/react-keycap) is rapid development component library for [React](https://reactjs.org/).
+**Important statement, enterprise-level development is recommended to be used with caution!**
+For instructions on use, please check the [Wiki](https://github.com/ispong/react-keycap/wiki) carefully.
+Welcome to develop and maintain together, please follow the [github development](https://github.com/ispong/react-keycap/blob/main/CONTRIBUTING.md) specification.
 
 ## 📦 Installation
 
@@ -74,10 +74,6 @@ const App = () => (
 const mountNode = document.getElementById('root')
 ReactDOM.render(<App/>, mountNode)
 ```
-
-## 🌈 Features
-
-![img](https://gitee.com/ispong/blog-images/raw/master/design/keycap-feature.png)
 
 ***
 

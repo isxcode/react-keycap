@@ -1,48 +1,25 @@
-## Welcome to contribute react-keycap
+## Welcome to contribute React Keycap
 
 Hello! Thank you for taking the time to contribute! If you want to join us, please send email to **ispong@outlook.com**.
 
 #### [How to Contribute to an Open Source Project on GitHub](https://egghead.io/series/how-to-contribute-to-an-open-source-project-on-github)
 
-### Start Project
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 
-1. Make new workspace
+### Installation Prerequisites
 
-```shell script
-mkdir keycap
-```
+- Git 2.22.+
+- Node 12.16.+
+- Npm 6.13.+
 
-2. Clone `leo-day-react` and Start
+### Build and Package
 
-```shell script
-cd keycap
-git clone -b latest https://github.com/ispong/leo-day-react.git
-cd leo-day-react
-npm install
-npm start
-```
-
-3. Clone `react-keycap` and Build
+- for Npm
 
 ```shell script
-cd keycap
 git clone -b latest https://github.com/ispong/react-keycap.git
 cd react-keycap
 npm install
 npm run build
 npm link
-```
-
-4. Use Local `react-keycap` and Debug
-
-```shell script
-cd leo-day-react
-npm link @ispong/react-keycap
-npm start
-```
-
-5. Visit `leo-day-react` Demo Url
-
-```
-http://localhost:80/demo
 ```

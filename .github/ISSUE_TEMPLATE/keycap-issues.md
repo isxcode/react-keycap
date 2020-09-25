@@ -1,9 +1,9 @@
 ---
-name: for react-keycap
-about: only about react-keycap issues
+name: React Keycap Issues
+about: Only for react keycap issues
 title:
-labels: react-keycap
-assignees: ispong
+labels:
+assignees:
 ---
 
 <!--
