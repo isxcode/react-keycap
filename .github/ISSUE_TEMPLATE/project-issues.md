@@ -2,7 +2,7 @@
 name: React Keycap Project
 about: For new features
 title:
-labels:
+labels: project
 assignees: ispong
 ---
 

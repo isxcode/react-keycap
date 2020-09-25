@@ -26,6 +26,7 @@
 
 [![Wiki](https://img.shields.io/badge/Wiki-docs-important)](https://github.com/ispong/react-keycap/wiki)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/ispong/react-keycap/blob/main/CONTRIBUTING.md)
+[![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/ispong/react-keycap)
 
 </div>
 
