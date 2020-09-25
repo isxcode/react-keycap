@@ -1,13 +1,14 @@
 import React from 'react';
-import renderer from 'react-test-renderer';
+import ReactDOM from 'react-dom'
 import Button from '../button'
 
 test('test button component', () => {
 
-  const component = renderer.create(
-    <Button>test</Button>,
+  const mountNode = document.createElement('div')
+
+  const buttonNode = (
+    <Button>test</Button>
   )
 
-  let tree = component.toJSON()
-  expect(tree).toMatchSnapshot()
+  ReactDOM.render(buttonNode, mountNode)
 })
