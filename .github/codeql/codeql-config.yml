@@ -8,6 +8,8 @@ paths:
 
 paths-ignore:
   - coverage
+  - lib
+  - es
   - node_modules
   - .npm
   - '**/*.test.js.snap'

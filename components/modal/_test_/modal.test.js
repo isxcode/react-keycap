@@ -1,13 +1,18 @@
-import React from 'react';
-import renderer from 'react-test-renderer';
-import Modal from '../modal'
+import React from 'react'
+import ReactDOM from 'react-dom'
+import Modal from '../../modal/modal'
 
-test('test button component', () => {
+test('test modal component', () => {
 
-  const component = renderer.create(
-    <Modal>test</Modal>
+  const mountNode = document.createElement('div')
+
+  const buttonNode = (
+    <Modal>
+      <div>
+        show modal
+      </div>
+    </Modal>
   )
 
-  let tree = component.toJSON()
-  expect(tree).toMatchSnapshot()
+  ReactDOM.render(buttonNode, mountNode)
 })
