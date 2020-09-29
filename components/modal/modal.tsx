@@ -7,13 +7,13 @@ export interface BaseModalProps {
   isOpen?: boolean
 }
 
-export type ModalProps = BaseModalProps & React.ButtonHTMLAttributes<HTMLButtonElement>
+export type ModalProps = BaseModalProps & React.HTMLAttributes<HTMLDivElement>
 
 const InternalModal: React.ForwardRefRenderFunction<unknown, ModalProps> = (props, ref) => {
 
   const {
-    children,
     isOpen,
+    children,
     className
   } = props
 
@@ -25,13 +25,18 @@ const InternalModal: React.ForwardRefRenderFunction<unknown, ModalProps> = (prop
 
   const modalCls = classNames(
     prefixCls,
+    className
   )
 
   const modalNode = isOpen ? (
     <div className={modalCls} ref={modalRef}>
-      <div className={className}>
-        {children}
+
+      <div>
+
       </div>
+
+      {children}
+
     </div>
   ) : null
 
