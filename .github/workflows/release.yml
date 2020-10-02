@@ -23,7 +23,7 @@ jobs:
             ${{ runner.os }}-node-
 
       - name: npm build
-        uses: actions/setup-node@v2.1.1
+        uses: actions/setup-node@v2.1.2
         with:
           node-version: 12
       - run: |
@@ -31,14 +31,14 @@ jobs:
           npm run build
 
       - name: publish to npm
-        uses: actions/setup-node@v2.1.1
+        uses: actions/setup-node@v2.1.2
       - run: |
           echo 'registry=https://registry.npmjs.org' > ~/.npmrc
           echo '//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}' >> ~/.npmrc
           npm publish --access publish
 
       - name: publish to github
-        uses: actions/setup-node@v2.1.1
+        uses: actions/setup-node@v2.1.2
       - run: |
           echo 'registry=https://npm.pkg.github.com/ispong' > ~/.npmrc
           echo '//npm.pkg.github.com/:_authToken=${{ secrets.GITHUB_TOKEN }}' >> ~/.npmrc
