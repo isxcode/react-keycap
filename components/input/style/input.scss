@@ -3,6 +3,26 @@
 $input-prefix-cls: '#{$keycap-prefix}-input';
 
 .#{$input-prefix-cls} {
+  width: 300px;
+  height: 40px;
+  outline-style: none;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 15px;
+}
 
-
+input {
+  &:hover {
+    border-color: $theme-color;
+  }
+  &:focus{
+    box-shadow:0 0 5px rgba(81, 203, 238, 1);
+    -webkit-box-shadow:0 0 5px rgba(81, 203, 238, 1);
+    -moz-box-shadow:0 0 5px rgba(81, 203, 238, 1);
+  }
+  ::-webkit-input-placeholder {
+    position: relative;
+    left: 10px;
+  }
+  padding-left:10px;
 }

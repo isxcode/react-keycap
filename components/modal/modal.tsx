@@ -4,7 +4,7 @@ import { ConfigContext } from '../provider/context'
 import classNames from 'classnames'
 
 export interface BaseModalProps {
-  isOpen?: boolean
+  isOpen: boolean
 }
 
 export type ModalProps = BaseModalProps & React.HTMLAttributes<HTMLDivElement>
@@ -12,31 +12,25 @@ export type ModalProps = BaseModalProps & React.HTMLAttributes<HTMLDivElement>
 const InternalModal: React.ForwardRefRenderFunction<unknown, ModalProps> = (props, ref) => {
 
   const {
-    isOpen,
     children,
-    className
+    className,
+    isOpen
   } = props
 
   const modalRef = (ref as any) || React.createRef<HTMLElement>()
 
   const { getPrefixCls } = useContext(ConfigContext)
 
-  const prefixCls = getPrefixCls('modal')
-
-  const modalCls = classNames(
-    prefixCls,
-    className
+  const modalContainCls = classNames(
+    className,
+    getPrefixCls('modal-contain'),
   )
 
   const modalNode = isOpen ? (
-    <div className={modalCls} ref={modalRef}>
-
-      <div>
-
+    <div className={getPrefixCls('modal')} ref={modalRef}>
+      <div className={modalContainCls}>
+        {children}
       </div>
-
-      {children}
-
     </div>
   ) : null
 
@@ -50,7 +44,7 @@ const Modal = React.forwardRef<unknown, ModalProps>(InternalModal)
 Modal.displayName = 'Modal'
 
 Modal.defaultProps = {
-  isOpen: false,
+  isOpen: true,
 }
 
 export default Modal

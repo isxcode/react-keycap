@@ -1,0 +1,20 @@
+@import '../../style/index';
+
+$alter-prefix-cls: '#{$keycap-prefix}-alter';
+
+.#{$alter-prefix-cls} {
+
+  &-info {
+    width: 100px;
+    height: 30px;
+    background: greenyellow;
+    color: white;
+  }
+
+  &-error {
+    width: 100px;
+    height: 30px;
+    background: indianred;
+    color: white;
+  }
+}

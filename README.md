@@ -64,11 +64,11 @@ yarn add @ispong/react-keycap --dev
 ```javascript
 import React from 'react'
 import ReactDOM from 'react-dom'
-import { Button } from '@ispong/react-keycap'
+import { Alter } from '@ispong/react-keycap'
 
 const App = () => (
   <>
-    <Button which={'primary'} label={'Hello'} />
+    <Alter which={'primary'} label={'Hello'} />
   </>
 )
 

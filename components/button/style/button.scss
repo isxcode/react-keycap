@@ -25,6 +25,15 @@ $btn-prefix-cls: '#{$keycap-prefix}-btn';
     background: white;
   }
 
+  &-font {
+    &:hover {
+      color: $theme-deep-color;
+    }
+    border: none;
+    color: black;
+    background: white;
+  }
+
   &-primary {
     &:hover {
       background: $theme-deep-color;
