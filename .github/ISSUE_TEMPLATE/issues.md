@@ -1,9 +1,6 @@
 ---
 name: React Keycap Issues
 about: Only for react keycap issues
-title:
-labels:
-assignees:
 ---
 
 <!--

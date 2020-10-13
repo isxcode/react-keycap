@@ -1,4 +1,4 @@
-name: "codeql config"
+name: 'codeql config'
 
 queries:
   - uses: security-and-quality
@@ -7,11 +7,11 @@ paths:
   - components
 
 paths-ignore:
+  - '**/*.test.js'
+  - '**/*.test.js.snap'
+  - '**/*.scss'
+  - ~/.npm
+  - node_modules
   - coverage
   - lib
   - es
-  - node_modules
-  - .npm
-  - '**/*.test.js.snap'
-  - '**/*.test.js'
-  - '**/*.scss'

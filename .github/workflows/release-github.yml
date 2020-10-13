@@ -1,0 +1,44 @@
+name: 🔖 release for github
+
+on:
+  release:
+    types: [created]
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node:
+          - '12'
+
+    steps:
+
+      - name: checkout repository
+        uses: actions/checkout@v2
+        with:
+          ref: main
+
+      - name: cache npm
+        uses: actions/cache@v2
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+
+      - name: npm build
+        uses: actions/setup-node@v2.1.2
+        with:
+          node-version: ${{ matrix.node }}
+      - run: |
+          npm ci
+          npm run build
+
+      - name: publish to github
+        uses: actions/setup-node@v2.1.2
+      - run: |
+          echo 'registry=https://npm.pkg.github.com/ispong' > ~/.npmrc
+          echo '//npm.pkg.github.com/:_authToken=${{ secrets.GITHUB_TOKEN }}' >> ~/.npmrc
+      - run: npm publish
