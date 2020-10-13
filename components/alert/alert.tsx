@@ -1,31 +1,29 @@
 import React, { useContext } from 'react'
 import classNames from 'classnames'
 import { ConfigContext } from '../provider/context'
-import './style/alter.scss'
+import './style/alert.scss'
 
-export type AlterType = 'error' | 'warning' | 'success'
+export type AlertType = 'info' | 'error' | 'warning' | 'success'
 
-export interface BaseAlterProps {
+export interface BaseAlertProps {
+  which: AlertType
   message?: string
-  which?: AlterType
 }
 
-export type AlterProps = BaseAlterProps & React.HtmlHTMLAttributes<HTMLButtonElement>
+export type AlertProps = BaseAlertProps & React.HTMLAttributes<HTMLDivElement>
 
-const InternalAlter: React.ForwardRefRenderFunction<unknown, AlterProps> = (props, ref) => {
+const InternalAlter: React.ForwardRefRenderFunction<unknown, AlertProps> = (props, ref) => {
 
   const {
     className,
     which,
-    message
+    message,
   } = props
 
   const alterRef = (ref as any) || React.createRef<HTMLElement>()
 
   const { getPrefixCls } = useContext(ConfigContext)
-
   const prefixCls = getPrefixCls('alter')
-
   const alterCls = classNames(
     prefixCls,
     className,
@@ -45,12 +43,13 @@ const InternalAlter: React.ForwardRefRenderFunction<unknown, AlterProps> = (prop
   </>
 }
 
-const Alter = React.forwardRef<unknown, AlterProps>(InternalAlter)
+const Alert = React.forwardRef<unknown, AlertProps>(InternalAlter)
 
-Alter.displayName = 'Alter'
+Alert.displayName = 'Alert'
 
-Alter.defaultProps = {
-  which: 'success',
+Alert.defaultProps = {
+  which: 'info',
+  message: ''
 }
 
-export default Alter
+export default Alert

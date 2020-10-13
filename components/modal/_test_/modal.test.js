@@ -1,18 +1,24 @@
-import React from 'react'
+import React, { useState } from 'react'
 import ReactDOM from 'react-dom'
 import Modal from '../../modal/modal'
 
 test('test modal component', () => {
 
+  // const [isOpen, setIsOpen] = useState(true)
+
+  function closeModal() {
+
+  }
+
   const mountNode = document.createElement('div')
 
-  const buttonNode = (
-    <Modal>
+  const modalNode = (
+    <Modal isOpen={true} closeModal={closeModal}>
       <div>
-        show modal
+        test modal
       </div>
     </Modal>
   )
 
-  ReactDOM.render(buttonNode, mountNode)
+  ReactDOM.render(modalNode, mountNode)
 })

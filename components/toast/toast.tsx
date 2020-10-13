@@ -1,37 +1,46 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import Alert from '../alert/alert'
 import './style/toast.scss'
-import Alter from '../alter/alter'
 
-const div = document.createElement('div')
-
-function addNotice(notice: any) {
-  if (notice.duration > 0) {
-    setTimeout(() => {
-      ReactDOM.unmountComponentAtNode(div)
-      document.body.removeChild(div)
-    }, notice.duration)
-  }
-}
+const defaultDuration = 1000
 
 function createToast(notice: any) {
 
+  const div = document.createElement('div')
   document.body.appendChild(div)
-  ReactDOM.render(<Alter className={'keycap-toast'} which={notice.type} message={notice.content} />, div)
+  ReactDOM.render(
+    <div className={'keycap-toast-div'}>
+      <Alert className={'keycap-toast-alert'} which={notice.type} message={notice.content} />
+    </div>, div)
 
-  addNotice(notice)
+  setTimeout(() => {
+    ReactDOM.unmountComponentAtNode(div)
+    document.body.removeChild(div)
+  }, notice.duration)
+
 }
 
-const notice = (type: string, content: string, duration: number = 2000) => {
+const notice = (type: string, content: string, duration: number) => {
 
   return createToast({ type, content, duration })
 }
 
 export default {
-  error(message: string) {
-    return notice('error', message, 2000)
-  },
+
   info(message: string) {
-    return notice('info', message, 2000)
+    return notice('info', message, defaultDuration)
+  },
+
+  error(message: string) {
+    return notice('error', message, defaultDuration)
+  },
+
+  warning(message: string) {
+    return notice('warning', message, defaultDuration)
+  },
+
+  success(message: string) {
+    return notice('success', message, defaultDuration)
   },
 }
