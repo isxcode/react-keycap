@@ -1,9 +1,11 @@
 name: 🔖 release for github
 
 on:
-  pull_request:
-    branches:
-      - latest
+  workflow_dispatch:
+    inputs:
+      sure:
+        description: 'are you sure release to github repository'
+        required: true
 
 jobs:
   release:
