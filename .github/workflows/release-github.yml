@@ -1,8 +1,11 @@
 name: 🔖 release for github
 
 on:
-  release:
-    types: [created]
+  workflow_dispatch:
+    inputs:
+      sure:
+        description: 'are you sure release to github repository'
+        required: true
 
 jobs:
   release:
@@ -18,7 +21,7 @@ jobs:
       - name: checkout repository
         uses: actions/checkout@v2
         with:
-          ref: main
+          ref: latest
 
       - name: cache npm
         uses: actions/cache@v2
