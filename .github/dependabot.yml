@@ -1,18 +1,22 @@
+# https://docs.github.com/en/free-pro-team@latest/github/administering-a-repository/keeping-your-dependencies-updated-automatically
+
 version: 2
 updates:
 
   - package-ecosystem: 'github-actions'
     directory: '/'
     target-branch: 'latest'
+    open-pull-requests-limit: 30
     schedule:
-      interval: 'daily'
+      interval: 'monthly'
       timezone: "Asia/Shanghai"
       time: '09:00'
 
   - package-ecosystem: 'npm'
     directory: '/'
     target-branch: 'latest'
+    open-pull-requests-limit: 30
     schedule:
-      interval: 'daily'
+      interval: 'monthly'
       timezone: "Asia/Shanghai"
       time: '09:00'

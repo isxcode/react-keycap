@@ -11,3 +11,6 @@ es
 
 ### Jest ###
 coverage
+
+### Storybook ###
+storybook-static

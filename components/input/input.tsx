@@ -19,7 +19,6 @@ const InternalInput: React.ForwardRefRenderFunction<unknown, InputProps> = (prop
     className,
     children,
     which,
-    icon,
   } = props
 
   const inputRef = (ref as any) || React.createRef<HTMLElement>()
@@ -34,17 +33,8 @@ const InternalInput: React.ForwardRefRenderFunction<unknown, InputProps> = (prop
     },
   )
 
-  const iconNode = (
-    icon ? (
-      <span className={`${prefixCls}-icon`}>
-        {icon}
-      </span>
-    ) : ('')
-  )
-
   const inputNode = (
     <input {...props} className={inputCls} ref={inputRef}>
-      {iconNode}
       {children}
     </input>
   )

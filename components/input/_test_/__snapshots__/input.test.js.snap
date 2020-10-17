@@ -5,7 +5,6 @@ exports[`test button component 1`] = `
   className="keycap-input keycap-input-default"
   which="default"
 >
-  
   test
 </input>
 `;
