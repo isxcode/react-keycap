@@ -1,0 +1,32 @@
+@import '../../style/index';
+
+$textArea-prefix-cls: '#{$keycap-prefix}-textArea';
+
+.#{$textArea-prefix-cls} {
+
+  overflow-y: auto;
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  ::-webkit-input-placeholder {
+    position: relative;
+    left: 15px;
+  }
+  padding: 15px;
+
+  font-size: 15px;
+
+  outline: none;
+
+  &-default {
+    &:hover {
+      border-color: $theme-color;
+    }
+    &:focus {
+      box-shadow: 0 0 5px rgba(176, 127, 241, 1);
+      -webkit-box-shadow: 0 0 5px rgba(176, 127, 241, 1);
+      -moz-box-shadow: 0 0 5px rgba(176, 127, 241, 1);
+    }
+  }
+}

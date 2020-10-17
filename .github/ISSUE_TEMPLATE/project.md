@@ -1,7 +1,7 @@
 ---
 name: React Keycap Project
-about: For new features
-title:
+about: Only for react keycap new features
+title: [New Feature]
 labels: project
 assignees: ispong
 ---
@@ -10,6 +10,5 @@ assignees: ispong
 !!! New Features  !!!
 -->
 **Describe the features**
-
 
 ***

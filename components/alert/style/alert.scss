@@ -1,0 +1,35 @@
+@import '../../style/index';
+
+$alter-prefix-cls: '#{$keycap-prefix}-alter';
+$alter-info-color: #e6f7ff;
+$alter-error-color: #fff2f0;
+$alter-warning-color: #fffbe6;
+$alter-success-color: #f6ffed;
+
+.#{$alter-prefix-cls} {
+
+  width: 400px;
+  height: 40px;
+  border: none;
+  border-radius: 8px;
+
+  line-height: 40px;
+  text-align: center;
+
+  &-info {
+    background: $alter-info-color;
+  }
+
+  &-error {
+    background: $alter-error-color;
+  }
+
+  &-warning {
+    background: $alter-warning-color;
+  }
+
+  &-success {
+    background: $alter-success-color;
+  }
+
+}

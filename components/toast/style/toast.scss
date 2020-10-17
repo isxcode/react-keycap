@@ -1,0 +1,13 @@
+.keycap-toast-div {
+  display: flex;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 99999;
+  position: fixed;
+  flex-direction: column;
+}
+
+.keycap-toast-alert{
+  margin: 20px auto;
+}

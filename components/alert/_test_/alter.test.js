@@ -1,13 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom'
-import Button from '../button'
+import Alert from '../alert'
 
-test('test button component', () => {
+test('test alter component', () => {
 
   const mountNode = document.createElement('div')
 
   const buttonNode = (
-    <Button>test</Button>
+    <Alert>test</Alert>
   )
 
   ReactDOM.render(buttonNode, mountNode)
