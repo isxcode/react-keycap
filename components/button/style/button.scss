@@ -4,7 +4,7 @@ $btn-prefix-cls: '#{$keycap-prefix}-btn';
 
 .#{$btn-prefix-cls} {
 
-  padding: 10px 20px;
+  padding: 8px 20px;
   height: 40px;
   font-size: 15px;
   text-align: center;
@@ -25,6 +25,15 @@ $btn-prefix-cls: '#{$keycap-prefix}-btn';
     background: white;
   }
 
+  &-primary {
+    &:hover {
+      background: $theme-color;
+    }
+    border: none;
+    color: white;
+    background: $theme-deep-color;
+  }
+
   &-font {
     &:hover {
       color: $theme-deep-color;
@@ -32,15 +41,6 @@ $btn-prefix-cls: '#{$keycap-prefix}-btn';
     border: none;
     color: black;
     background: white;
-  }
-
-  &-primary {
-    &:hover {
-      background: $theme-deep-color;
-    }
-    border: none;
-    color: white;
-    background: $theme-color;
   }
 
   &-danger {

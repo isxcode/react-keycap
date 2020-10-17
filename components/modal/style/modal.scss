@@ -2,24 +2,6 @@
 
 $modal-prefix-cls: '#{$keycap-prefix}-modal';
 
-.#{$modal-prefix-cls} {
-  margin: 10% auto;
-  background: white;
-  width: 400px;
-  height: 300px;
-}
-
-//.#{$modal-prefix-cls}-contain {
-//  width: 500px;
-//  height: 400px;
-//  position: fixed;
-//  top: 50%;
-//  left: 50%;
-//  transform: translate(-50%, -50%);
-//  background: white;
-//  z-index: 1001
-//}
-
 .keycap-modal-div {
   position: fixed;
   top: 0;
@@ -28,9 +10,34 @@ $modal-prefix-cls: '#{$keycap-prefix}-modal';
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 999;
+
+  overflow-y: auto;
+  ::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 .keycap-modal-cross-btn {
+  float: right;
+  font-size: 20px;
+}
 
+.keycap-modal-title-span {
+  line-height: 40px;
+  width: 100px;
+  margin-left: 30px;
+  font-size: 15px;
+}
 
+.keycap-modal-title-div {
+  width: 100%;
+  height: 40px;
+  border-bottom: lightgrey solid 1px;
+}
+
+.#{$modal-prefix-cls} {
+  margin: 8% auto;
+  background: white;
+  width: 400px;
+  height: 450px;
 }

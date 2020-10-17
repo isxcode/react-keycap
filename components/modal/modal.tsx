@@ -11,6 +11,7 @@ export interface BaseModalProps {
   isOpen: boolean
   closeModal: () => void
   hasCross?: boolean
+  title?: string
 }
 
 export type ModalProps = BaseModalProps & React.HTMLAttributes<HTMLDivElement>
@@ -23,7 +24,8 @@ const InternalModal: React.ForwardRefRenderFunction<unknown, ModalProps> = (prop
     isOpen,
     closeModal,
     which,
-    hasCross
+    hasCross,
+    title
   } = props
 
   const modalRef = (ref as any) || React.createRef<HTMLElement>()
@@ -40,15 +42,21 @@ const InternalModal: React.ForwardRefRenderFunction<unknown, ModalProps> = (prop
 
   function HasCross() {
     return hasCross ?
-      <Button className={'keycap-modal-cross-btn'} which={'font'} label={'x'} onClick={() => {
-        closeModal()
-      }} /> : null
+      <div className={'keycap-modal-title-div'}>
+        <span className={'keycap-modal-title-span'}>
+          {title}
+        </span>
+        <Button className={'keycap-modal-cross-btn'} which={'font'} label={'x'} onClick={() => {
+          closeModal()
+        }} />
+      </div>
+      : null
   }
 
   const modalNode = isOpen ? (
     <div className={'keycap-modal-div'}>
-      <HasCross />
       <div className={modalCls} ref={modalRef}>
+        <HasCross />
         {children}
       </div>
     </div>

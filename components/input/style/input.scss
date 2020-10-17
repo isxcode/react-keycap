@@ -16,9 +16,9 @@ input {
     border-color: $theme-color;
   }
   &:focus{
-    box-shadow:0 0 5px rgba(81, 203, 238, 1);
-    -webkit-box-shadow:0 0 5px rgba(81, 203, 238, 1);
-    -moz-box-shadow:0 0 5px rgba(81, 203, 238, 1);
+    box-shadow:0 0 5px rgba(176, 127, 241, 1);
+    -webkit-box-shadow:0 0 5px rgba(176, 127, 241, 1);
+    -moz-box-shadow:0 0 5px rgba(176, 127, 241, 1);
   }
   ::-webkit-input-placeholder {
     position: relative;
