@@ -3,7 +3,7 @@ name: build
 on:
   pull_request:
     branches:
-      - main
+      - latest
 
 jobs:
   build:
@@ -14,6 +14,8 @@ jobs:
       matrix:
         language:
           - javascript
+        node:
+          - '12'
 
     steps:
 
@@ -35,9 +37,9 @@ jobs:
         config-file: ./.github/codeql/codeql-config.yml
 
     - name: npm build
-      uses: actions/setup-node@v2.1.1
+      uses: actions/setup-node@v2.1.2
       with:
-        node-version: 12
+        node-version: ${{ matrix.node }}
     - run: |
         npm ci
         npm run build
@@ -50,4 +52,3 @@ jobs:
       uses: coverallsapp/github-action@v1.1.2
       with:
         github-token: ${{ secrets.GITHUB_TOKEN }}
-        path-to-lcov: ./coverage/lcov.info

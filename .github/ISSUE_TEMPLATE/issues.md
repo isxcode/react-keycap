@@ -1,9 +1,6 @@
 ---
 name: React Keycap Issues
 about: Only for react keycap issues
-title:
-labels:
-assignees:
 ---
 
 <!--
@@ -11,12 +8,10 @@ assignees:
 -->
 **Describe the question**
 
-
 <!--
 !!! For show your code. !!!
 -->
 **To Show code**
-
 
 <!--
 !!! Add any other context about the problem here. !!!

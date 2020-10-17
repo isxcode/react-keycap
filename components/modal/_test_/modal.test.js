@@ -1,13 +1,24 @@
-import React from 'react';
-import renderer from 'react-test-renderer';
-import Modal from '../modal'
+import React, { useState } from 'react'
+import ReactDOM from 'react-dom'
+import Modal from '../../modal/modal'
 
-test('test button component', () => {
+test('test modal component', () => {
 
-  const component = renderer.create(
-    <Modal>test</Modal>
+  // const [isOpen, setIsOpen] = useState(true)
+
+  function closeModal() {
+
+  }
+
+  const mountNode = document.createElement('div')
+
+  const modalNode = (
+    <Modal isOpen={true} closeModal={closeModal}>
+      <div>
+        test modal
+      </div>
+    </Modal>
   )
 
-  let tree = component.toJSON()
-  expect(tree).toMatchSnapshot()
+  ReactDOM.render(modalNode, mountNode)
 })
