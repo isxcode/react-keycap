@@ -5,7 +5,7 @@ updates:
 
   - package-ecosystem: 'github-actions'
     directory: '/'
-    target-branch: 'latest'
+    target-branch: 'main'
     open-pull-requests-limit: 30
     schedule:
       interval: 'monthly'
@@ -14,7 +14,7 @@ updates:
 
   - package-ecosystem: 'npm'
     directory: '/'
-    target-branch: 'latest'
+    target-branch: 'main'
     open-pull-requests-limit: 30
     schedule:
       interval: 'monthly'
