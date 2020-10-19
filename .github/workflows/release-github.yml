@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
     inputs:
       sure:
-        description: 'are you sure release to github repository'
+        description: 'release to github repository'
         required: true
 
 jobs:
