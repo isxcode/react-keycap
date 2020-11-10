@@ -1,22 +1,21 @@
+// ts website -- https://www.typescriptlang.org/
+// ts config -- https://www.typescriptlang.org/tsconfig/
+
 {
     "compilerOptions": {
-
-        "baseUrl": "./",
+       "baseUrl": "./",
         "paths": {
             "react-keycap": ["components/index.tsx"],
             "react-keycap/es/*": ["components/*"]
         },
-
         "allowSyntheticDefaultImports": true,
         "strictNullChecks": true,
         "alwaysStrict": true,
         "allowJs": true,
-
         "noUnusedParameters": true,
         "noUnusedLocals": true,
         "noImplicitAny": true,
         "skipLibCheck": true,
-
         "jsx": "react",
         "target": "esnext",
         "outDir": "./es",
@@ -26,7 +25,6 @@
             "dom",
             "esnext"
         ],
-
         "declaration": true,
         "declarationDir": "./es"
     },

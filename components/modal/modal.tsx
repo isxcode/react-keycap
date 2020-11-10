@@ -7,7 +7,7 @@ import Button from '../button/button'
 export type ModalType = 'none' | 'cross'
 
 export interface BaseModalProps {
-  which?: ModalType
+  cap?: ModalType
   isOpen: boolean
   closeModal: () => void
   hasCross?: boolean
@@ -23,7 +23,7 @@ const InternalModal: React.ForwardRefRenderFunction<unknown, ModalProps> = (prop
     className,
     isOpen,
     closeModal,
-    which,
+    cap,
     hasCross,
     title
   } = props
@@ -36,7 +36,7 @@ const InternalModal: React.ForwardRefRenderFunction<unknown, ModalProps> = (prop
     className,
     prefixCls,
     {
-      [`${prefixCls}-${which}`]: which,
+      [`${prefixCls}-${cap}`]: cap,
     },
   )
 
@@ -46,7 +46,7 @@ const InternalModal: React.ForwardRefRenderFunction<unknown, ModalProps> = (prop
         <span className={'keycap-modal-title-span'}>
           {title}
         </span>
-        <Button className={'keycap-modal-cross-btn'} which={'font'} label={'x'} onClick={() => {
+        <Button className={'keycap-modal-cross-btn'} cap={'font'} label={'x'} onClick={() => {
           closeModal()
         }} />
       </div>
@@ -72,7 +72,7 @@ const Modal = React.forwardRef<unknown, ModalProps>(InternalModal)
 Modal.displayName = 'Modal'
 
 Modal.defaultProps = {
-  which: 'none',
+  cap: 'none',
   isOpen: true,
   hasCross: true,
 }

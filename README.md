@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://github.com/ispong/react-keycap">
-    <img alt="react-keycap" width="500" src="https://gitee.com/ispong/blog-images/raw/master/design/keycap.png">
+    <img alt="react-keycap" width="600" src="https://gitee.com/ispong/blog-images/raw/master/design/keycap.png">
   </a>
 </p>
 
@@ -64,11 +64,13 @@ yarn add @ispong/react-keycap --dev
 ```javascript
 import React from 'react'
 import ReactDOM from 'react-dom'
-import { Alert } from '@ispong/react-keycap'
+import { Button, Toast } from '@ispong/react-keycap'
 
 const App = () => (
   <>
-    <Alert which={'primary'} label={'Hello'} />
+    <Button cap={'primary'} label={'Hello'} onClick={() => {
+      Toast.info('Welcome to use React-Keycap !!!')
+    }} />
   </>
 )
 
