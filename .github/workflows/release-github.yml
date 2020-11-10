@@ -6,6 +6,7 @@ on:
       version:
         description: 'version number like 0.1.7-alpha-x'
         required: true
+        default: '0.1.7-alpha-1'
 
 jobs:
   release:
