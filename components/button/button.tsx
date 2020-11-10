@@ -8,7 +8,7 @@ export type ButtonSize = 'large' | 'middle' | 'small'
 
 export interface BaseButtonProps {
   label?: string
-  which?: ButtonType
+  cap?: ButtonType
   size?: ButtonSize
   icon?: React.ReactNode
 }
@@ -20,7 +20,7 @@ const InternalButton: React.ForwardRefRenderFunction<unknown, ButtonProps> = (pr
   const {
     className,
     children,
-    which,
+    cap,
     icon,
     label
   } = props
@@ -35,7 +35,7 @@ const InternalButton: React.ForwardRefRenderFunction<unknown, ButtonProps> = (pr
     prefixCls,
     className,
     {
-      [`${prefixCls}-${which}`]: which,
+      [`${prefixCls}-${cap}`]: cap,
     },
   )
 
@@ -68,7 +68,7 @@ const Button = React.forwardRef<unknown, ButtonProps>(InternalButton)
 Button.displayName = 'Button'
 
 Button.defaultProps = {
-  which: 'default',
+  cap: 'default',
 }
 
 export default Button

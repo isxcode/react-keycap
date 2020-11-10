@@ -33,6 +33,7 @@ jobs:
         with:
           node-version: ${{ matrix.node }}
       - run: |
+          node scripts/version.js --version=${{ github.GITHUB_REF }} --type=npm
           npm ci
           npm run build
 

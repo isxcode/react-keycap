@@ -7,7 +7,7 @@ export type TextAreaType = 'default' | 'primary' | 'ghost' | 'dashed' | 'danger'
 
 export interface BaseTextAreaProps {
   label?: string
-  which?: TextAreaType
+  cap?: TextAreaType
 }
 
 export type TextAreaProps = BaseTextAreaProps & React.TextareaHTMLAttributes<HTMLTextAreaElement>
@@ -17,7 +17,7 @@ const InternalTextArea: React.ForwardRefRenderFunction<unknown, TextAreaProps> =
   const {
     className,
     children,
-    which,
+    cap,
   } = props
 
   const textAreaRef = (ref as any) || React.createRef<HTMLElement>()
@@ -30,7 +30,7 @@ const InternalTextArea: React.ForwardRefRenderFunction<unknown, TextAreaProps> =
     prefixCls,
     className,
     {
-      [`${prefixCls}-${which}`]: which,
+      [`${prefixCls}-${cap}`]: cap,
     },
   )
 
@@ -50,7 +50,7 @@ const TextArea = React.forwardRef<unknown, TextAreaProps>(InternalTextArea)
 TextArea.displayName = 'TextArea'
 
 TextArea.defaultProps = {
-  which: 'default',
+  cap: 'default',
 }
 
 export default TextArea
