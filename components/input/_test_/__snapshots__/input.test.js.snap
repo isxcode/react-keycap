@@ -3,7 +3,7 @@
 exports[`test button component 1`] = `
 <input
   className="keycap-input keycap-input-default"
-  which="default"
+  cap="default"
 >
   test
 </input>

@@ -11,7 +11,7 @@ function createToast(notice: any) {
   document.body.appendChild(div)
   ReactDOM.render(
     <div className={'keycap-toast-div'}>
-      <Alert className={'keycap-toast-alert'} which={notice.type} message={notice.content} />
+      <Alert className={'keycap-toast-alert'} cap={notice.type} message={notice.content} />
     </div>, div)
 
   setTimeout(() => {

@@ -1,6 +1,6 @@
 {
   "name": "@ispong/react-keycap",
-  "version": "0.1.7-alpha-1",
+  "version": "1.0.0",
   "description": "React rapid development component library.",
   "homepage": "https://github.com/ispong/react-keycap/wiki",
   "private": false,

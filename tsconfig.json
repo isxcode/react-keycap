@@ -1,3 +1,6 @@
+// ts website -- https://www.typescriptlang.org/
+// ts config -- https://www.typescriptlang.org/tsconfig/
+
 {
     "compilerOptions": {
        "baseUrl": "./",

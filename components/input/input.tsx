@@ -7,7 +7,7 @@ export type InputType = 'default' | 'primary'
 
 export interface BaseInputProps {
   label?: string
-  which?: InputType
+  cap?: InputType
   icon?: React.ReactNode
 }
 
@@ -18,7 +18,7 @@ const InternalInput: React.ForwardRefRenderFunction<unknown, InputProps> = (prop
   const {
     className,
     children,
-    which,
+    cap,
   } = props
 
   const inputRef = (ref as any) || React.createRef<HTMLElement>()
@@ -29,7 +29,7 @@ const InternalInput: React.ForwardRefRenderFunction<unknown, InputProps> = (prop
     prefixCls,
     className,
     {
-      [`${prefixCls}-${which}`]: which,
+      [`${prefixCls}-${cap}`]: cap,
     },
   )
 
@@ -49,7 +49,7 @@ const Input = React.forwardRef<unknown, InputProps>(InternalInput)
 Input.displayName = 'Input'
 
 Input.defaultProps = {
-  which: 'default',
+  cap: 'default',
 }
 
 export default Input

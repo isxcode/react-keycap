@@ -16,10 +16,10 @@ const Template: Story<ButtonProps> = (args) => (<Button {...args}>hello</Button>
 
 export const Default = Template.bind({})
 Default.args = {
-  which: 'default',
+  cap: 'default',
 }
 
 export const Primary = Template.bind({})
 Primary.args = {
-  which: 'primary',
+  cap: 'primary',
 }
