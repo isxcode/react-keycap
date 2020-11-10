@@ -17,7 +17,7 @@ if (args.type === 'npm') {
 
 // change package.json version code
 let fs = require('fs')
-const file = '../package.json'
+const file = 'package.json'
 
 fs.readFile(file, function(err, data) {
   let packInfo = JSON.parse(data.toString())
