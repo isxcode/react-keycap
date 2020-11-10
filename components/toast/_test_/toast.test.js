@@ -1,5 +1,4 @@
-import React from 'react';
-import ReactDOM from 'react-dom'
+import React from 'react'
 import Toast from '../toast'
 
 test('test toast component', () => {
@@ -8,5 +7,4 @@ test('test toast component', () => {
   Toast.info('test')
   Toast.warning('test')
   Toast.success('test')
-
 })

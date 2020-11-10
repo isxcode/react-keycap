@@ -6,7 +6,7 @@ import './style/alert.scss'
 export type AlertType = 'info' | 'error' | 'warning' | 'success'
 
 export interface BaseAlertProps {
-  which: AlertType
+  cap: AlertType
   message?: string
 }
 
@@ -16,7 +16,7 @@ const InternalAlter: React.ForwardRefRenderFunction<unknown, AlertProps> = (prop
 
   const {
     className,
-    which,
+    cap,
     message,
   } = props
 
@@ -28,7 +28,7 @@ const InternalAlter: React.ForwardRefRenderFunction<unknown, AlertProps> = (prop
     prefixCls,
     className,
     {
-      [`${prefixCls}-${which}`]: which,
+      [`${prefixCls}-${cap}`]: cap,
     },
   )
 
@@ -48,7 +48,7 @@ const Alert = React.forwardRef<unknown, AlertProps>(InternalAlter)
 Alert.displayName = 'Alert'
 
 Alert.defaultProps = {
-  which: 'info',
+  cap: 'info',
   message: ''
 }
 

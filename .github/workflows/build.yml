@@ -1,3 +1,8 @@
+# github action trigger -- https://docs.github.com/en/free-pro-team@latest/actions/reference/events-that-trigger-workflows#workflow_dispatch
+# github action env params -- https://docs.github.com/en/free-pro-team@latest/actions/reference/environment-variables
+
+# git push to ispong for build / test and code quality
+
 name: build
 
 on:
