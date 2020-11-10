@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 import Toast from '../toast'
 
 test('test toast component', () => {
@@ -7,5 +7,4 @@ test('test toast component', () => {
   Toast.info('test')
   Toast.warning('test')
   Toast.success('test')
-
 })
