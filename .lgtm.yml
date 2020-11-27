@@ -1,0 +1,6 @@
+# See: https://lgtm.com/projects/g/isxcode/isxcode
+
+extraction:
+  node:
+    index:
+      build_command: ./npm install && npm run build
