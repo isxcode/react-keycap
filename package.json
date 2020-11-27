@@ -1,8 +1,8 @@
 {
-  "name": "@ispong/react-keycap",
+  "name": "@isxcode/react-keycap",
   "version": "0.0.1",
   "description": "React rapid development component library.",
-  "homepage": "https://github.com/ispong/react-keycap/wiki",
+  "homepage": "https://github.com/isxcode/react-keycap/wiki",
   "private": false,
   "license": "MIT",
   "keywords": [
@@ -12,7 +12,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ispong/react-keycap.git"
+    "url": "git+https://github.com/isxcode/react-keycap.git"
   },
   "main": "lib/index.js",
   "module": "es/index.js",

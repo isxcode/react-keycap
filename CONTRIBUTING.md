@@ -17,7 +17,7 @@ Hello! Thank you for taking the time to contribute! If you want to join us, plea
 - for Npm
 
 ```shell script
-git clone -b latest https://github.com/ispong/react-keycap.git
+git clone -b latest https://github.com/isxcode/react-keycap.git
 cd react-keycap
 npm install
 npm run build
