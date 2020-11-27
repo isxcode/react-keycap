@@ -1,9 +1,8 @@
 ---
 name: React Keycap Project
 about: Only for react keycap new features
-title: [New Feature]
+title:
 labels: project
-assignees: ispong
 ---
 
 <!--

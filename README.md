@@ -82,4 +82,4 @@ ReactDOM.render(<App/>, mountNode)
 
 #### Thanks for free JetBrains Open Source license
 
-<a href="https://www.jetbrains.com/?from=react-keycap" target="_blank"><img src="https://gitee.com/isxcode/blog-images/raw/master/jetbrains/jetbrains-3.png" height="100" alt="jetbrains"/></a>
+<a href="https://www.jetbrains.com/?from=react-keycap" target="_blank"><img src="https://gitee.com/isxcode/blogs-galaxy-images/raw/master/jetbrains/jetbrains-3.png" height="100" alt="jetbrains"/></a>
