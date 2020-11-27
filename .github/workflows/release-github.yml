@@ -4,9 +4,8 @@ on:
   workflow_dispatch:
     inputs:
       version:
-        description: 'version number like 0.1.7-alpha-x'
+        description: 'version number like 0.0.x'
         required: true
-        default: '0.1.7-alpha-1'
 
 jobs:
   release:
@@ -21,8 +20,6 @@ jobs:
 
       - name: checkout repository
         uses: actions/checkout@v2
-        with:
-          ref: latest
 
       - name: cache npm
         uses: actions/cache@v2
@@ -44,6 +41,6 @@ jobs:
       - name: publish to github
         uses: actions/setup-node@v2.1.2
       - run: |
-          echo 'registry=https://npm.pkg.github.com/ispong' > ~/.npmrc
+          echo 'registry=https://npm.pkg.github.com/isxcode' > ~/.npmrc
           echo '//npm.pkg.github.com/:_authToken=${{ secrets.GITHUB_TOKEN }}' >> ~/.npmrc
       - run: npm publish

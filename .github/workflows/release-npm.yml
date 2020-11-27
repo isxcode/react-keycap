@@ -1,8 +1,11 @@
 name: 🔖 release for npm
 
 on:
-  release:
-    types: [created]
+  workflow_dispatch:
+    inputs:
+      version:
+        description: 'version number like 0.0.x-alpha-x'
+        required: true
 
 jobs:
   release:
@@ -17,8 +20,6 @@ jobs:
 
       - name: checkout repository
         uses: actions/checkout@v2
-        with:
-          ref: main
 
       - name: cache npm
         uses: actions/cache@v2
@@ -33,7 +34,7 @@ jobs:
         with:
           node-version: ${{ matrix.node }}
       - run: |
-          node scripts/version.js --version=${{ github.GITHUB_REF }} --type=npm
+          node scripts/version.js --version=${{ github.event.inputs.version }} --type=npm
           npm ci
           npm run build
 
