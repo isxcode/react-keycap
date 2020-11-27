@@ -7,12 +7,11 @@ currently being supported with security updates.
 
 | Version | Supported          |
 | ------- | ------------------ |
-| 0.1.x   | :white_check_mark: |
-| < 0.1   | :x:                |
+| 0.0.1   | :white_check_mark: |
 
 ## Reporting a Vulnerability
 
-- https://github.com/ispong/react-keycap/wiki
+- https://github.com/isxcode/react-keycap/wiki
 
 Use this section to tell people how to report a vulnerability.
 
