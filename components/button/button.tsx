@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { CSSProperties, useContext } from 'react'
 import classNames from 'classnames'
 import { ConfigContext } from '../provider/context'
 import './style/button.scss'
@@ -11,6 +11,7 @@ export interface BaseButtonProps {
   cap?: ButtonType
   size?: ButtonSize
   icon?: React.ReactNode
+  color?: string
 }
 
 export type ButtonProps = BaseButtonProps & React.ButtonHTMLAttributes<HTMLButtonElement>
@@ -22,7 +23,8 @@ const InternalButton: React.ForwardRefRenderFunction<unknown, ButtonProps> = (pr
     children,
     cap,
     icon,
-    label
+    label,
+    color
   } = props
 
   const buttonRef = (ref as any) || React.createRef<HTMLElement>()
@@ -47,12 +49,16 @@ const InternalButton: React.ForwardRefRenderFunction<unknown, ButtonProps> = (pr
     ) : ('')
   )
 
+  const buttonStyle: CSSProperties = {
+    background: color,
+  }
+
   const buttonNode = label ? (
-    <button {...props} className={buttonCls} ref={buttonRef}>
+    <button {...props} style={buttonStyle} className={buttonCls} ref={buttonRef}>
       {label}
     </button>
   ) : (
-    <button {...props} className={buttonCls} ref={buttonRef}>
+    <button {...props} style={buttonStyle} className={buttonCls} ref={buttonRef}>
       {iconNode}
       {children}
     </button>
