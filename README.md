@@ -94,11 +94,11 @@ ReactDOM.render(<App/>, mountNode)
 
 ## 📒 Documentation
 
-- [![Wiki](https://img.shields.io/badge/Wiki-docs-important)](https://github.com/isxcode/react-keycap/wiki)
+[![Wiki](https://img.shields.io/badge/Wiki-docs-important)](https://github.com/isxcode/react-keycap/wiki)
 
 ## 👏 Contributing
 
-- [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/isxcode/react-keycap/blob/main/CONTRIBUTING.md)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/isxcode/react-keycap/blob/main/CONTRIBUTING.md)
 
 ***
 
