@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://github.com/isxcode/react-keycap">
-    <img src="https://gitee.com/isxcode/blogs-galaxy-images/raw/master/keycap/keycap.png" alt="react-keycap" width="600">
+    <img src="https://gitee.com/isxcode/blogs-galaxy-images/raw/master/keycap/keycap.png" alt="react-keycap" width="500">
   </a>
 </p>
 
@@ -40,9 +40,11 @@
 
 </div>
 
+<br/>
+
 ## Table of contents
 
-  - 🐣 [Intro](#-intro)
+  - 🐣 [Introduce](#-introduce)
   - 📦 [Installation](#-installation)
     - [Npm](#--for-npm)
     - [Yarn](#--for-yarn)
@@ -50,7 +52,7 @@
   - 📒 [Documentation](#-documentation)
   - 👏 [Contributing](#-contributing)
 
-## 🐣 Intro
+## 🐣 Introduce
 
 [React Keycap](https://github.com/isxcode/react-keycap) is rapid development UI components for [React](https://reactjs.org/).
 **Important statement, enterprise-level development is recommended to be used with caution!**
