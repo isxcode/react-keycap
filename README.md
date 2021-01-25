@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://github.com/isxcode/react-keycap">
-    <img alt="react-keycap" width="600" src="https://gitee.com/isxcode/blogs-galaxy-images/raw/master/keycap/keycap.png">
+    <img src="https://gitee.com/isxcode/blogs-galaxy-images/raw/master/keycap/keycap.png" alt="react-keycap" width="500">
   </a>
 </p>
 
@@ -11,6 +11,8 @@
 <h4 align="center">
     React rapid development component library.
 </h4>
+
+<br/>
 
 <div align="center">
 
@@ -38,22 +40,34 @@
 
 </div>
 
-## 🐣 Intro
+<br/>
 
-[React Keycap](https://github.com/isxcode/react-keycap) is rapid development component library for [React](https://reactjs.org/).
+##  Table of contents
+
+  - 🐣 [Introduce](#-introduce)
+  - 📦 [Installation](#-installation)
+    - [Npm](#--for-npm)
+    - [Yarn](#--for-yarn)
+  - 🔨 [Usage](#-usage)
+  - 📒 [Documentation](#-documentation)
+  - 👏 [Contributing](#-contributing)
+
+## 🐣 Introduce
+
+[React Keycap](https://github.com/isxcode/react-keycap) is rapid development UI components for [React](https://reactjs.org/).
 **Important statement, enterprise-level development is recommended to be used with caution!**
 For instructions on use, please check the [Wiki](https://github.com/isxcode/react-keycap/wiki) carefully.
 Welcome to develop and maintain together, please follow the [github development](https://github.com/isxcode/react-keycap/blob/main/CONTRIBUTING.md) specification.
 
 ## 📦 Installation
 
-- for Npm
+#### - for Npm
 
 ```shell script
 npm install @isxcode/react-keycap --save-dev
 ```
 
-- for Yarn
+#### - for Yarn
 
 ```shell script
 yarn add @isxcode/react-keycap --dev
@@ -78,8 +92,18 @@ const mountNode = document.getElementById('root')
 ReactDOM.render(<App/>, mountNode)
 ```
 
+## 📒 Documentation
+
+[![Wiki](https://img.shields.io/badge/Wiki-docs-important)](https://github.com/isxcode/react-keycap/wiki)
+
+## 👏 Contributing
+
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/isxcode/react-keycap/blob/main/CONTRIBUTING.md)
+
 ***
 
 #### Thanks for free JetBrains Open Source license
 
 <a href="https://www.jetbrains.com/?from=react-keycap" target="_blank"><img src="https://gitee.com/isxcode/blogs-galaxy-images/raw/master/jetbrains/jetbrains-3.png" height="100" alt="jetbrains"/></a>
+
+-the end-
