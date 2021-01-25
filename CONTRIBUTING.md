@@ -17,9 +17,19 @@ Hello! Thank you for taking the time to contribute! If you want to join us, plea
 - for Npm
 
 ```shell script
-git clone -b latest https://github.com/isxcode/react-keycap.git
+git clone https://github.com/isxcode/react-keycap.git
 cd react-keycap
 npm install
+npm run build
+```
+
+Note: If npm link in local, you should link your project react to react-keycap
+
+```shell script
+git clone https://github.com/isxcode/react-keycap.git
+cd react-keycap
+npm install
+npm run add-react
 npm run build
 npm link
 ```
