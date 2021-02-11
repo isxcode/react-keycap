@@ -50,7 +50,8 @@
     - [Yarn](#--for-yarn)
   - 🔨 [Usage](#-usage)
   - 📒 [Documentation](#-documentation)
-  - 👏 [Contributing](#-contributing)
+
+[comment]: <> (  - 👏 [Contributing]&#40;#-contributing&#41;)
 
 ## 🐣 Introduce
 
@@ -94,11 +95,11 @@ ReactDOM.render(<App/>, mountNode)
 
 ## 📒 Documentation
 
-[![Wiki](https://img.shields.io/badge/Wiki-docs-important)](https://github.com/isxcode/react-keycap/wiki)
+- https://github.com/isxcode/react-keycap/wiki
 
-## 👏 Contributing
+[comment]: <> (## 👏 Contributing)
 
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/isxcode/react-keycap/blob/main/CONTRIBUTING.md)
+[comment]: <> ([![PRs Welcome]&#40;https://img.shields.io/badge/PRs-welcome-brightgreen.svg&#41;]&#40;https://github.com/isxcode/react-keycap/blob/main/CONTRIBUTING.md&#41;)
 
 ***
 
