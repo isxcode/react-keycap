@@ -26,7 +26,6 @@
 
 <div align="center">
 
-[![Wiki](https://img.shields.io/badge/Wiki-docs-important)](https://github.com/isxcode/react-keycap/wiki)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/isxcode/react-keycap/blob/main/CONTRIBUTING.md)
 [![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/isxcode/react-keycap)
 
@@ -50,8 +49,7 @@
     - [Yarn](#--for-yarn)
   - 🔨 [Usage](#-usage)
   - 📒 [Documentation](#-documentation)
-
-[comment]: <> (  - 👏 [Contributing]&#40;#-contributing&#41;)
+  - 👏 [Contributing](#-contributing)
 
 ## 🐣 Introduce
 
@@ -95,16 +93,14 @@ ReactDOM.render(<App/>, mountNode)
 
 ## 📒 Documentation
 
-- https://github.com/isxcode/react-keycap/wiki
+- [Docs](https://react-keycap.isxcode.com)
 
-[comment]: <> (## 👏 Contributing)
+## 👏 Contributing
 
-[comment]: <> ([![PRs Welcome]&#40;https://img.shields.io/badge/PRs-welcome-brightgreen.svg&#41;]&#40;https://github.com/isxcode/react-keycap/blob/main/CONTRIBUTING.md&#41;)
+- [PRs Welcome](https://github.com/isxcode/react-keycap/blob/main/CONTRIBUTING.md)
 
 ***
 
 #### Thanks for free JetBrains Open Source license
 
 <a href="https://www.jetbrains.com/?from=react-keycap" target="_blank"><img src="https://gitee.com/isxcode/blogs-galaxy-images/raw/master/jetbrains/jetbrains-3.png" height="100" alt="jetbrains"/></a>
-
--the end-

@@ -8,4 +8,6 @@ export { default as Alert } from './alert/alert'
 
 export { default as Toast } from './toast/toast'
 
-export { default as TextArea } from './textArea/textArea'
+export {default as TextArea} from './textArea/textArea';
+
+export {default as Table} from './table/table';
