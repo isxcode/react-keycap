@@ -55,7 +55,7 @@
 
 [React Keycap](https://github.com/isxcode/react-keycap) is rapid development UI components for [React](https://reactjs.org/).
 **Important statement, enterprise-level development is recommended to be used with caution!**
-For instructions on use, please check the [Wiki](https://github.com/isxcode/react-keycap/wiki) carefully.
+For instructions on use, please check the [Docs](https://react-keycap.isxcode.com) carefully.
 Welcome to develop and maintain together, please follow the [github development](https://github.com/isxcode/react-keycap/blob/main/CONTRIBUTING.md) specification.
 
 ## 📦 Installation
