@@ -30,7 +30,8 @@
     "prettier": "prettier -c --write .",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "add-react": "npm link ../leo-day-react/node_modules/react"
+    "add-react": "npm link ../leo-day-react/node_modules/react",
+    "add-react-dom": "npm link ../leo-day-react/node_modules/react-dom"
   },
   "dependencies": {
     "classnames": "^2.2.6",
