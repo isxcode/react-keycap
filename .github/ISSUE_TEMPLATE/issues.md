@@ -1,6 +1,9 @@
 ---
-name: React Keycap Issues
-about: Only for react keycap issues
+name: For Tracking Issues
+about: Use this template for issues.
+title: "[ISSUE NAME]"
+labels: bug
+assignees: ispong
 ---
 
 <!--
@@ -8,10 +11,12 @@ about: Only for react keycap issues
 -->
 **Describe the question**
 
+
 <!--
 !!! For show your code. !!!
 -->
 **To Show code**
+
 
 <!--
 !!! Add any other context about the problem here. !!!

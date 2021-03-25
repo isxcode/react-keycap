@@ -19,10 +19,10 @@ jobs:
     steps:
 
       - name: checkout repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v2.3.4
 
       - name: cache npm
-        uses: actions/cache@v2
+        uses: actions/cache@v2.1.4
         with:
           path: ~/.npm
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
@@ -30,7 +30,7 @@ jobs:
             ${{ runner.os }}-node-
 
       - name: npm build
-        uses: actions/setup-node@v2.1.2
+        uses: actions/setup-node@v2.1.5
         with:
           node-version: ${{ matrix.node }}
       - run: |
@@ -39,7 +39,7 @@ jobs:
           npm run build
 
       - name: publish to github
-        uses: actions/setup-node@v2.1.2
+        uses: actions/setup-node@v2.1.5
       - run: |
           echo 'registry=https://npm.pkg.github.com/isxcode' > ~/.npmrc
           echo '//npm.pkg.github.com/:_authToken=${{ secrets.GITHUB_TOKEN }}' >> ~/.npmrc
