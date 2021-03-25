@@ -73,6 +73,7 @@ isxcode/react-keycap/hotfix-0.0.x --> isxcode/react-keycap/release-0.0.x     | m
 7. Docs Contribute
 
 ```
+npm i docsify-cli -g
 cd react-keycap
 docsify serve docs
 ```
