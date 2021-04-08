@@ -4,11 +4,11 @@ import Alert from '../alert'
 
 test('test alter component', () => {
 
-  const mountNode = document.createElement('div')
+  const mountNode = document.createElement('div');
 
-  const buttonNode = (
+  const alertNode = (
     <Alert>test</Alert>
-  )
+  );
 
-  ReactDOM.render(buttonNode, mountNode)
+  ReactDOM.render(alertNode, mountNode);
 })

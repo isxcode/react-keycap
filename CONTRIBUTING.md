@@ -77,3 +77,11 @@ npm i docsify-cli -g
 cd react-keycap
 docsify serve docs
 ```
+
+8. Run BookStory
+
+- http://localhost:6006
+
+```bash
+npm run storybook
+```
