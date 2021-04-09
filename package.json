@@ -29,7 +29,7 @@
     "cpx": "cpx \"./components/**/*.scss\" ./es && cpx \"./components/**/*.scss\" ./lib",
     "prettier": "prettier -c --write .",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook",
+    "build-storybook": "build-storybook -o ./deploy/dist",
     "add-react": "npm link ../leo-day-react/node_modules/react",
     "add-react-dom": "npm link ../leo-day-react/node_modules/react-dom"
   },
