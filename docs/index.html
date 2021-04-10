@@ -12,7 +12,9 @@
   <script src="//cdn.jsdelivr.net/npm/docsify-edit-on-github"></script>
 </head>
 <body>
-<div id="app">Please wait...</div>
+<div id="app">
+  Please wait...
+</div>
 <script>
   window.$docsify = {
     basePath: '/',
@@ -23,7 +25,7 @@
     loadNavbar: true,
     coverpage: true,
     onlyCover: true,
-    notFoundPage: 'assets/_404.md',
+    notFoundPage: true,
     subMaxLevel: 4,
     maxLevel: 4,
     routerMode: 'hash',
@@ -33,14 +35,8 @@
       EditOnGithubPlugin.create('https://github.com/isxcode/react-keycap/blob/main/docs/', null, 'Edit on github')
     ],
     search: {
-      placeholder: {
-        '/zh-cn/': '搜索',
-        '/en-us/': 'Search'
-      },
-      noData: {
-        '/zh-cn/': '找不到结果',
-        '/en-us/': 'No Results'
-      },
+      placeholder: 'Search',
+      noData: 'No Results',
       namespace: '/en-us/',
       hideOtherSidebarContent: true,
     },
