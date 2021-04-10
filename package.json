@@ -29,13 +29,14 @@
     "cpx": "cpx \"./components/**/*.scss\" ./es && cpx \"./components/**/*.scss\" ./lib",
     "prettier": "prettier -c --write .",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook -o ./deploy/dist",
+    "build-storybook": "build-storybook",
     "add-react": "npm link ../leo-day-react/node_modules/react",
     "add-react-dom": "npm link ../leo-day-react/node_modules/react-dom"
   },
   "dependencies": {
     "@babel/runtime": "^7.13.10",
-    "classnames": "^2.2.6"
+    "classnames": "^2.2.6",
+    "hexo-deployer-git": "^3.0.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.13.10",
