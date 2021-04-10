@@ -1,7 +1,7 @@
-* [Project Starter]()
+* **Project Starter**
   * [1 Init React Project](/en-us/1-1-Init-React-Project.md)
   * [2 Install React Keycap](/en-us/1-2-Install-React-Keycap.md)
-* [Components]()
+* **Components**
   * [1 Button](/en-us/2-1-Button.md)
-* [BookStory]()
+* **BookStory**
   * [1 Run BookStory](/en-us/3-1-Run-BookStory.md)
