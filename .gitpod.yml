@@ -1,5 +1,3 @@
-#  https://www.gitpod.io/
-
 image: gitpod/workspace-full
 
 ports:
