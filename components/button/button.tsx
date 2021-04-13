@@ -7,6 +7,7 @@ import './style/button.scss'
 export type ButtonType = 'default' | 'primary' | 'ghost' | 'dashed' | 'danger' | 'font'
 
 export interface BaseButtonProps {
+  label?: string
   // 类型
   cap?: ButtonType
   // icon
