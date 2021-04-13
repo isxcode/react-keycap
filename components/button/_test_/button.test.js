@@ -1,9 +1,8 @@
-import React from 'react';
+import React from 'react'
 import ReactDOM from 'react-dom'
 import Button from '../button'
 
-test('test button component', () => {
-
+test('test components component', () => {
   const mountNode = document.createElement('div')
 
   const buttonNode = (

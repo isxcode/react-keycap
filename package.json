@@ -23,7 +23,7 @@
     "test": "jest",
     "tsc": "tsc",
     "cpx": "cpx \"./components/**/*.scss\" ./es",
-    "storybook": "start-storybook -p 6006"
+    "storybook": "start-storybook -p 6006 --no-manager-cache"
   },
   "browserslist": [
     ">0.2%",
@@ -35,11 +35,14 @@
     "classnames": "^2.2.6"
   },
   "devDependencies": {
-    "@storybook/addon-actions": "^6.1.21",
-    "@storybook/addon-essentials": "^6.1.21",
-    "@storybook/addon-links": "^6.1.21",
+    "@storybook/theming": "^6.2.7",
+    "@storybook/addon-docs": "^6.2.7",
+    "@storybook/addon-actions": "^6.2.7",
+    "@storybook/addon-essentials": "^6.2.7",
+    "@storybook/addon-links": "^6.2.7",
+    "@storybook/addons": "^6.2.7",
     "@storybook/preset-scss": "^1.0.3",
-    "@storybook/react": "^6.1.21",
+    "@storybook/react": "^6.2.7",
     "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/react": "^11.2.5",
     "@testing-library/user-event": "^13.0.13",

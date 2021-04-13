@@ -14,11 +14,10 @@ export interface BaseInputProps {
 export type InputProps = BaseInputProps & React.InputHTMLAttributes<HTMLInputElement>
 
 const InternalInput: React.ForwardRefRenderFunction<unknown, InputProps> = (props, ref) => {
-
   const {
     className,
     children,
-    cap,
+    cap
   } = props
 
   const inputRef = (ref as any) || React.createRef<HTMLElement>()
@@ -29,8 +28,8 @@ const InternalInput: React.ForwardRefRenderFunction<unknown, InputProps> = (prop
     prefixCls,
     className,
     {
-      [`${prefixCls}-${cap}`]: cap,
-    },
+      [`${prefixCls}-${cap}`]: cap
+    }
   )
 
   const inputNode = (
@@ -49,7 +48,7 @@ const Input = React.forwardRef<unknown, InputProps>(InternalInput)
 Input.displayName = 'Input'
 
 Input.defaultProps = {
-  cap: 'default',
+  cap: 'default'
 }
 
 export default Input
