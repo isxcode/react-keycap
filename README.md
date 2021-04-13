@@ -41,16 +41,6 @@
 
 <br/>
 
-##  Table of contents
-
-  - 🐣 [Introduce](#-introduce)
-  - 📦 [Installation](#-installation)
-    - [Npm](#--for-npm)
-    - [Yarn](#--for-yarn)
-  - 🔨 [Usage](#-usage)
-  - 📒 [Documentation](#-documentation)
-  - 👏 [Contributing](#-contributing)
-
 ## 🐣 Introduce
 
 [React Keycap](https://github.com/isxcode/react-keycap) is rapid development UI components for [React](https://reactjs.org/).
