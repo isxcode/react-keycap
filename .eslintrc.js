@@ -26,6 +26,8 @@ module.exports = {
     'no-use-before-define': 'off',
     'no-undef': 'off',
     'react/prop-types': 'off',
-    'no-unused-vars': 'off'
+    'no-unused-vars': 'off',
+    'node/handle-callback-err': 'off',
+    'array-callback-return': 'off'
   }
 }

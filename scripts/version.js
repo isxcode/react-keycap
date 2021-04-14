@@ -1,5 +1,5 @@
 // point version number
-// node version.js --version=xxx --type=npm/github
+// node version.js --version=xxx --type=npm/(github)
 
 const args = {}
 process.argv.splice(2).map(value => {
@@ -9,11 +9,6 @@ process.argv.splice(2).map(value => {
 
 // get version number
 const version = args.version
-// if (args.type === 'npm') {
-//   version = args.version.toString().split('/')[2]
-// } else {
-//   version = args.version
-// }
 
 // change package.json version code
 const fs = require('fs')
