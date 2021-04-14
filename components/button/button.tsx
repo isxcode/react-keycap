@@ -4,10 +4,10 @@ import { ConfigContext } from '../provider/context'
 import './style/button.scss'
 import components from '../provider/components'
 
-export type ButtonType = 'default' | 'primary' | 'ghost' | 'dashed' | 'danger' | 'font';
+export type ButtonCap = 'default' | 'primary' | 'ghost' | 'dashed' | 'danger' | 'font';
 
 export interface BaseButtonProps {
-  cap?: ButtonType;
+  cap?: ButtonCap;
 }
 
 export type ButtonProps = BaseButtonProps & React.ButtonHTMLAttributes<HTMLButtonElement>;

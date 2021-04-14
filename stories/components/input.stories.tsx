@@ -10,25 +10,19 @@ export default {
   argTypes: {
     cap: {
       description: 'input type',
-      defaultValue: 'string',
-      options: ['primary', 'default'],
+      options: ['default', 'primary'],
       control: {
         type: 'select'
       }
-    },
-    label: {
-      control: {
-        type: 'string'
-      },
-      description: 'input label'
     }
   }
 } as Meta
 
 const inputTemplate: Story<InputProps> = (args) => (
-  <Input label={args.label}/>
+  <Input cap={args.cap}/>
 )
 
 export const input = inputTemplate.bind({})
 input.args = {
+  cap: 'default'
 }

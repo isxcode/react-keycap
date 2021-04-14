@@ -6,6 +6,6 @@ export { default as Input } from './input/input'
 
 export { default as Alert } from './alert/alert'
 
-export { default as Toast } from './message/toast'
+export { default as Message } from './message/message'
 
 export { default as Table } from './table/table'

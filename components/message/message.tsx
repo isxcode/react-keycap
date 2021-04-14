@@ -1,12 +1,12 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import Alert from '../alert/alert'
-import './style/toast.scss'
+import './style/message.scss'
 
+// 默认时间间隔
 const defaultDuration = 1000
 
-function createToast(notice: any) {
-
+function createToast (notice: any) {
   const div = document.createElement('div')
   document.body.appendChild(div)
   ReactDOM.render(
@@ -18,29 +18,27 @@ function createToast(notice: any) {
     ReactDOM.unmountComponentAtNode(div)
     document.body.removeChild(div)
   }, notice.duration)
-
 }
 
 const notice = (type: string, content: string, duration: number) => {
-
   return createToast({ type, content, duration })
 }
 
 export default {
 
-  info(message: string) {
+  info (message: string) {
     return notice('info', message, defaultDuration)
   },
 
-  error(message: string) {
+  error (message: string) {
     return notice('error', message, defaultDuration)
   },
 
-  warning(message: string) {
+  warning (message: string) {
     return notice('warning', message, defaultDuration)
   },
 
-  success(message: string) {
+  success (message: string) {
     return notice('success', message, defaultDuration)
-  },
+  }
 }

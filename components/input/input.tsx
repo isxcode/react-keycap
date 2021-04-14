@@ -2,13 +2,14 @@ import React, { useContext } from 'react'
 import classNames from 'classnames'
 import { ConfigContext } from '../provider/context'
 import './style/input.scss'
+import components from '../provider/components'
 
-export type InputType = 'default' | 'primary'
+export type InputCap = 'default' | 'primary'
 
 export interface BaseInputProps {
-  label?: string
-  cap?: InputType
-  icon?: React.ReactNode
+  cap?: InputCap
+  // label?: string
+  // icon?: React.ReactNode
 }
 
 export type InputProps = BaseInputProps & React.InputHTMLAttributes<HTMLInputElement>
@@ -23,7 +24,7 @@ const InternalInput: React.ForwardRefRenderFunction<unknown, InputProps> = (prop
   const inputRef = (ref as any) || React.createRef<HTMLElement>()
 
   const { getPrefixCls } = useContext(ConfigContext)
-  const prefixCls = getPrefixCls('input')
+  const prefixCls = getPrefixCls(components.INPUT)
   const inputCls = classNames(
     prefixCls,
     className,

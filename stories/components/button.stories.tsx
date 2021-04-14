@@ -17,13 +17,13 @@ export default {
   }
 } as Meta
 
-const buttonComponent: Story<ButtonProps> = (args) => (
+const buttonTemplate: Story<ButtonProps> = (args) => (
   <Button {...args}>
     keycap
   </Button>
 )
 
-export const button = buttonComponent.bind({})
+export const button = buttonTemplate.bind({})
 button.args = {
   cap: 'default'
 }
