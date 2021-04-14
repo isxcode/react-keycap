@@ -1,7 +1,6 @@
 import Toast from '../toast'
 
-test('test toast component', () => {
-
+test('test message component', () => {
   Toast.error('test')
   Toast.info('test')
   Toast.warning('test')

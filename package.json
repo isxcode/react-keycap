@@ -35,6 +35,12 @@
     "classnames": "^2.2.6"
   },
   "devDependencies": {
+    "@babel/runtime": "^7.13.10",
+    "@babel/cli": "^7.13.10",
+    "@babel/core": "^7.13.10",
+    "@babel/preset-env": "^7.13.12",
+    "@babel/preset-react": "^7.12.13",
+    "@babel/preset-typescript": "^7.13.0",
     "@storybook/theming": "^6.2.7",
     "@storybook/addon-docs": "^6.2.7",
     "@storybook/addon-actions": "^6.2.7",

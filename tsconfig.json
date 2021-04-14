@@ -25,9 +25,9 @@
     "./components"
   ],
   "exclude": [
-    "node_modules",
-    "stories",
-    "es",
+    "./node_modules",
+    "./stories",
+    "./es",
     "**/_test_",
     "**/style"
   ]
