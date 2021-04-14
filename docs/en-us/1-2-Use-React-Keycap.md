@@ -24,17 +24,17 @@ yarn add @isxcode/react-keycap --dev
 
 - edit file `src/index.tsx`
 
-```tsx
+```ts
 import React from 'react'
 import ReactDOM from 'react-dom'
-import { Button, Toast } from '@isxcode/react-keycap'
+import { Button, Message } from '@isxcode/react-keycap'
 
 const App = () => (
-  <>
-    <Button cap={'primary'} label={'Hello'} onClick={() => {
-  Toast.info('Welcome to use React-Keycap !!!')
-}} />
-</>
+    <>
+      <Button cap={'primary'} label={'Hello'} onClick={() => {
+          Message.info('Welcome to use React-Keycap !!!')
+      }} /> 
+    </>
 )
 
 const mountNode = document.getElementById('root')

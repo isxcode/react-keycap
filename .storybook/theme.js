@@ -33,5 +33,5 @@ export default create({
 
   brandTitle: 'React Keycap',
   brandUrl: 'https://react-keycap.isxcode.com',
-  brandImage: 'https://gitee.com/isxcode/blogs-galaxy-images/raw/master/keycap/keycap.png',
+  // brandImage: 'https://gitee.com/isxcode/blogs-galaxy-images/raw/master/keycap/keycap.png',
 });

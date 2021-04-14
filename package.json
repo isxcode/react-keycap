@@ -23,7 +23,8 @@
     "test": "jest",
     "tsc": "tsc",
     "cpx": "cpx \"./components/**/*.scss\" ./es",
-    "storybook": "start-storybook -p 6006 --no-manager-cache"
+    "storybook": "start-storybook -p 6006 --no-manager-cache",
+    "publish": "npm publish --access public"
   },
   "browserslist": [
     ">0.2%",
