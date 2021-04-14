@@ -28,5 +28,5 @@ const alterTemplate: Story<AlertProps> = (args) => (
 export const alert = alterTemplate.bind({})
 alert.args = {
   cap: 'info',
-  message: 'info'
+  message: 'keycap'
 }

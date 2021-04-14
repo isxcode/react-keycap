@@ -2,12 +2,12 @@ import React, { useContext } from 'react'
 import classNames from 'classnames'
 import { ConfigContext } from '../provider/context'
 import './style/button.scss'
+import components from '../provider/components'
 
 export type ButtonType = 'default' | 'primary' | 'ghost' | 'dashed' | 'danger' | 'font';
 
 export interface BaseButtonProps {
   cap?: ButtonType;
-  test: string;
 }
 
 export type ButtonProps = BaseButtonProps & React.ButtonHTMLAttributes<HTMLButtonElement>;
@@ -22,8 +22,7 @@ const InternalButton: React.ForwardRefRenderFunction<unknown, ButtonProps> = (pr
   const buttonRef = (ref as any) || React.createRef<HTMLElement>()
 
   const { getPrefixCls } = useContext(ConfigContext)
-  const prefixCls = getPrefixCls('btn')
-
+  const prefixCls = getPrefixCls(components.BUTTON)
   const buttonCls = classNames(prefixCls, className, {
     [`${prefixCls}-${cap}`]: cap
   })
@@ -33,7 +32,9 @@ const InternalButton: React.ForwardRefRenderFunction<unknown, ButtonProps> = (pr
       {children}
     </button>)
 
-  return <>{buttonNode}</>
+  return <>
+    {buttonNode}
+  </>
 }
 
 const Button = React.forwardRef<unknown, ButtonProps>(InternalButton)

@@ -19,7 +19,7 @@ export default {
 
 const buttonComponent: Story<ButtonProps> = (args) => (
   <Button {...args}>
-    example
+    keycap
   </Button>
 )
 

@@ -1,4 +1,5 @@
 export default {
   KEYCAP: 'keycap',
-  ALTER: 'alter'
+  ALTER: 'alter',
+  BUTTON: 'btn'
 }
