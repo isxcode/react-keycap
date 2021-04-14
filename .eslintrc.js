@@ -25,6 +25,7 @@ module.exports = {
     'prettier/prettier': 'error',
     'no-use-before-define': 'off',
     'no-undef': 'off',
-    'react/prop-types': 'off'
+    'react/prop-types': 'off',
+    'no-unused-vars': 'off'
   }
 }

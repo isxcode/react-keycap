@@ -4,10 +4,10 @@ import { ConfigContext } from '../provider/context'
 import classNames from 'classnames'
 import Button from '../button/button'
 
-export type ModalType = 'none' | 'cross'
+export type ModalCap = 'none' | 'cross'
 
 export interface BaseModalProps {
-  cap?: ModalType
+  cap?: ModalCap
   isOpen: boolean
   closeModal: () => void
   hasCross?: boolean
@@ -17,7 +17,6 @@ export interface BaseModalProps {
 export type ModalProps = BaseModalProps & React.HTMLAttributes<HTMLDivElement>
 
 const InternalModal: React.ForwardRefRenderFunction<unknown, ModalProps> = (props, ref) => {
-
   const {
     children,
     className,
@@ -36,13 +35,13 @@ const InternalModal: React.ForwardRefRenderFunction<unknown, ModalProps> = (prop
     className,
     prefixCls,
     {
-      [`${prefixCls}-${cap}`]: cap,
-    },
+      [`${prefixCls}-${cap}`]: cap
+    }
   )
 
-  function HasCross() {
-    return hasCross ?
-      <div className={'keycap-modal-title-div'}>
+  function HasCross () {
+    return hasCross
+      ? <div className={'keycap-modal-title-div'}>
         <span className={'keycap-modal-title-span'}>
           {title}
         </span>
@@ -53,14 +52,16 @@ const InternalModal: React.ForwardRefRenderFunction<unknown, ModalProps> = (prop
       : null
   }
 
-  const modalNode = isOpen ? (
+  const modalNode = isOpen
+    ? (
     <div className={'keycap-modal-div'}>
       <div className={modalCls} ref={modalRef}>
         <HasCross />
         {children}
       </div>
     </div>
-  ) : null
+      )
+    : null
 
   return <>
     {modalNode}
@@ -74,7 +75,7 @@ Modal.displayName = 'Modal'
 Modal.defaultProps = {
   cap: 'none',
   isOpen: true,
-  hasCross: true,
+  hasCross: true
 }
 
 export default Modal

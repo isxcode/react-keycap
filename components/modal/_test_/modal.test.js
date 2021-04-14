@@ -3,17 +3,14 @@ import ReactDOM from 'react-dom'
 import Modal from '../../modal/modal'
 
 test('test modal component', () => {
-
-  // const [isOpen, setIsOpen] = useState(true)
-
-  function closeModal() {
-
+  let isOpen = true
+  function closeModal () {
+    isOpen = false
   }
-
   const mountNode = document.createElement('div')
 
   const modalNode = (
-    <Modal isOpen={true} closeModal={closeModal}>
+    <Modal isOpen={isOpen} closeModal={closeModal} hasCross={true}>
       <div>
         test modal
       </div>
@@ -21,4 +18,6 @@ test('test modal component', () => {
   )
 
   ReactDOM.render(modalNode, mountNode)
+
+  closeModal()
 })

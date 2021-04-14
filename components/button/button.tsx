@@ -8,6 +8,7 @@ export type ButtonCap = 'default' | 'primary' | 'ghost' | 'dashed' | 'danger' | 
 
 export interface BaseButtonProps {
   cap?: ButtonCap;
+  label?: string;
 }
 
 export type ButtonProps = BaseButtonProps & React.ButtonHTMLAttributes<HTMLButtonElement>;
@@ -16,7 +17,8 @@ const InternalButton: React.ForwardRefRenderFunction<unknown, ButtonProps> = (pr
   const {
     className,
     children,
-    cap
+    cap,
+    label
   } = props
 
   const buttonRef = (ref as any) || React.createRef<HTMLElement>()
@@ -27,10 +29,15 @@ const InternalButton: React.ForwardRefRenderFunction<unknown, ButtonProps> = (pr
     [`${prefixCls}-${cap}`]: cap
   })
 
-  const buttonNode = (
-    <button {...props} className={buttonCls} ref={buttonRef}>
-      {children}
-    </button>)
+  const buttonNode = label == null
+    ? (
+      <button {...props} className={buttonCls} ref={buttonRef}>
+        {children}
+      </button>)
+    : (
+      <button {...props} className={buttonCls} ref={buttonRef}>
+        {label}
+      </button>)
 
   return <>
     {buttonNode}
