@@ -2,34 +2,34 @@ import React, { useContext } from 'react'
 import classNames from 'classnames'
 import { ConfigContext } from '../provider/context'
 import './style/alert.scss'
+import components from '../provider/components'
 
-export type AlertType = 'info' | 'error' | 'warning' | 'success'
+export type AlertCap = 'info' | 'error' | 'warning' | 'success'
 
 export interface BaseAlertProps {
-  cap: AlertType
+  cap: AlertCap
   message?: string
 }
 
-export type AlertProps = BaseAlertProps & React.HTMLAttributes<HTMLDivElement>
+export type AlertProps = BaseAlertProps & React.HTMLAttributes<HTMLDivElement>;
 
 const InternalAlter: React.ForwardRefRenderFunction<unknown, AlertProps> = (props, ref) => {
-
   const {
     className,
     cap,
-    message,
+    message
   } = props
 
   const alterRef = (ref as any) || React.createRef<HTMLElement>()
 
   const { getPrefixCls } = useContext(ConfigContext)
-  const prefixCls = getPrefixCls('alter')
+  const prefixCls = getPrefixCls(components.ALTER)
   const alterCls = classNames(
     prefixCls,
     className,
     {
-      [`${prefixCls}-${cap}`]: cap,
-    },
+      [`${prefixCls}-${cap}`]: cap
+    }
   )
 
   const alterNode = (

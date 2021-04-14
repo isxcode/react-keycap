@@ -1,21 +1,11 @@
-# git ignore -- https://git-scm.com/docs/gitignore
-
 ### IntelliJ IDEA ###
 .idea
 
 ### Npm ###
 node_modules
-.npmrc
 
 ### Package ###
-lib
 es
 
 ### Jest ###
 coverage
-
-### Storybook ###
-storybook-static
-
-### Github ###
-.github

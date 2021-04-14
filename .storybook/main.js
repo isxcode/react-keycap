@@ -1,5 +1,3 @@
-// https://storybook.js.org/
-
 module.exports = {
   'stories': [
     '../stories/**/*.stories.mdx',

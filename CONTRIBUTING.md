@@ -2,9 +2,11 @@
 
 Hello! Thank you for taking the time to contribute! If you want to join us, please send email to **ispong@outlook.com**.
 
-#### [How to Contribute to an Open Source Project on GitHub](https://egghead.io/series/how-to-contribute-to-an-open-source-project-on-github)
+#### [How to Contribute to an Open Source Project on GitHub](https://app.egghead.io/playlists/how-to-contribute-to-an-open-source-project-on-github)
 
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
+
+---
 
 ### Installation Prerequisites
 
@@ -12,70 +14,74 @@ Hello! Thank you for taking the time to contribute! If you want to join us, plea
 - Node 12.16.+
 - Npm 6.13.+
 
-### Contribute (developer : _ispong_)
+### Contribute (Example developer:**ispong** )
 
-1. Fork Project (https://github.com/isxcode/react-keycap)
+1. Fork Project (_https://github.com/isxcode/react-keycap_)
 
-your project - https://github.com/ispong/react-keycap
+2. Clone Project (Branch: **latest**)
 
-2. Clone Project (branch: **latest**)
-
-```
+```bash
 git clone -b latest https://github.com/ispong/react-keycap.git
 ```
 
-3. Build Project and Install Local and Use
+3. Build Project
 
-- for Npm
-
-```shell script
+```bash
 cd react-keycap
 npm install && npm run build
 ```
 
-Note: If npm link in local, you should link your project react-env to react-keycap
+Note:
+> If use npm link in local, you should link your project react and react-dom to react-keycap first </br>
+> react and react-dom version must be in the same
+> npm link must be run first
 
-```shell script
+```bash
 cd react-keycap
+npm link
 npm install
 npm link /project/node_modules/react
 npm link /project/node_modules/react-dom
 npm run build
-npm link
 ```
 
-4. Merge conflict (branch: **latest**)
+4. Install Local ([Example](https://react-keycap.isxcode.com/#/en-us/1-1-Init-React-Project))
 
+```bash
+npm link @isxcode/react-keycap
 ```
+
+5. Merge conflict (Branch: **latest**)
+
+```bash
 git remote add upstream https://github.com/isxcode/react-keycap.git
 git fetch upstream
 git merge upstream/latest
+git add .
+git commit -m ":sparkles: add new features"
 git push origin latest
 ```
 
-5. Pull Request
+6. Pull Request
 
 - https://github.com/isxcode/react-keycap/compare
 
 > Note:  ispong/react-keycap/latest  **==squash merge==>** isxcode/react-keycap/latest
 
-6. Merge Rule (**Optional**)
+7. Build Docs
 
-Branch flow                                                                  | Operate
- ----                                                                        | ---
-ispong/react-keycap/feature-core --> isxcode/react-keycap/feature-core       | squash merge
-isxcode/react-keycap/feature-core --> ispong/react-keycap/feature-core       | merge commits
-isxcode/react-keycap/feature-core --> isxcode/react-keycap/release-0.0.x     | merge commits
-isxcode/react-keycap/release-0.0.x --> isxcode/react-keycap/feature-flysql   | squash merge
-isxcode/react-keycap/release-0.0.x --> isxcode/react-keycap/main             | rebase merge
-isxcode/react-keycap/hotfix-0.0.x --> isxcode/react-keycap/release-0.0.x     | merge commits
+- http://localhost:3000
 
-7. Docs Contribute
-
-```
+```bash
 npm i docsify-cli -g
 cd react-keycap
 docsify serve docs
 ```
 
-- [local docs](http://localhost:3000)
+8. Run BookStory
+
+- http://localhost:6006
+
+```bash
+npm run storybook
+```

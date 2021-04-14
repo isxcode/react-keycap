@@ -11,8 +11,7 @@ switch (os.type()) {
     break
 }
 
-function buildOnWindows() {
-
+function buildOnWindows () {
   const { spawn } = require('child_process')
   const bat = spawn('cmd.exe', ['/c', '.\\scripts\\build.bat'])
 
@@ -29,8 +28,7 @@ function buildOnWindows() {
   })
 }
 
-function buildOnLinux() {
-
+function buildOnLinux () {
   const { exec } = require('child_process')
   exec('bash ./scripts/build.sh', (error, stdout, stderr) => {
     if (error) {

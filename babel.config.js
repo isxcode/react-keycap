@@ -1,6 +1,4 @@
-// babel config -- https://www.babeljs.cn/docs/7.2.0/configuration
-
-module.exports = function(api) {
+module.exports = function (api) {
   api.cache(true)
 
   const presets = [
@@ -12,6 +10,6 @@ module.exports = function(api) {
 
   return {
     presets,
-    plugins,
+    plugins
   }
 }

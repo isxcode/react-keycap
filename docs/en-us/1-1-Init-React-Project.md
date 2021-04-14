@@ -1,18 +1,15 @@
-### 初始化React项目
+1. Init from [Create React App](https://create-react-app.dev/)
 
-1- 建议使用 [Create React App](https://create-react-app.dev/) 初始化项目
+- typescript + npm
 
-- typescripts + npm
-
-```
+```bash
 npx create-react-app demo --template typescript --use-npm
 cd demo
 npm start
 ```
 
-- 访问项目 http://localhost:3000/
+![img](https://gitee.com/isxcode/blogs-galaxy-images/raw/master/keycap-docs/126aef0e75f4d34b6d1ac3d585e64a8.png)
 
-### Optional
+2. Add webpack (Optional)
 
-- 添加webpack [Create App](https://createapp.dev/)
-
+- [Create App](https://createapp.dev/)

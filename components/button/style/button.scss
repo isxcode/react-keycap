@@ -20,6 +20,7 @@ $btn-prefix-cls: '#{$keycap-prefix}-btn';
       color: white;
       background: $theme-deep-color;
     }
+
     border: 1px solid black;
     color: black;
     background: white;
@@ -29,6 +30,7 @@ $btn-prefix-cls: '#{$keycap-prefix}-btn';
     &:hover {
       background: $theme-color;
     }
+
     border: none;
     color: white;
     background: $theme-deep-color;
@@ -38,6 +40,7 @@ $btn-prefix-cls: '#{$keycap-prefix}-btn';
     &:hover {
       color: $theme-deep-color;
     }
+
     border: none;
     color: black;
     background: white;
@@ -47,6 +50,7 @@ $btn-prefix-cls: '#{$keycap-prefix}-btn';
     &:hover {
       background: white;
     }
+
     border: 1px solid red;
     color: red;
     background: white;

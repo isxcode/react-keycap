@@ -1,12 +1,14 @@
-# website -- https://editorconfig.org/
-
 root = true
 
 [*]
 indent_style = space
 tab_width = 2
 indent_size = 2
+end_of_line = lf
 charset = utf-8
 trim_trailing_whitespace = true
 insert_final_newline = false
 max_line_length = off
+
+[*.md]
+trim_trailing_whitespace = false
