@@ -18,3 +18,8 @@ updates:
       interval: 'monthly'
       timezone: "Asia/Shanghai"
       time: '09:00'
+    ignore:
+      - dependency-name: '@babel*'
+      - dependency-name: '@storybook*'
+      - dependency-name: 'eslint*'
+      - dependency-name: '@typescript-eslint*'
