@@ -18,8 +18,8 @@ updates:
       interval: 'monthly'
       timezone: "Asia/Shanghai"
       time: '09:00'
-    allow:
-      - dependency-name: 'react*'
-      - dependency-name: 'classnames'
-      - dependency-name: 'typescript'
-      - dependency-name: 'cpx'
+    ignore:
+      - dependency-name: '@babel*'
+      - dependency-name: '@storybook*'
+      - dependency-name: 'eslint*'
+      - dependency-name: '@typescript-eslint*'
