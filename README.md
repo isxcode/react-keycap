@@ -49,13 +49,13 @@ Welcome to develop and maintain together, please follow the [github development]
 
 #### For Npm
 
-```shell script
+```bash
 npm install @isxcode/react-keycap --save-dev
 ```
 
 #### For Yarn
 
-```shell script
+```bash
 yarn add @isxcode/react-keycap --dev
 ```
 
@@ -64,12 +64,12 @@ yarn add @isxcode/react-keycap --dev
 ```javascript
 import React from 'react'
 import ReactDOM from 'react-dom'
-import { Button, Toast } from '@isxcode/react-keycap'
+import { Button, Message } from '@isxcode/react-keycap'
 
 const App = () => (
   <>
     <Button cap={'primary'} label={'Hello'} onClick={() => {
-      Toast.info('Welcome to use React-Keycap !!!')
+        Message.info('Welcome to use React-Keycap !!!')
     }} />
   </>
 )
