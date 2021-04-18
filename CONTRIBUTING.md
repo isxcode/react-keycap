@@ -86,4 +86,17 @@ docsify serve docs
 npm run storybook
 ```
 
-"publish": "npm publish --access public"
+9. Publish 
+
+> update package.json and set version number
+
+```json
+{
+  "name": "@isxcode/react-keycap",
+  "version": "0.0.1"
+}
+```
+
+```bash
+npm publish --access public
+```

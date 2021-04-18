@@ -1,13 +1,19 @@
 ## 0.0.1
 
+### 💥️ Breaking Change
+
+- remove component button attribute -- `icon`
+- remove commonjs package
+
 ### ✨ Feature
 
-- add new module
+- add new component -- `table` 
 
 ### 🎨 Enhancement
 
-- nothing
+- add storybook for react keycap
+- add sandcodebox for react keycap
 
 ### 🐛 Fix
 
-- nothing
+- fix modal can not cancel

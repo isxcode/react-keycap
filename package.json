@@ -1,7 +1,7 @@
 {
   "name": "@isxcode/react-keycap",
   "version": "0.0.1",
-  "description": "React rapid development component library.",
+  "description": "React rapid development integration framework.",
   "homepage": "https://react-keycap.isxcode.com",
   "private": false,
   "license": "MIT",

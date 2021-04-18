@@ -1,11 +1,7 @@
-### IntelliJ IDEA ###
 .idea
 
-### Npm ###
 node_modules
 
-### Package ###
 es
 
-### Jest ###
 coverage
