@@ -35,6 +35,10 @@
     plugins: [
       EditOnGithubPlugin.create('https://github.com/isxcode/react-keycap/blob/latest/docs/', null, 'Edit on github')
     ],
+    alias: {
+      '.*/_sidebar.md': '/en-us/_sidebar.md',
+      '.*/_navbar.md': '/en-us/_navbar.md',
+    },
     search: {
       placeholder: 'Search',
       noData: 'No Results',
