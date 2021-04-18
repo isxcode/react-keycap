@@ -6,22 +6,19 @@ on:
       branch:
         description: 'which branch'
         required: true
-        default: main
       version:
-        description: 'version number like 0.0.x'
+        description: 'version number'
         required: true
 
 jobs:
   release:
     runs-on: ubuntu-latest
-
     strategy:
       matrix:
         node:
           - '12'
 
     steps:
-
       - name: checkout repository
         uses: actions/checkout@v2.3.4
         with:
@@ -40,7 +37,7 @@ jobs:
         with:
           node-version: ${{ matrix.node }}
       - run: |
-          node scripts/version.js --version=${{ github.event.inputs.version }} --type=github
+          node scripts/version.js --version=${{ github.event.inputs.version }}
           npm ci
           npm run build
 
