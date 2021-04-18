@@ -45,7 +45,7 @@ npm link /project/node_modules/react-dom
 npm run build
 ```
 
-4. Install Local ([Example](https://react-keycap.isxcode.com/#/en-us/1-1-Init-React-Project))
+4. Install Local
 
 ```bash
 npm link @isxcode/react-keycap
