@@ -90,4 +90,6 @@ Read our [contributing guide](https://github.com/isxcode/react-keycap/blob/lates
 
 #### Thanks for free JetBrains Open Source license
 
-<a href="https://www.jetbrains.com/?from=react-keycap" target="_blank"><img src="https://gitee.com/isxcode/blogs-galaxy-images/raw/master/jetbrains/jetbrains-3.png" height="100" alt="jetbrains"/></a>
+<a href="https://www.jetbrains.com/?from=react-keycap" target="_blank" style="border-bottom: none !important;">
+    <img src="https://gitee.com/isxcode/blogs-galaxy-images/raw/master/jetbrains/jetbrains-3.png" height="100" alt="jetbrains"/>
+</a>
