@@ -23,3 +23,4 @@ updates:
       - dependency-name: '@storybook*'
       - dependency-name: 'eslint*'
       - dependency-name: '@typescript-eslint*'
+      - dependency-name: '@testing-library*'
