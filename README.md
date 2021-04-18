@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://github.com/isxcode/react-keycap">
+  <a href="https://github.com/isxcode/react-keycap" style="border-bottom: none !important;">
     <img src="https://gitee.com/isxcode/blogs-galaxy-images/raw/master/keycap/keycap.png" alt="react-keycap" width="500">
   </a>
 </p>
@@ -9,12 +9,10 @@
 </h1>
 
 <h4 align="center">
-    React rapid development component library.
+    🧙 React rapid development integration framework.
 </h4>
 
-<br/>
-
-<div align="center">
+<div align="center" class="badge">
 
 [![Github Build](https://github.com/isxcode/react-keycap/workflows/build/badge.svg?branch=latest)](https://github.com/isxcode/react-keycap/actions?query=workflow%3A%22build%22)
 [![Npm Version](https://img.shields.io/npm/v/@isxcode/react-keycap)](https://www.npmjs.com/package/@isxcode/react-keycap)
@@ -24,14 +22,15 @@
 
 </div>
 
-<div align="center">
+<div align="center" class="badge">
 
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/isxcode/react-keycap/blob/main/CONTRIBUTING.md)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/isxcode/react-keycap/blob/latest/CONTRIBUTING.md)
 [![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/isxcode/react-keycap)
+[![Discussions on github](https://img.shields.io/badge/Discussions-on%20github-blueviolet)](https://github.com/isxcode/spring-oxygen/discussions)
 
 </div>
 
-<div align="center">
+<div align="center" class="badge">
 
 [![Github Watch](https://img.shields.io/github/watchers/isxcode/react-keycap?style=social)](https://github.com/isxcode/react-keycap/watchers)
 [![Github Star](https://img.shields.io/github/stars/isxcode/react-keycap?style=social)](https://github.com/isxcode/react-keycap/stargazers)
@@ -39,24 +38,22 @@
 
 </div>
 
-<br/>
-
 ## 🐣 Introduce
 
-[React Keycap](https://github.com/isxcode/react-keycap) is rapid development UI components for [React](https://reactjs.org/).
+[React Keycap](https://github.com/isxcode/react-keycap) is rapid development integration framework for [React](https://reactjs.org/).
 **Important statement, enterprise-level development is recommended to be used with caution!**
 For instructions on use, please check the [Docs](https://react-keycap.isxcode.com) carefully.
-Welcome to develop and maintain together, please follow the [github development](https://github.com/isxcode/react-keycap/blob/main/CONTRIBUTING.md) specification.
+Welcome to develop and maintain together, please follow the [github development](https://github.com/isxcode/react-keycap/blob/latest/CONTRIBUTING.md) specification.
 
 ## 📦 Installation
 
-#### - for Npm
+#### For Npm
 
 ```shell script
 npm install @isxcode/react-keycap --save-dev
 ```
 
-#### - for Yarn
+#### For Yarn
 
 ```shell script
 yarn add @isxcode/react-keycap --dev
@@ -81,13 +78,21 @@ const mountNode = document.getElementById('root')
 ReactDOM.render(<App/>, mountNode)
 ```
 
+<iframe 
+  src="https://codesandbox.io/embed/keycap-template-64r7m?fontsize=14&hidenavigation=1&theme=dark"
+  style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
+  title="keycap-template"
+  allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+  sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+/>
+
 ## 📒 Documentation
 
-- [Docs](https://react-keycap.isxcode.com)
+Check out the [Getting Started](https://react-keycap.isxcode.com) page for a quick overview.
 
-## 👏 Contributing
+##  👏 Contributing
 
-- [PRs Welcome](https://github.com/isxcode/react-keycap/blob/main/CONTRIBUTING.md)
+Read our [contributing guide](https://github.com/isxcode/react-keycap/blob/latest/CONTRIBUTING.md) to learn about our development process, how to propose bugfixes and improvements, and how to build and test your changes to React Keycap.
 
 ***
 

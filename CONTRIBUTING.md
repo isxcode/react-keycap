@@ -85,3 +85,5 @@ docsify serve docs
 ```bash
 npm run storybook
 ```
+
+"publish": "npm publish --access public"
