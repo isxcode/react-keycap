@@ -47,13 +47,13 @@ Welcome to develop and maintain together, please follow the [github development]
 
 ## 📦 Installation
 
-#### For Npm
+* For Npm
 
 ```bash
 npm install @isxcode/react-keycap --save-dev
 ```
 
-#### For Yarn
+* For Yarn
 
 ```bash
 yarn add @isxcode/react-keycap --dev
@@ -88,7 +88,7 @@ Read our [contributing guide](https://github.com/isxcode/react-keycap/blob/lates
 
 ***
 
-#### Thanks for free JetBrains Open Source license
+**Thanks for free JetBrains Open Source license**
 
 <a href="https://www.jetbrains.com/?from=react-keycap" target="_blank" style="border-bottom: none !important;">
     <img src="https://gitee.com/isxcode/blogs-galaxy-images/raw/master/jetbrains/jetbrains-3.png" height="100" alt="jetbrains"/>

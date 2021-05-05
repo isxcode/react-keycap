@@ -28,3 +28,9 @@
 1. 实现组件的测试
 
 #### Normal
+
+先搞定function component的方法实现
+然后 搞懂为什么要实现forwardRef去实现组件
+接着规范实现一个function component 使用源码的方式去实现
+
+
