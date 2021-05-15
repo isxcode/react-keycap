@@ -1,9 +1,7 @@
 :root {
   --theme-color: #61dafb;
   --theme-color-dark: #61dafb;
-
   --text-color-base: #2e2e46;
-  --text-color-secondary: #646473;
   --text-color-tertiary: #81818e;
 }
 
@@ -11,6 +9,14 @@ body {
   font-size: 100% !important;
   line-height: 1.5!important;
   color: var(--text-color-base);
+}
+
+* {
+  text-decoration: none !important;
+}
+
+a {
+  transition: all 0.3s linear;
 }
 
 .sidebar ul li a {
@@ -38,13 +44,7 @@ html::-webkit-scrollbar {
   display: none !important;
 }
 
-* {
-  text-decoration: none !important;
-}
 
-a {
-  transition: all 0.3s linear;
-}
 
 .github-corner {
   z-index: 5;
@@ -106,27 +106,6 @@ section.cover.show ~ .sidebar-toggle {
   display: none;
 }
 
-.cover-main .netflix-logo {
-  position: fixed;
-  display: flex;
-  align-items: center;
-  background: #ffffff;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  padding: 40px;
-  z-index: 5;
-}
-
-.cover-main .netflix-logo .logo {
-  width: 125px;
-  height: 32px;
-  background: url('images/Netflix_Logo.png');
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-position: center center;
-}
-
 .cover-main .buttons {
   width: 100%;
 }
@@ -176,7 +155,7 @@ section.cover.show ~ .sidebar-toggle {
 
 .cover-main .buttons a:hover {
   color: white;
-  box-shadow: 0 5px 16px rgba(229, 9, 20, 0.3);
+  box-shadow: 0 5px 16px rgba(66, 66, 0, 0.3);
 }
 
 .cover-main .buttons a:hover:after {
@@ -398,4 +377,8 @@ body .sidebar-toggle span:nth-child(3) {
 
 .badge p a {
     border-bottom: none !important;
+}
+
+.notFound {
+  line-height: 150px;
 }

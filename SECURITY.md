@@ -8,4 +8,4 @@
 
 ## Reporting a Vulnerability
 
-- https://react-keycap.isxcode.com
+- https://keycap.isxcode.com

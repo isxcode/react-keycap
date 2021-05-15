@@ -88,15 +88,10 @@ npm run storybook
 
 9. Publish 
 
+> look `VERSION.md` file and update version code
 > update package.json and set version number
 
-```json
-{
-  "name": "@isxcode/react-keycap",
-  "version": "0.0.1"
-}
-```
-
 ```bash
-npm publish --access public
+npm login 
+npm run publish
 ```

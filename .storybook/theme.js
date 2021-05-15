@@ -32,6 +32,6 @@ export default create({
   // inputBorderRadius: 4,
 
   brandTitle: 'React Keycap',
-  brandUrl: 'https://react-keycap.isxcode.com',
+  brandUrl: 'https://keycap.isxcode.com',
   // brandImage: 'https://gitee.com/isxcode/blogs-galaxy-images/raw/master/keycap/keycap.png',
 });
