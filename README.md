@@ -42,7 +42,7 @@
 
 [React Keycap](https://github.com/isxcode/react-keycap) is rapid development integration framework for [React](https://reactjs.org/).
 **Important statement, enterprise-level development is recommended to be used with caution!**
-For instructions on use, please check the [Docs](https://react-keycap.isxcode.com) carefully.
+For instructions on use, please check the [Docs](https://keycap.isxcode.com) carefully.
 Welcome to develop and maintain together, please follow the [github development](https://github.com/isxcode/react-keycap/blob/latest/CONTRIBUTING.md) specification.
 
 ## 📦 Installation
@@ -80,7 +80,7 @@ ReactDOM.render(<App/>, mountNode)
 
 ## 📒 Documentation
 
-Check out the [Getting Started](https://react-keycap.isxcode.com) page for a quick overview.
+Check out the [Getting Started](https://keycap.isxcode.com) page for a quick overview.
 
 ##  👏 Contributing
 
