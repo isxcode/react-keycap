@@ -1,9 +1,9 @@
 const fs = require('fs')
 const path = require('path')
-const buildPath = 'es'
 
-if (fs.existsSync(buildPath)) {
-  deleteFolderRecursive(buildPath)
+const esPath = 'es'
+if (fs.existsSync(esPath)) {
+  deleteFolderRecursive(esPath)
 }
 
 function deleteFolderRecursive (folderPath) {

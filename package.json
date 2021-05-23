@@ -20,7 +20,8 @@
   ],
   "scripts": {
     "deploy": "node scripts/publish.js",
-    "clean": "node ./scripts/clean.js",
+    "clean": "node scripts/clean.js",
+    "link_local": "npm link ../leo-day-react/node_modules/react && npm run clean && npm run tsc && npm run cpx && npm link",
     "test": "jest",
     "tsc": "tsc",
     "cpx": "cpx \"./components/**/*.scss\" ./es",

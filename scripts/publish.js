@@ -1,6 +1,3 @@
-// publish to npm
-
-// 1. read VERSION.md file and get version number
 const fs = require('fs')
 const versionNumberFile = 'VERSION.md'
 let newVersionNumber
@@ -10,9 +7,7 @@ fs.readFile(versionNumberFile, function (err, data) {
   console.log('get new version :' + newVersionNumber)
 })
 
-// 2. update package.json version property
 const packageFile = 'package.json'
-
 fs.readFile(packageFile, function (err, data) {
   const packageInfo = JSON.parse(data.toString())
   packageInfo.version = newVersionNumber
@@ -24,7 +19,6 @@ fs.readFile(packageFile, function (err, data) {
   console.log('update package.json version success')
 })
 
-// 3. build and publish project
 const { exec } = require('child_process')
 const buildCommand = 'npm run clean && npm run tsc && npm run cpx && npm publish --access public'
 
