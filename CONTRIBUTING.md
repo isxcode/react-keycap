@@ -88,10 +88,14 @@ npm run storybook
 
 9. Publish 
 
+> update .npmrc file
+> registry=https://registry.npmjs.org/
+
 > look `VERSION.md` file and update version code
 > update package.json and set version number
 
 ```bash
+# ispong
 npm login 
-npm run publish
+npm run deploy
 ```
