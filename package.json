@@ -1,6 +1,6 @@
 {
   "name": "@isxcode/react-keycap",
-  "version": "0.0.1-alpha.6",
+  "version": "0.0.2",
   "description": "React rapid development integration framework.",
   "homepage": "https://keycap.isxcode.com",
   "private": false,
@@ -19,13 +19,14 @@
     "es"
   ],
   "scripts": {
-    "deploy": "node scripts/publish.js",
-    "clean": "node scripts/clean.js",
-    "link_local": "npm link ../leo-day-react/node_modules/react && npm run clean && npm run tsc && npm run cpx && npm link",
-    "test": "jest",
-    "tsc": "tsc",
-    "cpx": "cpx \"./components/**/*.scss\" ./es",
-    "storybook": "start-storybook -p 6006 --no-manager-cache"
+    "storybook": "start-storybook -p 6006 --no-manager-cache",
+    "build": "npm run clean && npm run tsc && npm run sass",
+    "upload": "npm run build && npm publish --access public",
+    "local": "npm link ../leo-day-react/node_modules/react && npm run build && npm link",
+    "clean": "node scripts/clean.js -o ./es",
+    "tsc": "tsc && tsccss -o ./es",
+    "sass": "sass ./components:./es",
+    "version": "node scripts/version.js -o VERSION.md"
   },
   "browserslist": [
     ">0.2%",
@@ -59,7 +60,6 @@
     "@types/react-dom": "^17.0.3",
     "@typescript-eslint/eslint-plugin": "^4.22.0",
     "@typescript-eslint/parser": "^4.22.0",
-    "cpx": "^1.5.0",
     "css-loader": "^5.2.2",
     "eslint": "^7.23.0",
     "eslint-config-prettier": "^8.2.0",
@@ -79,6 +79,8 @@
     "sass": "^1.32.10",
     "sass-loader": "^10.0.5",
     "style-loader": "^2.0.0",
-    "typescript": "^4.2.4"
+    "tsccss": "0.0.6",
+    "typescript": "^4.2.4",
+    "webpack": "^4.46.0"
   }
 }

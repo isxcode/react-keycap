@@ -1,3 +1,22 @@
+## 0.0.2
+
+### 💥️ Breaking Change
+
+- nothing
+
+### ✨ Feature
+
+- nothing
+
+### 🎨 Enhancement
+
+- remove scss and add css
+- modal add esc key to close modal
+
+### 🐛 Fix
+
+- nothing
+
 ## 0.0.1
 
 ### 💥️ Breaking Change

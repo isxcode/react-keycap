@@ -1,20 +1,20 @@
 import React, { useContext } from 'react'
-import './style/modal.scss'
+import './style/Modal.scss'
 import { ConfigContext } from '../provider/context'
 import classNames from 'classnames'
-import Button from '../button/button'
+import Button from '../button/Button'
+import components from '../provider/components'
 
-export type ModalCap = 'none' | 'cross'
+export type ModalCap = 'none' | 'cross';
 
 export interface BaseModalProps {
   cap?: ModalCap
   isOpen: boolean
-  closeModal: () => void
-  hasCross?: boolean
+  closeModal: () => void;
   title?: string
 }
 
-export type ModalProps = BaseModalProps & React.HTMLAttributes<HTMLDivElement>
+export type ModalProps = BaseModalProps & React.HTMLAttributes<HTMLDivElement>;
 
 const InternalModal: React.ForwardRefRenderFunction<unknown, ModalProps> = (props, ref) => {
   const {
@@ -23,14 +23,13 @@ const InternalModal: React.ForwardRefRenderFunction<unknown, ModalProps> = (prop
     isOpen,
     closeModal,
     cap,
-    hasCross,
     title
   } = props
 
   const modalRef = (ref as any) || React.createRef<HTMLElement>()
 
   const { getPrefixCls } = useContext(ConfigContext)
-  const prefixCls = getPrefixCls('modal')
+  const prefixCls = getPrefixCls(components.Modal)
   const modalCls = classNames(
     className,
     prefixCls,
@@ -39,32 +38,40 @@ const InternalModal: React.ForwardRefRenderFunction<unknown, ModalProps> = (prop
     }
   )
 
-  function HasCross () {
-    return hasCross
+  const ModalCross = () => {
+    return cap === 'cross'
       ? <div className={'keycap-modal-title-div'}>
         <span className={'keycap-modal-title-span'}>
           {title}
         </span>
         <Button className={'keycap-modal-cross-btn'} cap={'font'} label={'x'} onClick={() => {
           closeModal()
-        }} />
+        }}/>
       </div>
       : null
   }
 
-  const modalNode = isOpen
-    ? (
-    <div className={'keycap-modal-div'}>
-      <div className={modalCls} ref={modalRef}>
-        <HasCross />
-        {children}
-      </div>
-    </div>
-      )
-    : null
+  window.onkeydown = (e: KeyboardEvent) => {
+    if (e.code === 'Escape') {
+      closeModal()
+    }
+  }
+
+  const ModalNode = () => {
+    return isOpen
+      ? (
+        <div className={'keycap-modal-div'}>
+          <ModalCross/>
+          <div className={modalCls} ref={modalRef}>
+            {children}
+          </div>
+        </div>
+        )
+      : null
+  }
 
   return <>
-    {modalNode}
+    <ModalNode/>
   </>
 }
 
@@ -74,8 +81,8 @@ Modal.displayName = 'Modal'
 
 Modal.defaultProps = {
   cap: 'none',
-  isOpen: true,
-  hasCross: true
+  isOpen: false,
+  title: ''
 }
 
 export default Modal
