@@ -1,7 +1,7 @@
 import React from 'react'
 import { Meta, Story } from '@storybook/react'
 
-import { ButtonProps } from '../../components/button/button'
+import { ButtonProps } from '../../components/button/Button'
 import { Button } from '../../components/'
 
 export default {

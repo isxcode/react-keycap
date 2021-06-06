@@ -88,10 +88,25 @@ npm run storybook
 
 9. Publish 
 
+> update .npmrc file
+> registry=https://registry.npmjs.org/
+
 > look `VERSION.md` file and update version code
 > update package.json and set version number
 
 ```bash
+# ispong
 npm login 
-npm run publish
+npm run deploy
 ```
+
+## todo
+
+[] VERSION.md version number
+[] github tag and make new branch
+[] github publish repository
+[] SECURITY.md version number
+[] publish new version docs
+[] building status
+[] dependent version update to latest
+[] fix github security

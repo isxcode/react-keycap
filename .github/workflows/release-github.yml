@@ -6,9 +6,6 @@ on:
       branch:
         description: 'which branch'
         required: true
-      version:
-        description: 'version number'
-        required: true
 
 jobs:
   release:
@@ -25,7 +22,7 @@ jobs:
           ref: ${{ github.event.inputs.branch }}
 
       - name: cache npm
-        uses: actions/cache@v2.1.5
+        uses: actions/cache@v2.1.6
         with:
           path: ~/.npm
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
@@ -37,7 +34,6 @@ jobs:
         with:
           node-version: ${{ matrix.node }}
       - run: |
-          node scripts/version.js --version=${{ github.event.inputs.version }}
           npm ci
           npm run build
 

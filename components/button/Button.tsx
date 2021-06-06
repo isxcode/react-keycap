@@ -1,7 +1,7 @@
 import React, { useContext } from 'react'
 import classNames from 'classnames'
 import { ConfigContext } from '../provider/context'
-import './style/button.scss'
+import './style/Button.scss'
 import components from '../provider/components'
 
 export type ButtonCap = 'default' | 'primary' | 'ghost' | 'dashed' | 'danger' | 'font';
