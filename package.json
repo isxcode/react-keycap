@@ -26,7 +26,8 @@
     "clean": "node scripts/clean.js -o ./es",
     "tsc": "tsc && tsccss -o ./es",
     "sass": "sass ./components:./es",
-    "version": "node scripts/version.js -o VERSION.md"
+    "version": "node scripts/version.js -o VERSION.md",
+    "test": "jest"
   },
   "browserslist": [
     ">0.2%",

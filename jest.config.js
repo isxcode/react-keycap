@@ -3,6 +3,7 @@ module.exports = {
   moduleNameMapper: {
     '\\.(css|scss)$': 'identity-obj-proxy'
   },
+  testEnvironment: 'jsdom',
   coverageThreshold: {
     global: {
       statements: 50,

@@ -1,9 +1,12 @@
 name: deploy-docs
 
 on:
-  push:
-    branches:
-      - latest
+  workflow_dispatch:
+    inputs:
+      branch:
+        description: 'which branch'
+        required: true
+        default: 'latest'
 
 jobs:
   build:
