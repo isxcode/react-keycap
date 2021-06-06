@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import Modal from '../../modal/modal'
+import Modal from '../../modal/Modal'
 
 test('test modal component', () => {
   let isOpen = true
