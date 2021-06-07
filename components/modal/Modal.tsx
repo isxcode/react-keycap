@@ -44,7 +44,7 @@ const InternalModal: React.ForwardRefRenderFunction<unknown, ModalProps> = (prop
         <span className={'keycap-modal-title-span'}>
           {title}
         </span>
-        <Button className={'keycap-modal-cross-btn'} cap={'font'} label={'x'} onClick={() => {
+        <Button className={'keycap-modal-cross-btn'} cap={'text'} label={'x'} onClick={() => {
           closeModal()
         }}/>
       </div>

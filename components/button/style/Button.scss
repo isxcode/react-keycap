@@ -2,65 +2,70 @@
 
 $btn-prefix-cls: '#{$keycap-prefix}-btn';
 
+%btn-common {
+  outline: none;
+  border-radius: 0;
+}
+
 .#{$btn-prefix-cls} {
 
-  padding: 8px 20px;
-  height: 40px;
-  font-size: 15px;
-  text-align: center;
-  border-radius: 3px;
-  outline: none;
+  &-small {
+    font-size: 14px;
+    width: 90px;
+    height: 40px;
+  }
+
+  &-middle {
+    font-size: 14px;
+    width: 90px;
+    height: 40px;
+  }
+
+  &-large {
+    font-size: 24px;
+    width: 90px;
+    height: 40px;
+  }
 
   &-icon {
     margin: 0 10px 0 0;
   }
 
   &-default {
-    &:hover {
-      color: white;
-      background: $theme-deep-color;
-    }
 
-    border: 1px solid black;
+    @extend %btn-common;
     color: black;
     background: white;
+    border: 1px solid black;
+
+    &:hover {
+      color: white;
+      background: black;
+    }
   }
 
   &-primary {
-    &:hover {
-      background: $theme-color;
-    }
 
-    border: none;
+    @extend %btn-common;
     color: white;
-    background: $theme-deep-color;
-  }
+    background: black;
+    border: 1px solid black;
 
-  &-font {
     &:hover {
-      color: $theme-deep-color;
-    }
-
-    border: none;
-    color: black;
-    background: white;
-  }
-
-  &-danger {
-    &:hover {
+      color: black;
       background: white;
     }
+  }
 
-    border: 1px solid red;
-    color: red;
+  &-text {
+
+    @extend %btn-common;
+    color: black;
     background: white;
-  }
+    border: none;
 
-  &-ghost {
-
-  }
-
-  &-dashed {
-
+    &:hover {
+      color: grey;
+    }
   }
 }
