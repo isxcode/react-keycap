@@ -10,4 +10,4 @@ export { default as Message } from './message/message'
 
 export { Utils } from './common/utils'
 
-export { keycap } from './axios/index'
+export { keycap, RequestMethod } from './axios/index'
