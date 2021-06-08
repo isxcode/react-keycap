@@ -6,11 +6,12 @@
 
 ### ✨ Feature
 
-- nothing
+- integrate axios for http request
 
 ### 🎨 Enhancement
 
 - enhance button component
+- enhance input component
 
 ### 🐛 Fix
 

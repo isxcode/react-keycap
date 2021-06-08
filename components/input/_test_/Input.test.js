@@ -1,5 +1,5 @@
 import React from 'react'
-import Input from '../input'
+import Input from '../Input'
 import ReactDOM from 'react-dom'
 
 test('test input component', () => {
