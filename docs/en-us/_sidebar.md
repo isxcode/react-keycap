@@ -1,7 +1,6 @@
-* **Project Starter**
+* **Getting Started**
   * [Overview](README.md)
-  * [Init React Project](/en-us/1-1-Init-React-Project.md)
-  * [Use React Keycap](/en-us/1-2-Use-React-Keycap.md)
+  * [Getting Started](/en-us/Getting-started.md)
 * **Components**
   * [Alert](/en-us/2-1-Alert.md)
   * [Button](/en-us/2-2-Button.md)
