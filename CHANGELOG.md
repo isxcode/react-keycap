@@ -7,6 +7,7 @@
 ### ✨ Feature
 
 - integrate axios for http request
+- add new component -- dropdown
 
 ### 🎨 Enhancement
 

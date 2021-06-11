@@ -3,6 +3,7 @@
   "description": "React rapid development integration framework.",
   "homepage": "https://keycap.isxcode.com",
   "private": false,
+  "version": "0.0.3-alpha.5",
   "license": "MIT",
   "keywords": [
     "react",
@@ -83,6 +84,5 @@
     "tsccss": "0.0.6",
     "typescript": "^4.3.2",
     "webpack": "^4.46.0"
-  },
-  "version": "0.0.3-alpha.3"
+  }
 }

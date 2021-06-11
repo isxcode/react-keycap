@@ -6,6 +6,8 @@ export { default as Input } from './input/Input'
 
 export { default as Alert } from './alert/alert'
 
+export { default as Dropdowns } from './dropdowns/Dropdown'
+
 export { default as Message } from './message/message'
 
 export { Utils } from './common/utils'
