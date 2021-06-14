@@ -3,8 +3,8 @@
   "description": "React rapid development integration framework.",
   "homepage": "https://keycap.isxcode.com",
   "private": false,
-  "version": "0.0.3-alpha.5",
   "license": "MIT",
+  "version": "0.6.1-alpha.1",
   "keywords": [
     "react",
     "react-keycap"

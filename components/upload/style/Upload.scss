@@ -1,0 +1,71 @@
+@import '../../style/index';
+
+$btn-prefix-cls: '#{$keycap-prefix}-btn';
+
+%btn-common {
+  outline: none;
+  border-radius: 0;
+}
+
+.#{$btn-prefix-cls} {
+
+  &-small {
+    font-size: 14px;
+    width: 90px;
+    height: 40px;
+  }
+
+  &-middle {
+    font-size: 14px;
+    width: 90px;
+    height: 40px;
+  }
+
+  &-large {
+    font-size: 24px;
+    width: 90px;
+    height: 40px;
+  }
+
+  &-icon {
+    margin: 0 10px 0 0;
+  }
+
+  &-default {
+
+    @extend %btn-common;
+    color: black;
+    background: white;
+    border: 1px solid black;
+
+    &:hover {
+      color: white;
+      background: black;
+    }
+  }
+
+  &-primary {
+
+    @extend %btn-common;
+    color: white;
+    background: black;
+    border: 1px solid black;
+
+    &:hover {
+      color: black;
+      background: white;
+    }
+  }
+
+  &-text {
+
+    @extend %btn-common;
+    color: black;
+    background: white;
+    border: none;
+
+    &:hover {
+      color: grey;
+    }
+  }
+}

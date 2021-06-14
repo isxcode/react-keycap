@@ -27,10 +27,10 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { Button , Message } from '@isxcode/react-keycap'
+import { Upload , Message } from '@isxcode/react-keycap'
 
 const KeycapDemo = () => {
-  return <Button cap={'primary'} label={'Hello'} onClick={() => Message.info('Welcome to use React-Keycap !!!')}/>;
+  return <Upload cap={'primary'} label={'Hello'} onClick={() => Message.info('Welcome to use React-Keycap !!!')}/>;
 }
 
 ReactDOM.render(

@@ -5,7 +5,7 @@ import { ButtonProps } from '../../components/button/Button'
 import { Button } from '../../components/'
 
 export default {
-  title: 'components/Button',
+  title: 'components/Upload',
   component: Button,
   argTypes: {
     cap: {
