@@ -5,7 +5,7 @@
 ##### typescript + yarn
 
 ```bash
-npx create-react-app keycap-demo --template typescript
+npx create-react-app keycap-demo --use-npm --template typescript
 cd keycap-demo
 ```
 
@@ -14,12 +14,16 @@ cd keycap-demo
 > Recommend to use `registry=https://registry.npmjs.org/` repository
 
 ```bash
-yarn add @isxcode/react-keycap --dev
+npm install @isxcode/react-keycap --save-dev
 ```
 
 #### Demo and Use react-keycap
 
 - edit file `src/index.tsx`
+
+```bash
+vim src/index.tsx
+```
 
 ```tsx
 import React from 'react';
@@ -27,10 +31,10 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { Upload , Message } from '@isxcode/react-keycap'
+import { Button , Message } from '@isxcode/react-keycap'
 
 const KeycapDemo = () => {
-  return <Upload cap={'primary'} label={'Hello'} onClick={() => Message.info('Welcome to use React-Keycap !!!')}/>;
+  return <Button cap={'primary'} label={'Hello'} onClick={() => Message.info('Welcome to use React-Keycap !!!')}/>;
 }
 
 ReactDOM.render(
@@ -49,7 +53,9 @@ reportWebVitals();
 ##### Start project
 
 ```bash
-yarn start
+npm start
 ```
 
-![img]()
+- http://localhost:3000
+
+![img](https://gitee.com/isxcode/blogs-galaxy-images/raw/master/keycap-docs/keycap-demo.png)

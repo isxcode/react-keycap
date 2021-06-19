@@ -1,4 +1,4 @@
-import {KeycapAxiosInstance} from './config'
+import { KeycapAxiosInstance } from './config'
 import Message from '../message/message'
 
 export enum RequestMethod {

@@ -1,6 +1,5 @@
 import React from 'react'
 import './style/Dropdown.scss'
-import any = jasmine.any;
 
 export type DropdownCap = 'default' | 'primary';
 
@@ -20,7 +19,7 @@ const InternalDropdown: React.ForwardRefRenderFunction<unknown, DropdownProps> =
 
   const dropdownNode = () => {
     const array = Array.prototype.slice.call(children, 0)
-    { array.map((e:any) => { return <li key={e.key} ref={dropdownRef} onClick={e.props.onClick}>e.props.label</li> }) }
+    array.map((e:any) => { return <li key={e.key} ref={dropdownRef} onClick={e.props.onClick}>e.props.label</li> })
   }
 
   return <>
@@ -37,6 +36,6 @@ Dropdown.defaultProps = {
 }
 
 export default Object.assign(Dropdown, {
-  Item: any,
-  Menu: any
+  // Item: any,
+  // Menu: any
 })

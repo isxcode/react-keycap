@@ -1,6 +1,5 @@
 import React from 'react'
 import './style/Dropdown.scss'
-import any = jasmine.any;
 
 export type DropdownCap = 'default' | 'primary';
 
@@ -37,6 +36,4 @@ Dropdown.defaultProps = {
 }
 
 export default Object.assign(Dropdown, {
-  Item: any,
-  Menu: any
 })
