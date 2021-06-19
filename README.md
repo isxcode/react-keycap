@@ -64,11 +64,11 @@ yarn add @isxcode/react-keycap --dev
 ```javascript
 import React from 'react'
 import ReactDOM from 'react-dom'
-import { Upload, Message } from '@isxcode/react-keycap'
+import { Button, Message } from '@isxcode/react-keycap'
 
 const App = () => (
   <>
-    <Upload cap={'primary'} label={'Hello'} onClick={() => {
+    <Button cap={'primary'} label={'Hello'} onClick={() => {
         Message.info('Welcome to use React-Keycap !!!')
     }} />
   </>
