@@ -1,0 +1,53 @@
+@import '../../style/index';
+
+$input-prefix-cls: '#{$keycap-prefix}-input';
+
+.#{$input-prefix-cls} {
+
+  width: 300px;
+  height: 40px;
+  font-size: 15px;
+
+  outline-style: none;
+  border-radius: 0;
+
+  &-default {
+    border: 1px solid black;
+    &:hover {
+      border: 1px solid lightgray;
+    }
+    &:focus{
+      border: 1px solid grey;
+    }
+  }
+
+  &-line {
+    border: none;
+    border-bottom: 1px solid black;
+    &:hover {
+      border-bottom: solid 1px lightgray;
+    }
+    &:focus {
+      border-bottom: solid 1px grey;
+    }
+  }
+}
+
+input {
+
+  //&:hover {
+  //  border-bottom: solid 1px grey;
+  //}
+
+  //&:focus{
+    //border-bottom: solid 1px lightgray;
+    //box-shadow:0 0 5px rgba(176, 127, 241, 1);
+    //-webkit-box-shadow:0 0 5px rgba(176, 127, 241, 1);
+    //-moz-box-shadow:0 0 5px rgba(176, 127, 241, 1);
+  //}
+  ::-webkit-input-placeholder {
+    position: relative;
+    left: 10px;
+  }
+  padding-left:10px;
+}

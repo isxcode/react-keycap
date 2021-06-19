@@ -1,3 +1,23 @@
+## 0.6.x
+
+### 💥️ Breaking Change
+
+- nothing
+
+### ✨ Feature
+
+- integrate axios for http request
+- add new component -- dropdown
+
+### 🎨 Enhancement
+
+- enhance button component
+- enhance input component
+
+### 🐛 Fix
+
+- nothing
+
 ## 0.0.2
 
 ### 💥️ Breaking Change

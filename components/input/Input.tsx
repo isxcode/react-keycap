@@ -1,15 +1,14 @@
 import React, { useContext } from 'react'
 import classNames from 'classnames'
 import { ConfigContext } from '../provider/context'
-import './style/input.scss'
+import './style/Input.scss'
 import components from '../provider/components'
 
-export type InputCap = 'default' | 'primary'
+export type InputCap = 'default' | 'line';
 
 export interface BaseInputProps {
   cap?: InputCap
-  // label?: string
-  // icon?: React.ReactNode
+  label?: string
 }
 
 export type InputProps = BaseInputProps & React.InputHTMLAttributes<HTMLInputElement>
@@ -18,6 +17,7 @@ const InternalInput: React.ForwardRefRenderFunction<unknown, InputProps> = (prop
   const {
     className,
     children,
+    label,
     cap
   } = props
 
@@ -34,7 +34,7 @@ const InternalInput: React.ForwardRefRenderFunction<unknown, InputProps> = (prop
   )
 
   const inputNode = (
-    <input {...props} className={inputCls} ref={inputRef}>
+    <input {...props} className={inputCls} ref={inputRef} placeholder={label}>
       {children}
     </input>
   )

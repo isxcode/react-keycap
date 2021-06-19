@@ -1,10 +1,10 @@
 {
   "name": "@isxcode/react-keycap",
-  "version": "0.0.2",
   "description": "React rapid development integration framework.",
   "homepage": "https://keycap.isxcode.com",
   "private": false,
   "license": "MIT",
+  "version": "0.6.4-alpha.1",
   "keywords": [
     "react",
     "react-keycap"
@@ -20,7 +20,7 @@
   ],
   "scripts": {
     "storybook": "start-storybook -p 6006 --no-manager-cache",
-    "build": "npm run clean && npm run tsc && npm run sass",
+    "build": "npm run clean && npm run version && npm run tsc && npm run sass",
     "upload": "npm run build && npm publish --access public",
     "local": "npm link ../leo-day-react/node_modules/react && npm run build && npm link",
     "clean": "node scripts/clean.js -o ./es",
@@ -36,15 +36,16 @@
     "not op_mini all"
   ],
   "dependencies": {
-    "classnames": "^2.3.1"
-  },
-  "devDependencies": {
+    "axios": "^0.21.1",
+    "classnames": "^2.3.1",
     "@babel/runtime": "^7.13.10",
-    "@babel/cli": "^7.13.14",
     "@babel/core": "^7.13.15",
     "@babel/preset-env": "^7.13.15",
     "@babel/preset-react": "^7.13.13",
-    "@babel/preset-typescript": "^7.13.0",
+    "@babel/preset-typescript": "^7.13.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.13.14",
     "@storybook/theming": "^6.2.8",
     "@storybook/addon-docs": "^6.2.8",
     "@storybook/addon-actions": "^6.2.8",

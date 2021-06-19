@@ -3,5 +3,6 @@ export default {
   ALTER: 'alter',
   BUTTON: 'btn',
   INPUT: 'input',
-  Modal: 'modal'
+  Modal: 'modal',
+  UPLOAD: 'upload'
 }
