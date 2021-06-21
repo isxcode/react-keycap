@@ -4,7 +4,6 @@
   "homepage": "https://keycap.isxcode.com",
   "private": false,
   "license": "MIT",
-  "version": "0.6.4-alpha.1",
   "keywords": [
     "react",
     "react-keycap"
@@ -42,7 +41,9 @@
     "@babel/core": "^7.13.15",
     "@babel/preset-env": "^7.13.15",
     "@babel/preset-react": "^7.13.13",
-    "@babel/preset-typescript": "^7.13.0"
+    "@babel/preset-typescript": "^7.13.0",
+    "react-router-dom": "^5.2.0",
+    "@types/react-router-dom": "^5.1.7"
   },
   "devDependencies": {
     "@babel/cli": "^7.13.14",

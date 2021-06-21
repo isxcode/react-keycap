@@ -1,39 +1,49 @@
 import React from 'react'
-import './style/Dropdown.scss'
+import MenuItem from './MenuItem'
+import { Button } from '../index'
 
-export type DropdownCap = 'default' | 'primary';
+export type MenuCap = 'default' | 'primary';
 
-export interface BaseDropdownProps {
-  cap?: DropdownCap;
-  label?: string
+export interface BaseMenuProps {
+  cap?: MenuCap;
 }
 
-export type DropdownProps = BaseDropdownProps & React.ButtonHTMLAttributes<HTMLButtonElement>;
+export type MenuProps = BaseMenuProps & React.ButtonHTMLAttributes<HTMLButtonElement>;
 
-const InternalDropdown: React.ForwardRefRenderFunction<unknown, DropdownProps> = (props, ref) => {
+const InternalMenu: React.ForwardRefRenderFunction<unknown, MenuProps> = (props, ref) => {
   const {
+    cap,
     children
   } = props
 
-  const dropdownRef = (ref as any) || React.createRef<HTMLElement>()
+  const menuRef = (ref as any) || React.createRef<HTMLElement>()
 
-  const dropdownNode = () => {
-    const array = Array.prototype.slice.call(children, 0)
-    { array.map((e:any) => { return <li key={e.key} ref={dropdownRef} onClick={e.props.onClick}>e.props.label</li> }) }
-  }
+  const menuNode = cap === 'default'
+    ? <div ref={menuRef}>
+        <Button/>
+        <ul>
+          {children}
+        </ul>
+      </div>
+    : <div ref={menuRef}>
+      <ul>
+        {children}
+      </ul>
+    </div>
 
   return <>
-   {dropdownNode}
+    {menuNode}
   </>
 }
 
-const Dropdown = React.forwardRef<unknown, DropdownProps>(InternalDropdown)
+const Menu = React.forwardRef<unknown, MenuProps>(InternalMenu)
 
-Dropdown.displayName = 'Dropdown'
+Menu.displayName = 'Menu'
 
-Dropdown.defaultProps = {
+Menu.defaultProps = {
   cap: 'default'
 }
 
-export default Object.assign(Dropdown, {
+export default Object.assign(Menu, {
+  Item: MenuItem
 })

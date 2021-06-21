@@ -15,3 +15,5 @@ export { default as Message } from './message/message'
 export { Utils } from './common/utils'
 
 export { keycap, RequestMethod } from './axios/index'
+
+export { default as Menu } from './menu/Menu'

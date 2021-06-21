@@ -4,5 +4,6 @@ export default {
   BUTTON: 'btn',
   INPUT: 'input',
   Modal: 'modal',
-  UPLOAD: 'upload'
+  UPLOAD: 'upload',
+  MENU_ITEM: 'menuItem'
 }
