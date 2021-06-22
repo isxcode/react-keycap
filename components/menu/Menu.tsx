@@ -1,6 +1,10 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import MenuItem from './MenuItem'
 import { Button } from '../index'
+import './style/Menu.scss'
+import { ConfigContext } from '../provider/context'
+import components from '../provider/components'
+import classNames from 'classnames'
 
 export type MenuCap = 'default' | 'primary';
 
@@ -13,10 +17,20 @@ export type MenuProps = BaseMenuProps & React.ButtonHTMLAttributes<HTMLButtonEle
 const InternalMenu: React.ForwardRefRenderFunction<unknown, MenuProps> = (props, ref) => {
   const {
     cap,
-    children
+    children,
+    className
   } = props
 
   const menuRef = (ref as any) || React.createRef<HTMLElement>()
+
+  const { getPrefixCls } = useContext(ConfigContext)
+  const prefixCls = getPrefixCls(components.MENU)
+  const menuCls = classNames(
+    prefixCls,
+    {
+      [`${prefixCls}-${cap}`]: cap
+    },
+    className)
 
   const menuNode = cap === 'default'
     ? <div ref={menuRef}>
@@ -25,11 +39,9 @@ const InternalMenu: React.ForwardRefRenderFunction<unknown, MenuProps> = (props,
           {children}
         </ul>
       </div>
-    : <div ref={menuRef}>
-      <ul>
+    : <ul className={menuCls}>
         {children}
       </ul>
-    </div>
 
   return <>
     {menuNode}

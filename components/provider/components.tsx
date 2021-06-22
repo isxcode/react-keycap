@@ -5,5 +5,6 @@ export default {
   INPUT: 'input',
   Modal: 'modal',
   UPLOAD: 'upload',
-  MENU_ITEM: 'menuItem'
+  MENU_ITEM: 'menuItem',
+  MENU: 'menu'
 }

@@ -1,0 +1,19 @@
+@import '../../style/index';
+
+$menuItem-prefix-cls: '#{$keycap-prefix}-menuItem';
+
+.#{$menuItem-prefix-cls} {
+
+  &-default {
+
+    float: left;
+    text-align: center;
+    font-size: 22px;
+    margin-left: 60px;
+
+    &:hover {
+      background: white;
+      color: grey;
+    }
+  }
+}

@@ -1,28 +1,24 @@
 import React, { useContext } from 'react'
 import components from '../provider/components'
-import { useHistory } from 'react-router-dom'
 import classNames from 'classnames'
 import { ConfigContext } from '../provider/context'
+import './style/MenuItem.scss'
 
 export type MenuItemCap = 'default' | 'primary';
 
 export interface BaseMenuItemProps {
   cap?: MenuItemCap;
   label?: string;
-  link: string;
 }
 
-export type MenuItemProps = BaseMenuItemProps & React.ButtonHTMLAttributes<HTMLButtonElement>;
+export type MenuItemProps = BaseMenuItemProps & React.LiHTMLAttributes<HTMLLIElement>;
 
 const InternalMenuItem: React.ForwardRefRenderFunction<unknown, MenuItemProps> = (props, ref) => {
   const {
     className,
     label,
-    link,
     cap
   } = props
-
-  const history = useHistory()
 
   const menuItemRef = (ref as any) || React.createRef<HTMLElement>()
 
@@ -36,7 +32,7 @@ const InternalMenuItem: React.ForwardRefRenderFunction<unknown, MenuItemProps> =
     className)
 
   const menuItemNode =
-     <li className={menuItemCls} ref={menuItemRef} onClick={() => { history.push(link) }}>{label}</li>
+    <li {...props} className={menuItemCls} ref={menuItemRef}>{label}</li>
 
   return <>
     { menuItemNode }
