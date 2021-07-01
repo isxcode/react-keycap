@@ -5,12 +5,12 @@ import classNames from 'classnames'
 import Button from '../button/Button'
 import components from '../provider/components'
 
-export type ModalCap = 'none' | 'cross';
+export type ModalCap = 'none' | 'cross' | 'white'
 
 export interface BaseModalProps {
   cap?: ModalCap
   isOpen: boolean
-  closeModal: () => void;
+  closeModal: () => void
   title?: string
 }
 
@@ -29,7 +29,7 @@ const InternalModal: React.ForwardRefRenderFunction<unknown, ModalProps> = (prop
   const modalRef = (ref as any) || React.createRef<HTMLElement>()
 
   const { getPrefixCls } = useContext(ConfigContext)
-  const prefixCls = getPrefixCls(components.Modal)
+  const prefixCls = getPrefixCls(components.MODAL)
   const modalCls = classNames(
     className,
     prefixCls,

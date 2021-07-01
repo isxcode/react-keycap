@@ -1,4 +1,4 @@
-## 0.6.x
+## 0.6.5 (July 01, 2021)
 
 ### 💥️ Breaking Change
 
@@ -18,7 +18,7 @@
 
 - nothing
 
-## 0.0.2
+## 0.0.2 (June 06, 2021)
 
 ### 💥️ Breaking Change
 
@@ -37,7 +37,7 @@
 
 - nothing
 
-## 0.0.1
+## 0.0.1 (November 28, 2020)
 
 ### 💥️ Breaking Change
 

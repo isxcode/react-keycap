@@ -1,0 +1,13 @@
+@import '../../style/index';
+
+$menu-prefix-cls: '#{$keycap-prefix}-menu';
+
+.#{$menu-prefix-cls} {
+
+  &-primary {
+    list-style: none;
+    padding: 0;
+    border: none;
+    background: white;
+  }
+}

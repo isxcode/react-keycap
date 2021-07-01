@@ -3,6 +3,8 @@ export default {
   ALTER: 'alter',
   BUTTON: 'btn',
   INPUT: 'input',
-  Modal: 'modal',
-  UPLOAD: 'upload'
+  MODAL: 'modal',
+  UPLOAD: 'upload',
+  MENU_ITEM: 'menuItem',
+  MENU: 'menu'
 }
