@@ -15,8 +15,6 @@ export class keycap {
     authorization?: boolean,
     showMsg?: boolean,
   ) => Promise<any>
-
-  api = () => {};
 }
 
 keycap.api = async function (
