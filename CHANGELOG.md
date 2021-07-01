@@ -1,4 +1,4 @@
-## 0.6.x
+## 0.7.x
 
 ### 💥️ Breaking Change
 
