@@ -38,11 +38,7 @@ Note:
 
 ```bash
 cd react-keycap
-npm link
-npm install
-npm link /project/node_modules/react
-npm link /project/node_modules/react-dom
-npm run build
+npm install && npm run local
 ```
 
 4. Install Local
@@ -64,13 +60,11 @@ git push origin latest
 
 6. Pull Request
 
-- https://github.com/isxcode/react-keycap/compare
+[https://github.com/isxcode/react-keycap/compare](https://github.com/isxcode/react-keycap/compare)
 
 > Note:  ispong/react-keycap/latest  **==squash merge==>** isxcode/react-keycap/latest
 
-7. Build Docs
-
-- http://localhost:3000
+### Build docs
 
 ```bash
 npm i docsify-cli -g
@@ -78,35 +72,77 @@ cd react-keycap
 docsify serve docs
 ```
 
-8. Run BookStory
+[http://localhost:3000](http://localhost:3000)
 
-- http://localhost:6006
+### Build BookStory
 
 ```bash
 npm run storybook
 ```
 
-9. Publish 
+[http://localhost:6006](http://localhost:6006)
 
-> update .npmrc file
-> registry=https://registry.npmjs.org/
+### Publish
 
-> look `VERSION.md` file and update version code
-> update package.json and set version number
+#### publish alpha to Npm repository 
 
 ```bash
-# ispong
-npm login 
-npm run deploy
+vim VERSION.md
+
+# -------------- VERSION.md --------------  
+1.0.0-alpha
+# -------------- VERSION.md -------------- 
 ```
 
-## todo
+```bash
+vim gradle.properties
 
-[] VERSION.md version number
-[] github tag and make new branch
-[] github publish repository
-[] SECURITY.md version number
-[] publish new version docs
-[] building status
-[] dependent version update to latest
-[] fix github security
+# ------------- vim .npmrc -------------  
+registry=https://registry.npmjs.org/
+# ------------- gradle.properties -------------
+```
+
+```bash
+npm login 
+npm run upload
+```
+
+#### publish RELEASE to Npm repository
+
+```bash
+vim VERSION.md
+
+# -------------- VERSION.md --------------  
+1.0.0
+# -------------- VERSION.md -------------- 
+```
+
+```bash
+vim gradle.properties
+
+# ------------- vim .npmrc -------------  
+registry=https://registry.npmjs.org/
+# ------------- gradle.properties -------------
+```
+
+```bash
+npm login 
+npm run upload
+```
+
+#### publish RELEASE to GitHub repository
+
+[https://github.com/isxcode/react-keycap/actions/workflows/release-github.yml](https://github.com/isxcode/react-keycap/actions/workflows/release-github.yml)
+
+### Release new version
+
+- [ ] Fix Pull Request
+- [ ] Edit VERSION.md version number
+- [ ] Edit SECURITY.md version number
+- [ ] Edit CHANGELOG.md version number
+- [ ] Submit and Fix GitHub Security
+- [ ] Check project badge status
+- [ ] Create GitHub new tag and new branch
+- [ ] Run GitHub action publish to GitHub repository
+- [ ] Run GitHub action publish new version docs
+- [ ] Publish to Sonatype repository
