@@ -1,3 +1,21 @@
+## 0.6.x
+
+### 💥️ Breaking Change
+
+- nothing
+
+### ✨ Feature
+
+- nothing
+
+### 🎨 Enhancement
+
+- nothing
+
+### 🐛 Fix
+
+- nothing
+
 ## 0.6.6 (July 01, 2021)
 
 ### 💥️ Breaking Change
