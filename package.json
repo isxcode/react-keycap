@@ -4,7 +4,6 @@
   "homepage": "https://keycap.isxcode.com",
   "private": false,
   "license": "MIT",
-  "version": "0.6.6",
   "keywords": [
     "react",
     "react-keycap"
@@ -84,5 +83,6 @@
     "tsccss": "0.0.6",
     "typescript": "^4.3.5",
     "webpack": "^4.46.0"
-  }
+  },
+  "version": "0.7.1-alpha"
 }
