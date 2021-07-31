@@ -34,4 +34,4 @@ jobs:
         password: ${{ secrets.PASSWORD }}
         port: ${{ secrets.PORT }}
         source: "docs"
-        target: "/data/nginx/html/keycap/"
+        target: "/data/nginx/html/react-keycap/"
