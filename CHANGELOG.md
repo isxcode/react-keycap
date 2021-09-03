@@ -1,4 +1,22 @@
-## 0.6.5 (July 01, 2021)
+## 0.8.1 (September 03, 2021)
+
+### 💥️ Breaking Change
+
+- nothing
+
+### ✨ Feature
+
+- update typescript to 4.3.5
+
+### 🎨 Enhancement
+
+- nothing
+
+### 🐛 Fix
+
+- nothing
+
+## 0.6.6 (July 01, 2021)
 
 ### 💥️ Breaking Change
 

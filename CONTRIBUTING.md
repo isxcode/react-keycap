@@ -137,9 +137,9 @@ npm run upload
 ### Release new version
 
 - [ ] Fix Pull Request
-- [ ] Edit VERSION.md version number
+- [ ] Edit VERSION.md version number (`version`-alpha)
 - [ ] Edit SECURITY.md version number
-- [ ] Edit CHANGELOG.md version number
+- [ ] Edit CHANGELOG.md version number (## 0.8.1 (September 03, 2021))
 - [ ] Submit and Fix GitHub Security
 - [ ] Check project badge status
 - [ ] Create GitHub new tag and new branch
