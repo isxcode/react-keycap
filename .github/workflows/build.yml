@@ -35,7 +35,7 @@ jobs:
         config-file: ./.github/codeql/codeql-config.yml
 
     - name: npm build
-      uses: actions/setup-node@v2.4.0
+      uses: actions/setup-node@v2.4.1
       with:
         node-version: ${{ matrix.node }}
     - run: |

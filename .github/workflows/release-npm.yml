@@ -33,7 +33,7 @@ jobs:
             ${{ runner.os }}-node-
 
       - name: npm build
-        uses: actions/setup-node@v2.4.0
+        uses: actions/setup-node@v2.4.1
         with:
           node-version: ${{ matrix.node }}
       - run: |
@@ -42,7 +42,7 @@ jobs:
           npm run build
 
       - name: publish to npm
-        uses: actions/setup-node@v2.4.0
+        uses: actions/setup-node@v2.4.1
       - run: |
           echo 'registry=https://registry.npmjs.org' > ~/.npmrc
           echo '//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}' >> ~/.npmrc
