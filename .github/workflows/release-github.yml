@@ -31,7 +31,7 @@ jobs:
             ${{ runner.os }}-node-
 
       - name: npm build
-        uses: actions/setup-node@v2.4.0
+        uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node }}
       - run: |
@@ -39,7 +39,7 @@ jobs:
           npm run build
 
       - name: publish to github
-        uses: actions/setup-node@v2.4.0
+        uses: actions/setup-node@v3
       - run: |
           echo 'registry=https://npm.pkg.github.com/isxcode' > ~/.npmrc
           echo '//npm.pkg.github.com/:_authToken=${{ secrets.GITHUB_TOKEN }}' >> ~/.npmrc
