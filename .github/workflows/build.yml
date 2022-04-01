@@ -18,7 +18,7 @@ jobs:
 
     steps:
     - name: checkout repository
-      uses: actions/checkout@v2.3.4
+      uses: actions/checkout@v3
 
     - name: cache npm
       uses: actions/cache@v2.1.6
